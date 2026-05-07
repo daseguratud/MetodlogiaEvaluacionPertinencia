@@ -1,0 +1,546 @@
+Contents
+ Preface xxi
+1 Number Systems and Codes 1
+   Learning Objectives 1
+ 1.1 Analogue Versus Digital 1
+ 1.2 Introduction to Number Systems 2
+ 1.3 Decimal Number System 2
+ 1.4 Binary Number System 3
+  Advantages 4
+ 1.5 Octal Number System 4
+ 1.6 Hexadecimal Number System 4
+ 1.7 Number Systems – Some Common Terms 5
+  Binary Number System 5  Decimal Number System 5  Octal Number System 5  Hexadecimal Number System 5
+ 1.8 Number Representation in Binary 5
+  Sign-Bit Magnitude 5
+  1’s Complement 6  2’s Complement 6
+ 1.9 Finding the Decimal Equivalent 6
+  Binary-to-Decimal Conversion 6
+  Octal-to-Decimal Conversion 6
+  Hexadecimal-to-Decimal Conversion 7
+ 1.10 Decimal-to-Binary Conversion 7
+ 1.11 Decimal-to-Octal Conversion 8
+ 1.12 Decimal-to-Hexadecimal Conversion 9
+ 1.13 Binary–Octal and Octal–Binary Conversion 9
+ 1.14 Hex–Binary and Binary–Hex Conversion 10
+ 1.15 Hex–Octal and Octal–Hex Conversion 10
+ 1.16 The Four Axioms 11
+ 1.17 Floating-Point Numbers 13
+  Range of Numbers and Precision 13
+  Floating-Point Number Formats 14
+ 1.18 Binary Coded Decimal 17
+  BCD-to-Binary Conversion 18
+  Binary-to-BCD Conversion 18  Higher Density BCD Encoding 18
+  Packed and Unpacked BCD Numbers 19
+ 1.19 Excess-3 Code 19
+ 1.20 Gray Code 21
+  Binary–Gray Code Conversion 21
+  Gray Code–Binary Conversion 22
+  n-ary Gray Code 23
+  Applications 23
+ 1.21 Alphanumeric Codes 25
+  ASCII Code 26
+  EBCDIC Code 29
+  Unicode 36
+ 1.22 Seven-Segment Display Code 36
+ 1.23 Error Detection and Correction Codes 36
+  Parity Code 38
+  Repetition Code 38
+  Cyclic Redundancy Check Code 38
+  Hamming Code 39
+  Key Terms 41
+  Review Questions 42
+  Problems 43
+  Objective Type Exercises 43
+  Answers 45
+2 Digital Arithmetic 47
+  Learning Objectives 47
+ 2.1 Basic Rules of Binary Addition and Subtraction 47
+ 2.2 Addition of Larger Bit Binary Numbers 49
+  Addition Using the 2’s Complement Method 49
+ 2.3 Subtraction of Larger Bit Binary Numbers 52
+  Subtraction Using 2’s Complement Arithmetic 53
+ 2.4 BCD Addition and Subtraction in Excess-3 Code 56
+  Addition 56
+  Subtraction 56
+ 2.5 Binary Multiplication 58
+  Repeated Left-Shift and Add Algorithm 58
+  Repeated Add and Right-Shift Algorithm 59
+ 2.6 Binary Division 60
+  Repeated Right-Shift and Subtract Algorithm 60
+  Repeated Subtract and Left-Shift Algorithm 63
+ 2.7 Floating-Point Arithmetic 65
+  Addition and Subtraction 65
+  Multiplication and Division 66viii  • CONTENTS  Key Terms 67
+  Review Questions 67
+  Problems 67
+  Objective Type Exercises 68
+  Answers 69
+3 Logic Gates and Related Devices 71
+  Learning Objectives 71
+ 3.1 Positive and Negative Logic 71
+ 3.2 Truth Table 72
+ 3.3 Logic Gates 73
+  OR Gate 73
+  AND Gate 75
+  NOT Gate 76
+  Exclusive-OR Gate 77
+  NAND Gate 80
+  NOR Gate 80
+  Exclusive-NOR Gate 80
+  INHIBIT Gate 83
+ 3.4 Universal Gates 85
+ 3.5 Gates with Open Collector/Drain Outputs 85
+ 3.6 Tristate Logic Gates 87
+ 3.7 AND-OR-INVERT Gates 87
+ 3.8 Schmitt Gates 89
+ 3.9 Special Output Gates 89
+ 3.10 Fan-Out of Logic Gates 93
+ 3.11 Buffers and Transceivers 95
+ 3.12 IEEE/ANSI Standard Symbols 97
+  IEEE/ANSI Standards – Salient Features 97
+ 3.13 Application-Relevant Information 99
+  Key Terms 101
+  Review Questions 101
+  Problems 102
+  Objective Type Exercises 102
+  Answers 104
+4 Logic Families 107
+  Learning Objectives 107
+ 4.1 Logic Families – Signifi  cance and Types 107
+  Signifi  cance 107
+  Types of Logic Families 108
+ 4.2 Characteristic Parameters 109
+ 4.3 Transistor Transistor Logic (TTL) 116
+  Standard TTL 116CONTENTS  • ix  Open Collector Gate 118
+  Low-Power TTL 119  High-Power TTL (74H/54H) 120  Schottky TTL (74S/54S) 121  Low-Power Schottky TTL (74LS/54LS) 122
+  Advanced Low-Power Schottky TTL (74ALS/54ALS) 123
+  Advanced Schottky TTL (74AS/54AS) 125  Fairchild Advanced Schottky TTL (74F/54F) 126  Floating and Unused Inputs 127
+  Current Transients and Power Supply Decoupling 127
+ 4.4 Emitter Coupled Logic (ECL) 132
+  Different Sub-Families 132
+  Logic Gate Implementation in ECL 133
+  Salient Features of ECL 135
+ 4.5 CMOS Logic Family 135
+  Circuit Implementation of Logic Functions 136
+ 4.6 BiCMOS Logic 143
+  BiCMOS Inverter 144
+  BiCMOS NAND 144
+ 4.7 NMOS and PMOS Logic 145
+  PMOS Logic 145
+  NMOS Logic 146
+ 4.8 Integrated Injection Logic (I
+2L) Family 146
+ 4.9 Comparison of Different Logic Families 148
+ 4.10 Guidelines to Using TTL Devices 148
+ 4.11 Guidelines to Handling and Using CMOS Devices 150
+ 4.12 Interfacing with Different Logic Families 151
+  CMOS-to-TTL Interface 151
+  TTL-to-CMOS Interface 152
+  TTL-to-ECL and ECL-to-TTL Interface 154
+  CMOS-to-ECL and ECL-to-CMOS Interface 154
+ 4.13 Classifi  cation of Digital ICs 155
+ 4.14 Application-Relevant Information 155
+  Key Terms 156
+  Review Questions 156
+  Problems 157
+  Objective Type Questions 158
+  Answers 160
+5 Boolean Algebra and Simplifi  cation Techniques 161
+  Learning Objectives 161
+ 5.1 Introduction to Boolean Algebra 161
+  Variables, Literals, and Terms in Boolean Expressions 162
+  Equivalent and Complement of Boolean Expressions 162
+  Dual of a Boolean Expression 162x • CONTENTSCONTENTS  • xi
+ 5.2 Postulates of Boolean Algebra 163
+ 5.3 Theorems of Boolean Algebra 164
+  Theorem 1 (Operations with ‘0’ and ‘1’) 164
+  Theorem 2 (Operations with ‘0’ and ‘1’) 164
+  Theorem 3 (Idempotent or Identity Laws) 164
+  Theorem 4 (Complementation Law) 165
+  Theorem 5 (Commutative Laws) 165
+  Theorem 6 (Associative Laws) 165
+  Theorem 7 (Distributive Laws) 166
+  Theorem 8 167
+  Theorem 9 168
+  Theorem 10 (Absorption Law or Redundancy Law) 168
+  Theorem 11 168
+  Theorem 12 (Consensus Theorem) 169
+  Theorem 13 (DeMorgan’s Theorem) 170
+  Theorem 14 (Transposition Theorem) 171
+  Theorem 15 172
+  Theorem 16 172
+  Theorem 17 (Involution Law) 173
+ 5.4 Simplifi  cation Techniques 174
+  Sum-of-Products Boolean Expressions 175
+  Product-of-Sums Expressions 176
+  Expanded Forms of Boolean Expressions 176
+  Canonical Form of Boolean Expressions 177
+  ∑ and ∏ Nomenclature 177
+ 5.5 Quine–McCluskey Tabular Method 179
+  Tabular Method for Multi-Output Functions 183
+ 5.6 Karnaugh Map Method 187
+  Construction of Karnaugh Map 187
+  Karnaugh Maps for Boolean Expressions with Larger Number of Variables 192
+  Karnaugh Maps for Multi-Output Functions 195
+  Key Terms 198
+  Review Questions 199
+  Problems 199
+  Objective Type Exercises 200
+  Answers 201
+6 Arithmetic Circuits 203
+  Learning Objectives 203
+ 6.1 Combinational Circuits 203
+ 6.2 Implementing Combinational Logic 205
+ 6.3 Arithmetic Circuits – Basic Building Blocks 206
+  Half-Adder 206
+  Full Adder 207  Half-Subtractor 209
+  Full Subtractor 211
+  Controlled Inverter 213
+ 6.4 Adder–Subtractor 214
+ 6.5 BCD Adder 215
+ 6.6 Carry Propagation–Look-Ahead Carry Generator 222
+ 6.7 Arithmetic Logic Unit (ALU) 227
+ 6.8 Multipliers 227
+ 6.9 Magnitude Comparator 229
+  Cascading Magnitude Comparators 229
+ 6.10 Application-Relevant Information 233
+  Key Terms 234
+  Review Questions 234
+  Problems 234
+  Objective Type Exercises 235
+  Answers 237
+7 Combinational Logic Circuits 239
+  Learning Objectives 239
+ 7.1 Multiplexer 239
+  Inside the Multiplexer 240
+  Implementing Boolean Functions with Multiplexers 243
+  Multiplexers for Parallel-to-Serial Data Conversion 246
+  Cascading Multiplexer Circuits 248
+ 7.2 Encoders 250
+  Priority Encoder 250
+ 7.3 Demultiplexers and Decoders 254
+  Implementing Boolean Functions with Decoders 254
+  Cascading Decoder Circuits 256
+ 7.4 Parity Generation and Checking 260
+ 7.5 Application-Relevant Information 262
+  Key Terms 263
+  Review Questions 263
+  Problems 264
+  Objective Type Exercises 264
+  Answers 266
+8 Flip-Flops and Related Devices 269
+  Learning Objectives 269
+ 8.1 Multivibrator 269
+  Bistable Multivibrator 269
+  Schmitt Trigger 270
+  Monostable Multivibrator 272xii • CONTENTSCONTENTS  • xiii
+  Astable Multivibrator 273
+ 8.2 Integrated Circuit (IC) Multivibrators 274
+  Digital IC-Based Monostable Multivibrator 274
+  IC Timer-Based Multivibrators 276
+ 8.3 R-S Flip-Flop 284
+  R-S Flip-Flop with Active-LOW Inputs 284
+  R-S Flip-Flop with Active-HIGH Inputs 286
+  Clocked R-S Flip-Flop 287
+ 8.4 Level-Triggered and Edge-Triggered Flip-Flops 290
+ 8.5 J-K Flip-Flop 290
+  J-K Flip-Flop with PRESET and CLEAR Inputs 294
+  Master–Slave Flip-Flops 294
+ 8.6 Toggle Flip-Flop (T Flip-Flop) 298
+  J-K Flip-Flop as Toggle Flip-Flop 300
+ 8.7 D Flip-Flop 302
+  J-K Flip-Flop as D Flip-Flop 302
+  D-Type Latch 302
+ 8.8 Synchronous and Asynchronous Inputs 304
+ 8.9 Flip-Flop Timing Parameters 305
+  Set-Up and Hold Times 305
+  Propagation Delay 306
+  Clock Pulse HIGH and LOW Times 306
+  Asynchronous Input Active Pulse Width 307
+  Clock Transition Times 307
+  Maximum Clock Frequency 307
+ 8.10 Flip-Flop Applications 307
+  Switch Debouncing 308
+  Flip-Flop Synchronization 308
+  Detecting Sequence of Edges 309
+ 8.11 Application-Relevant Data 311
+  Key Terms 313
+  Review Questions 313
+  Problems 313
+  Objective Type Exercises 314
+  Answers 316
+9 Counters and Registers 317
+  Learning Objectives 317
+ 9.1 Ripple (Asynchronous) Counter 317
+  Propagation Delay in Ripple Counters 318
+ 9.2 Synchronous Counter 319
+ 9.3 Modulus of a Counter 319
+ 9.4 Binary Ripple Counter – Operational Basics 319xiv  • CONTENTS
+  Binary Ripple Counters with a Modulus of Less than 2N 322
+  Ripple Counters in IC Form 324
+ 9.5 Synchronous (or Parallel) Counters 328
+ 9.6 Up/Down Counters 330
+ 9.7 Decade and BCD Counters 330
+ 9.8 Presettable Counters 331
+  Variable Modulus with Presettable Counters 332
+ 9.9 Decoding a Counter 334
+ 9.10 Cascading Counters 337
+  Cascading Binary Counters 337
+  Cascading BCD Counters 337
+ 9.11 Designing Counters with Arbitrary Sequences 341
+  Excitation Table of a Flip-Flop 342
+  State Transition Diagram 342
+  Design Procedure 342
+ 9.12 Shift Register 350
+  Serial-In Serial-Out (SISO) Shift Register 351
+  Serial-In Parallel-Out (SIPO) Shift Register 353
+  Parallel-In Serial-Out (PISO) Shift Register 353
+  Parallel-In Parallel-Out (PIPO) Shift Register 354
+  Bidirectional Shift Register 355
+  Universal Shift Register 356
+ 9.13 Shift Register Counters 359
+  Ring Counter 359
+  Shift Counter 360
+ 9.14 IEEE/ANSI Symbology for Counters and Registers 364
+  Counters 365
+  Registers 366
+ 9.15 Application-Relevant Information 366
+  Key Terms 368
+  Review Questions 368
+  Problems 369
+  Objective Type Questions 370
+  Answers 372
+10 Data Conversion Circuits: D/A and A/D Converters 373
+  Learning Objectives 373
+ 10.1 Digital-to-Analogue Converters 373
+  Simple Resistive Divider Network for D/A Conversion 374
+  Binary Ladder Network for D/A Conversion 375
+ 10.2 D/A Convertor Specifi  cations 376
+  Resolution 376
+  Accuracy 377
+  Conversion Speed or Settling Time 378CONTENTS  • xv
+  Dynamic Range 378
+  Nonlinearity and Differential Nonlinearity 378
+  Monotonocity 378
+ 10.3 Types of D/A Converters 379
+  Multiplying-Type D/A Converters 379
+  Bipolar-Output D/A Converters 379
+  Companding D/A Converters 379
+ 10.4 Modes of Operation 380
+  Current Steering Mode of Operation 380
+  Voltage Switching Mode of Operation 380
+ 10.5 BCD-Input D/A Converter 382
+ 10.6 Integrated Circuit D/A Converters 385
+  DAC-08 385
+  DAC-0808 385
+  DAC-80 385  AD 7524 387  DAC-1408/DAC-1508 388
+ 10.7 D/A Converter Applications 388
+  D/A Converter as Multiplier 389
+  D/A Converter as a Divider 389
+  Programmable Integrator 389
+  Low-Frequency Function Generator 390
+  Digitally Controlled Filters 391
+ 10.8 A/D Converters 393
+ 10.9 A/D Converter Specifi  cations 394
+  Resolution 394
+  Accuracy 394
+  Gain and Offset Errors 394
+  Gain and Offset Drifts 394
+  Sampling Frequency and Aliasing Phenomenon 394
+  Quantization Error 395
+  Nonlinearity 395
+  Differential Nonlinearity 395
+  Conversion Time 395
+  Aperture and Acquisition Times 396
+  Code Width 397 10.10 A/D Converter Terminology 397
+  Unipolar Mode Operation 397
+  Bipolar Mode Operation 397
+  Coding 397
+  Low Byte and High Byte 397
+  Right Justifi  ed Data, Left Justifi  ed Data 397
+  Command Register, Status Register 397
+  Control Lines 397xvi  • CONTENTS
+ 10.11 Types of A/D Converters 398
+  Simultaneous or Flash A/D Converters 398
+  Half-Flash A/D Converter 399
+  Counter-Type A/D Converter 401
+  Tracking-Type A/D Converter 402
+  Successive Approximation Type A/D Converter 403
+  Single, Dual, and Multi-Slope A/D Converters 404
+  Sigma-Delta A/D Converter 406
+ 10.12 Integrated Circuit A/D Converters 411
+  ADC-0800 411
+  ADC-0808 412  ADC-80/AD ADC-80 412
+  ADC-84/ADC-85/AD ADC-84/AD ADC-85/AD-5240 412
+  AD 7820 414  ICL 7106/ICL 7107 414
+ 10.13 A/D Converter Applications 417
+  Data Acquisition 418
+  Key Terms 418
+  Review Questions 418
+  Problems 419
+  Objective Type Questions 420
+  Answers 421
+11 Programmable Logic Devices 423
+  Learning Objectives 423
+ 11.1 Fixed Logic Versus Programmable Logic 423
+  Advantages and Disadvantages 424
+ 11.2 Programmable Logic Devices: An Overview 426
+  Programmable ROMs 426
+  Programmable Logic Array (PLA) 426
+  Programmable Array Logic (PAL) 426
+  Generic Array Logic (GAL) 428
+  Complex Programmable Logic Device 429
+  Field Programmable Gate Array (FPGA) 430
+ 11.3 Programmable ROMs 430
+ 11.4 Programmable Logic Array (PLA) 435
+ 11.5 Programmable Array Logic (PAL) 442
+  PAL Architecture 442
+  PAL Numbering System 443
+ 11.6 Generic Array Logic (GAL) 448
+ 11.7 Complex Programmable Logic Devices 449
+  Internal Architecture 449
+  Applications 451
+ 11.8 Field-Programmable Gate Arrays 452CONTENTS  • xvii
+  Internal Architecture 452
+  Applications 453
+ 11.9 Programmable Interconnect Technologies 454
+  Fuse 454
+  Floating-Gate Transistor Switch 455
+  Static RAM-Controlled Programmable Switches 455
+  Antifuse 457
+ 11.10 Design and Development of Programmable Logic Hardware 458
+ 11.11 Programming Languages 459
+  ABEL-Hardware Description Language 459
+  VHDL-VHSIC Hardware Description Language 459
+  Verilog 460
+  Java HDL 460
+  Key Terms 460
+  Review Questions 460
+  Problems 461
+  Objective Type Exercises 462
+  Answers 464
+12 Microprocessors 465
+  Learning Objectives 465
+ 12.1 Introduction to Microprocessors 465
+ 12.2 Evolution of Microprocessors 467
+ 12.3 Inside a Microprocessor 468
+  Arithmetic Logic Unit (ALU) 468
+  Register File 469
+  Control Unit 470
+ 12.4 Basic Microprocessor Instructions 472
+  Data Transfer Instructions 472
+  Arithmetic Instructions 472
+  Logic Instructions 472
+  Control Transfer or Branch or Program Control Instructions 473
+  Machine Control Instructions 474
+ 12.5 Addressing Modes 474
+  Absolute or Memory Direct Addressing Mode 474
+  Immediate Addressing Mode 474
+  Register Direct Addressing Mode 475
+  Register Indirect Addressing Mode 475
+  Indexed Addressing Mode 475
+  Implicit Addressing Mode and Relative Addressing Mode 476
+ 12.6 Microprocessor Selection 476
+  Selection Criteria 476
+  Microprocessor Selection Table for Common Applications 477
+ 12.7 Programming Microprocessors 479xviii  • CONTENTS
+ 12.8 RISC Versus CISC Processors 480
+ 12.9 Eight-Bit Microprocessors 480
+  The 8085 Microprocessor 480
+  The Motorola 6800 Microprocessor 483
+  The Zilog Z80 Microprocessor 484
+ 12.10 16-Bit Microprocessors 485
+  The 8086 Microprocessor 485
+  The 80186 Microprocessor 487
+  The 80286 Microprocessor 487
+  The MC68000 Microprocessor 487
+ 12.11 32-Bit Microprocessors 489
+  The 80386 Microprocessor 489
+  The MC68020 Microprocessor 491
+  The MC68030 Microprocessor 492
+  The 80486 Microprocessor 493
+  PowerPC RISC Microprocessors 495
+ 12.12 Pentium Series of Microprocessors 495
+  Salient Features 496
+  Pentium Pro Microprocessor 496
+  Pentium II Series 497
+  Pentium III and Pentium IV Microprocessors 497
+  Pentium M, D, and Extreme Edition Processors 497
+  Celeron and Xeon Processors 497
+ 12.13 Microprocessors for Embedded Applications 498
+ 12.14 Peripheral Devices 498
+  Programmable Timer/Counter 498
+  Programmable Peripheral Interface (PPI) 498
+  Programmable Interrupt Controller (PIC) 499
+  DMA Controller 499
+  Programmable Communication Interface (PCI) 499
+  Math Coprocessor 499
+  Programmable Keyboard/Display Interface 500
+  Programmable CRT Controller 500
+  Floppy Disk Controller 500
+  Clock Generator 500
+  Octal Bus Transceiver 500
+  Key Terms 501
+  Review Questions 501
+  Objective Type Exercises 502
+  Answers 504
+13 Microcontrollers 505
+  Learning Objectives 505
+ 13.1 Introduction to Microcontroller 505CONTENTS  • xix
+  Applications 507
+ 13.2 Inside the Microcontroller 507
+  Central Processing Unit (CPU) 507
+  Random Access Memory (RAM) 508
+  Read Only Memory (ROM) 508
+  Special-Function Registers 508
+  Peripheral Components 509
+ 13.3 Microcontroller Architecture 514
+  Architecture to Access Memory 514
+  Mapping Special-Function Registers into Memory Space  515
+  Processor Architecture 515
+ 13.4 Power-Saving Modes  518
+ 13.5 Interfacing Peripheral Devices with a Microcontroller 518
+  Interfacing LEDs 518
+  Interfacing Electromechanical Relays 519
+  Interfacing Keyboards 519
+  Interfacing Seven-Segment Displays 521
+  Interfacing LCD Display  524
+  Interfacing A/D Converter 525
+  Interfacing D/A Converter 527
+  Key Terms 527
+  Review Questions 527
+  Problems 527
+  Objective Type Exercises 528
+  Answers 529
+14 Memory Devices 531
+  Learning Objectives 531
+ 14.1 Anatomy of a Computer 531
+  Central Processing Unit (CPU) 531
+  Memory 532
+  Input/Output Ports 533
+ 14.2 A Computer System 533
+ 14.3 Computer Memory 534
+  Primary Memory 534
+ 14.4 Random Access Memory (RAM) 535
+  Static RAM (SRAM) 535
+  Dynamic RAM (DRAM) 540
+  Applications of RAM 543
+ 14.5 Read Only Memory (ROM) 545
+  ROM Architecture 546
+  Types of ROM 547
+  Applications of ROM 551
+ 14.6 Expanding Memory Capacity 555xx • CONTENTS
+  Word Size Expansion 555
+  Memory Locations Expansion 556
+ 14.7 Secondary Storage or Auxiliary Storage 560
+  Magnetic Storage Devices 560
+  Magneto-Optical Storage Devices 562
+  Optical Storage Devices  562
+  USB Flash Drive 564
+  Key Terms 564
+  Review Questions 564
+  Problems 565
+  Objective Type Exercises 565
+  Answers 567
+Index  569

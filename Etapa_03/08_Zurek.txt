@@ -1,0 +1,49 @@
+v
+CONTENIDO
+PREFACIO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Capítulo 1
+INTRODUCCIÓN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1. SISTEMAS DE NUMERACIÓN Y CAMBIOS DE BASE . . . . . . . . . . . . . . . 3
+2. CODIFICACIÓN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3. NÚMERO DECIMAL CODIFICADO EN BINARIO (BCD)  . . . . . . . . . . . . . 7
+4. CÓDIGOS DE GRAY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+5. SUMAS Y RESTAS EN BASE DIEZ Y EN BASE DOS  . . . . . . . . . . . . . . . . 9
+6. EJERCICIOS DEL CAPÍTULO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Capítulo 2
+COMPUERTAS LÓGICAS BÁSICAS 
+Y ÁLGEBRA BOOLEANA  . . . . . . . . . . . . . . . . . . . . . . . . 15
+1. COMPUERTAS BÁSICAS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2. ÁLGEBRA BOOLEANA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3. REGLAS DEL ÁLGEBRA BOOLEANA . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4. EL DUAL DE UNA ECUACIÓN BOOLEANA  . . . . . . . . . . . . . . . . . . . . . 21
+5. MAPAS DE KARNAUGH  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+6. IGUALDAD ENTRE SUMA DE PRODUCTOS Y PRODUCTO DE SUMAS  . . .28
+7 . MAPA DE KARNAUGH DE CINCO VARIABLES  . . . . . . . . . . . . . . . . . . . 29
+8. MAPAS DE KARNAUGH CON INDIFERENCIA  . . . . . . . . . . . . . . . . . . . 40
+9. EJEMPLOS RESUELTOS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+10. EJERCICIOS DEL CAPÍTULO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47vi
+CONMUTACIÓN
+DISEÑO DIGITAL
+Capítulo 3
+CIRCUITOS LÓGICOS COMBINACIONALES  . . . . . . . . . . . 51
+1. DISPLAY DE SIETE SEGMENTOS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+2. COMPARADOR DE DOS NÚMEROS  . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+3. SEMISUMADOR Y SUMADOR COMPLETO  . . . . . . . . . . . . . . . . . . . . . 54
+4. DECODIFICADORES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+5. CODIFICADORES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+6. CODIFICADOR CON PRIORIDAD  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+7 . MULTIPLEXORES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+8. DEMULTIPLEXORES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+9. EJERCICIOS DEL CAPÍTULO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Capítulo 4
+CIRCUITOS LÓGICOS SECUENCIALES  . . . . . . . . . . . . . . 67
+1. PRELIMINARES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+2. LATCHES Y FLIP FLOPS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+3. APLICACIONES BÁSICAS DE LOS LATCHES Y LOS FLIP FLOPS  . . . . . . . . 79
+4. TABLAS DE EXCITACIÓN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+5. EJERCICIOS DEL CAPÍTULO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+Apéndice 1
+ANÁLISIS COMBINACIONAL . . . . . . . . . . . . . . . . . . . . . 93
+Apéndice 2
+TRANSISTORES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+REFERENCIA  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104

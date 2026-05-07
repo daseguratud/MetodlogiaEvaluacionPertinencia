@@ -1,0 +1,717 @@
+Contents
+1
+. 
+Preface
+ 
+ix
+1
+. 
+1
+ Digital Systems and Binary Numbers
+ 
+1
+1
+. 
+1.1
+ Digital Systems
+ 
+1
+2
+. 
+1.2
+ Binary Numbers
+ 
+4
+3
+. 
+1.3
+ Number-Base Conversions
+ 
+6
+4
+. 
+1.4
+ Octal and Hexadecimal Numbers
+ 
+9
+5
+. 
+1.5
+ Complements of Numbers
+ 
+11
+6
+. 
+1.6
+ Signed Binary Numbers
+ 
+17
+7
+. 
+1.7
+ Binary Codes
+ 
+22
+8
+. 
+1.8
+ Binary Storage and Registers
+ 
+31
+9
+. 
+1.9
+ Binary Logic
+ 
+34
+2
+. 
+2
+ Boolean Algebra and Logic Gates
+ 
+41
+1
+. 
+2.1
+ Introduction
+ 
+42
+2
+. 
+2.2
+ Basic Definitions
+ 
+42
+3
+. 
+2.3
+ Axiomatic Definition of Boolean Algebra
+ 
+43
+4
+. 
+2.4
+ Basic Theorems and Properties of Boolean Algebra
+ 
+47
+5
+. 
+2.5
+ Boolean Functions
+ 
+50
+6
+. 
+2.6
+ Canonical and Standard Forms
+ 
+56
+7
+. 
+2.7
+ Other Logic Operations
+ 
+65
+88
+. 
+2.8
+ Digital Logic Gates
+ 
+67
+9
+. 
+2.9
+ Integrated Circuits
+ 
+73
+3
+. 
+ 
+3
+ Gate-Level Minimization
+ 
+82
+1
+. 
+3.1
+ Introduction
+ 
+83
+2
+. 
+3.2
+ The Map Method
+ 
+83
+3
+. 
+3.3
+ Four-Variable K-Map
+ 
+90
+4
+. 
+3.4
+ Product-of-Sums Simplification
+ 
+95
+5
+. 
+3.5
+ Don’t-Care Conditions
+ 
+99
+6
+. 
+3.6
+ NAND and NOR Implementation
+ 
+102
+7
+. 
+3.7
+ Other Two-Level Implementations
+ 
+110
+8
+. 
+3.8
+ Exclusive-OR Function
+ 
+115
+9
+. 
+3.9
+ Hardware Description Languages (HDLS)
+ 
+121
+10
+. 
+3.10
+ Truth Tables in HDLS
+ 
+138
+4
+. 
+4
+ Combinational Logic
+ 
+147
+1
+. 
+4.1
+ Introduction
+ 
+148
+2
+. 
+4.2
+ Combinational Circuits
+ 
+148
+3
+. 
+4.3
+ Analysis of Combinational Circuits
+ 
+149
+4
+. 
+4.4
+ Design Procedure
+ 
+153
+5
+. 
+4.5
+ Binary Adder–Subtractor
+ 
+156
+6
+. 
+4.6
+ Decimal Adder
+ 
+168
+7
+. 
+4.7
+ Binary Multiplier
+ 
+170
+8
+. 
+4.8
+ Magnitude Comparator
+ 
+172
+99
+. 
+4.9
+ Decoders
+ 
+175
+10
+. 
+4.10
+ Encoders
+ 
+179
+11
+. 
+4.11
+ Multiplexers
+ 
+182
+12
+. 
+4.12
+ HDL Models of Combinational Circuits
+ 
+189
+13
+. 
+4.13
+ Behavioral Modeling
+ 
+215
+14
+. 
+4.14
+ Writing a Simple Testbench
+ 
+223
+15
+. 
+4.15
+ Logic Simulation
+ 
+229
+5
+. 
+5
+ Synchronous Sequential Logic
+ 
+245
+1
+. 
+5.1
+ Introduction
+ 
+246
+2
+. 
+5.2
+ Sequential Circuits
+ 
+246
+3
+. 
+5.3
+ Storage Elements: Latches
+ 
+248
+4
+. 
+5.4
+ Storage Elements: Flip-Flops
+ 
+253
+5
+. 
+5.5
+ Analysis of Clocked Sequential Circuits
+ 
+261
+6
+. 
+5.6
+ Synthesizable HDL Models of Sequential Circuits
+ 
+275
+7
+. 
+5.7
+ State Reduction and Assignment
+ 
+300
+8
+. 
+5.8
+ Design Procedure
+ 
+305
+6
+. 
+6
+ Registers and Counters
+ 
+326
+1
+. 
+6.1
+ Registers
+ 
+326
+2
+. 
+6.2
+ Shift Registers
+ 
+330
+3
+. 
+ 
+6.3
+ Ripple Counters
+ 
+338
+4
+. 
+6.4
+ Synchronous Counters
+ 
+343
+5
+. 
+6.5
+ Other Counters
+ 
+351
+106
+. 
+6.6
+ HDL Models of Registers and Counters
+ 
+356
+7
+. 
+7
+ Memory and Programmable Logic
+ 
+377
+1
+. 
+7.1
+ Introduction
+ 
+378
+2
+. 
+7.2
+ Random-Access Memory
+ 
+379
+3
+. 
+7.3
+ Memory Decoding
+ 
+386
+4
+. 
+7.4
+ Error Detection and Correction
+ 
+391
+5
+. 
+7.5
+ Read-Only Memory
+ 
+394
+6
+. 
+7.6
+ Programmable Logic Array
+ 
+400
+7
+. 
+7.7
+ Programmable Array Logic
+ 
+404
+8
+. 
+7.8
+ Sequential Programmable Devices
+ 
+408
+8
+. 
+8
+ Design at the Register Transfer Level
+ 
+429
+1
+. 
+8.1
+ Introduction
+ 
+430
+2
+. 
+8.2
+ Register Transfer Level (RTL) Notation
+ 
+430
+3
+. 
+8.3
+ RTL Descriptions
+ 
+432
+4
+. 
+8.4
+ Algorithmic State Machines (ASMs)
+ 
+450
+5
+. 
+8.5
+ Design Example (ASMD CHART)
+ 
+459
+6
+. 
+8.6
+ HDL Description of Design Example
+ 
+469
+7
+. 
+8.7
+ Sequential Binary Multiplier
+ 
+487
+8
+. 
+8.8
+ Control Logic
+ 
+492
+9
+. 
+8.9
+ HDL Description of Binary Multiplier
+ 
+498
+10
+. 
+8.10
+ Design with Multiplexers
+ 
+513
+11
+. 
+8.11
+ Race-Free Design (Software Race Conditions)
+ 
+529
+1112
+. 
+8.12
+ Latch-Free Design (Why Waste Silicon?)
+ 
+532
+13
+. 
+8.13
+ SystemVerilog—An Introduction
+ 
+533
+9
+. 
+9
+ 
+Laboratory Experiments with Standard ICs and FPGAs
+ 
+555
+1
+. 
+9.1
+ Introduction to Experiments
+ 
+555
+2
+. 
+9.2
+ Experiment 1: Binary and Decimal Numbers
+ 
+560
+3
+. 
+9.3
+ Experiment 2: Digital Logic Gates
+ 
+563
+4
+. 
+9.4
+ Experiment 3: Simplification of Boolean Functions
+ 
+565
+5
+. 
+9.5
+ Experiment 4: Combinational Circuits
+ 
+567
+6
+. 
+9.6
+ Experiment 5: Code Converters
+ 
+568
+7
+. 
+9.7
+ Experiment 6: Design with Multiplexers
+ 
+570
+8
+. 
+9.8
+ Experiment 7: Adders and Subtractors
+ 
+572
+9
+. 
+9.9
+ Experiment 8: Flip-Flops
+ 
+575
+10
+. 
+9.10
+ Experiment 9: Sequential Circuits
+ 
+577
+11
+. 
+9.11
+ Experiment 10: Counters
+ 
+579
+12
+. 
+ 
+9.12
+ Experiment 11: Shift Registers
+ 
+580
+13
+. 
+9.13
+ Experiment 12: Serial Addition
+ 
+584
+14
+. 
+9.14
+ Experiment 13: Memory Unit
+ 
+585
+15
+. 
+9.15
+ Experiment 14: Lamp Handball
+ 
+587
+16
+. 
+9.16
+ Experiment 15: Clock-Pulse Generator
+ 
+591
+17
+. 
+9.17
+ Experiment 16: Parallel Adder and Accumulator
+ 
+593
+18
+. 
+9.18
+ Experiment 17: Binary Multiplier
+ 
+595
+19
+. 
+9.19
+ HDL Simulation Experiments and Rapid Prototyping with
+12FPGAs
+ 
+599
+10
+. 
+10
+ Standard Graphic Symbols
+ 
+605
+1
+. 
+10.1
+ Rectangular-Shape Symbols
+ 
+605
+2
+. 
+10.2
+ Qualifying Symbols
+ 
+608
+3
+. 
+10.3
+ Dependency Notation
+ 
+610
+4
+. 
+10.4
+ Symbols for Combinational Elements
+ 
+612
+5
+. 
+10.5
+ Symbols for Flip-Flops
+ 
+614
+6
+. 
+10.6
+ Symbols for Registers
+ 
+616
+7
+. 
+10.7
+ Symbols for Counters
+ 
+619
+8
+. 
+10.8
+ Symbol for RAM
+ 
+621
+1
+. 
+Appendix
+ 
+624
+2
+. 
+Answers to Selected Problems
+ 
+638
+3
+. 
+Index
+ 
+683
+13

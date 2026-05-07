@@ -1,0 +1,459 @@
+´INDICE
+´Indice 5
+Listado de c´ odigo VHDL 13
+Prefacio 21
+1 Fundamentos del dise˜ no del hardware digital 25
+1.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+1.2 Lenguajes para la descripci´ on de hardware . . . . . . . . . . . . . . 30
+1.2.1 Usos de un programa HDL . . . . . . . . . . . . . . . . . . . 31
+1.2.2 HDL m´ as ampliamente usados . . . . . . . . . . . . . . . . . 31
+1.3 Ciclo de dise˜ no de los circuitos digitales . . . . . . . . . . . . . . . . 32
+1.4 Tecnolog´ ıas de circuitos integrados . . . . . . . . . . . . . . . . . . 34
+1.4.1 Clasiﬁcaci´ on de las tecnolog´ ıas . . . . . . . . . . . . . . . . . 34
+1.4.2 Comparaci´ on entre tecnolog´ ıas . . . . . . . . . . . . . . . . . 38
+1.5 Propiedades de los circuitos digitales . . . . . . . . . . . . . . . . . 42
+1.5.1 Retardo de los dispositivos . . . . . . . . . . . . . . . . . . . 42
+1.5.2 Ejecuci´ on concurrente . . . . . . . . . . . . . . . . . . . . . 44
+1.5.3 Dise˜ nos marginales . . . . . . . . . . . . . . . . . . . . . . . 45
+1.5.4 Fortaleza de las se˜ nales . . . . . . . . . . . . . . . . . . . . . 45
+1.6 Test de los circuitos . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+1.6.1 Test en manufactura . . . . . . . . . . . . . . . . . . . . . . 47
+1.6.2 Test funcional . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+5El código VHDL usado para ilustrar las explicaciones teóricas, así como los diseños y bancos de 
+prueba propuestos como solución de los ejercicios de autocomprobación, están disponibles en 
+la URL siguiente: https://canal.uned.es/series/64149eb43056d535ce6fe473DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+1.6.3 Programas de test funcional . . . . . . . . . . . . . . . . . . 49
+1.6.4 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 51
+1.7 Representaciones y niveles de abstracci´ on . . . . . . . . . . . . . . . 52
+1.7.1 Representaci´ on del sistema . . . . . . . . . . . . . . . . . . . 52
+1.7.2 Niveles de abstracci´ on . . . . . . . . . . . . . . . . . . . . . 53
+1.7.3 VHDL en el ﬂujo de desarrollo . . . . . . . . . . . . . . . . . 57
+1.8 Conceptos b´ asicos a trav´ es de un ejemplo . . . . . . . . . . . . . . . 58
+1.8.1 Comportamiento al nivel de funciones l´ ogicas . . . . . . . . 59
+1.8.2 Descripci´ on de la estructura . . . . . . . . . . . . . . . . . . 64
+1.8.3 Descripci´ on abstracta del comportamiento . . . . . . . . . . 66
+1.8.4 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 69
+1.8.5 Conﬁguraci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+1.9 Simulaci´ on de c´ odigo VHDL a trav´ es de un ejemplo . . . . . . . . . 72
+1.9.1 Dise˜ no de un buﬀer triestado . . . . . . . . . . . . . . . . . 72
+1.9.2 Dise˜ no del banco de pruebas . . . . . . . . . . . . . . . . . . 73
+1.10 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 75
+1.11 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 76
+1.12 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 80
+2 Conceptos b´ asicos de VHDL 83
+2.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+2.2 Unidades de dise˜ no . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+2.3 Entity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+2.3.1 Cl´ ausula port . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+2.3.2 Cl´ ausula generic . . . . . . . . . . . . . . . . . . . . . . . . . 91
+2.3.3 Declaraciones . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+2.3.4 Sentencias . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+2.3.5 Resumen de la sintaxis de la entity . . . . . . . . . . . . . . 93
+2.4 Architecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+6´INDICE
+2.5 Asignaciones concurrentes . . . . . . . . . . . . . . . . . . . . . . . 95
+2.5.1 Asignaciones concurrentes simples . . . . . . . . . . . . . . . 96
+2.5.2 Asignaciones concurrentes condicionales . . . . . . . . . . . 98
+2.5.3 Asignaciones concurrentes de selecci´ on . . . . . . . . . . . . 102
+2.5.4 Sensibilidad de las sentencias concurrentes . . . . . . . . . . 105
+2.6 Sentencia generate . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+2.6.1 Sentencia generate iterativa . . . . . . . . . . . . . . . . . . 106
+2.6.2 Sentencia generate condicional . . . . . . . . . . . . . . . . . 107
+2.7 Bloque process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+2.7.1 Sentencias wait . . . . . . . . . . . . . . . . . . . . . . . . . 109
+2.7.2 Lista de sensibilidad . . . . . . . . . . . . . . . . . . . . . . 111
+2.8 C´ odigo secuencial . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+2.8.1 Asignaci´ on secuencial a una se˜ nal . . . . . . . . . . . . . . . 113
+2.8.2 Asignaci´ on secuencial a una variable . . . . . . . . . . . . . 114
+2.8.3 Sentencia if . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+2.8.4 Sentencia case . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+2.8.5 Bucle for . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+2.9 Descripci´ on de la estructura . . . . . . . . . . . . . . . . . . . . . . 125
+2.9.1 Dise˜ nos con estructura regular . . . . . . . . . . . . . . . . . 130
+2.10 Parametrizaci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+2.10.1 Parametrizaci´ on del comportamiento . . . . . . . . . . . . . 133
+2.10.2 Parametrizaci´ on de la estructura . . . . . . . . . . . . . . . 133
+2.11 Se˜ nales, variables y constantes . . . . . . . . . . . . . . . . . . . . . 134
+2.12 Tipos de datos y operadores . . . . . . . . . . . . . . . . . . . . . . 136
+2.12.1 Tipos predeﬁnidos en VHDL . . . . . . . . . . . . . . . . . . 137
+2.12.2 Tipos del paquete IEEE.std logic1164. . . . . . . . . . . . 140
+2.12.3 Operadores sobre bit vector y std logicvector. . . . . . . . 144
+2.12.4 Tipos del paquete IEEE.numeric std. . . . . . . . . . . . . 147
+7DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+2.12.5 Tipos time y string . . . . . . . . . . . . . . . . . . . . . . . 153
+2.12.6 Tipos deﬁnidos por el usuario . . . . . . . . . . . . . . . . . 153
+2.13 Atributos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+2.14 Librer´ ıas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+2.15 Assert . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+2.16 Subprogramas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+2.16.1 Funciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+2.16.2 Procedimientos . . . . . . . . . . . . . . . . . . . . . . . . . 161
+2.16.3 Diferencias entre funciones y procedimientos . . . . . . . . . 164
+2.17 Paquetes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165
+2.18 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 166
+2.19 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 168
+2.20 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 175
+3 Simulaci´ on del c´ odigo VHDL 189
+3.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+3.2 Procesamiento del c´ odigo VHDL . . . . . . . . . . . . . . . . . . . . 194
+3.3 Orden de compilaci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+3.4 Drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 196
+3.5 Inicializaci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+3.5.1 Ejemplo: se˜ nal con un driver . . . . . . . . . . . . . . . . . . 200
+3.5.2 Ejemplo: se˜ nal con dos drivers . . . . . . . . . . . . . . . . . 201
+3.6 Atributos de las se˜ nales . . . . . . . . . . . . . . . . . . . . . . . . . 204
+3.7 El retardo delta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+3.8 Gesti´ on de la cola de transacciones del driver . . . . . . . . . . . . . 209
+3.8.1 Ejemplo: simulaci´ on de formas de onda con retardo inercial . 209
+3.8.2 Ejemplo: simulaci´ on de formas de onda con retardo de trans-
+porte. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+3.9 Ejemplo: simulaci´ on de un circuito sencillo . . . . . . . . . . . . . . 214
+8´INDICE
+3.10 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 217
+3.11 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 218
+3.12 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 229
+4 Dise˜ no de l´ ogica combinacional 263
+4.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
+4.2 Dise˜ no para s´ ıntesis de l´ ogica combinacional . . . . . . . . . . . . . 267
+4.2.1 Empleo de sentencias concurrentes . . . . . . . . . . . . . . 268
+4.2.2 Empleo de bloques process . . . . . . . . . . . . . . . . . . . 270
+4.3 Funciones l´ ogicas . . . . . . . . . . . . . . . . . . . . . . . . . . . . 271
+4.3.1 Dise˜ no del circuito . . . . . . . . . . . . . . . . . . . . . . . 271
+4.3.2 Programaci´ on del banco de pruebas . . . . . . . . . . . . . . 273
+4.4 Multiplexor de 4 entradas . . . . . . . . . . . . . . . . . . . . . . . 275
+4.4.1 Dise˜ no usando sentencias secuenciales . . . . . . . . . . . . . 275
+4.4.2 Dise˜ no usando sentencias concurrentes . . . . . . . . . . . . 279
+4.5 Restador completo de 1 bit . . . . . . . . . . . . . . . . . . . . . . . 281
+4.5.1 Descripci´ on del comportamiento . . . . . . . . . . . . . . . . 281
+4.5.2 Descripci´ on de la estructura . . . . . . . . . . . . . . . . . . 283
+4.5.3 Programaci´ on del banco de pruebas . . . . . . . . . . . . . . 286
+4.6 Sumador completo de 1 bit . . . . . . . . . . . . . . . . . . . . . . . 291
+4.6.1 Dise˜ no del circuito . . . . . . . . . . . . . . . . . . . . . . . 292
+4.6.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 294
+4.7 Unidad aritm´ etico l´ ogica . . . . . . . . . . . . . . . . . . . . . . . . 296
+4.7.1 Dise˜ no de la ALU . . . . . . . . . . . . . . . . . . . . . . . . 296
+4.7.2 Programaci´ on del banco de pruebas . . . . . . . . . . . . . . 298
+4.8 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 302
+4.9 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 303
+4.10 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 310
+9DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+5 Registros y memorias 341
+5.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 345
+5.2 Registro de 4 bits . . . . . . . . . . . . . . . . . . . . . . . . . . . . 345
+5.2.1 Descripci´ on del comportamiento . . . . . . . . . . . . . . . . 346
+5.2.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 347
+5.3 Registro multifunci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . 349
+5.3.1 Descripci´ on del comportamiento . . . . . . . . . . . . . . . . 349
+5.3.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 352
+5.4 Registro de desplazamiento . . . . . . . . . . . . . . . . . . . . . . . 355
+5.4.1 Descripci´ on del comportamiento . . . . . . . . . . . . . . . . 355
+5.4.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 356
+5.4.3 Banco de pruebas con acceso a ﬁchero . . . . . . . . . . . . 359
+5.5 Register ﬁle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 363
+5.5.1 Registro triestado . . . . . . . . . . . . . . . . . . . . . . . . 364
+5.5.2 Descripci´ on estructural del register ﬁle . . . . . . . . . . . . 365
+5.5.3 Drivers y funci´ on de resoluci´ on . . . . . . . . . . . . . . . . 367
+5.5.4 Banco de pruebas del register ﬁle . . . . . . . . . . . . . . . 367
+5.5.5 Descripci´ on del comportamiento del register ﬁle . . . . . . . 371
+5.6 Bus bidireccional y memorias . . . . . . . . . . . . . . . . . . . . . 373
+5.6.1 Memoria de s´ olo lectura . . . . . . . . . . . . . . . . . . . . 373
+5.6.2 Memoria de lectura y escritura . . . . . . . . . . . . . . . . 375
+5.6.3 Bus bidireccional . . . . . . . . . . . . . . . . . . . . . . . . 376
+5.7 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 378
+5.8 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 379
+5.9 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 385
+6 Dise˜ no de l´ ogica secuencial 403
+6.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+6.2 Dise˜ no de m´ aquinas de estado ﬁnito . . . . . . . . . . . . . . . . . . 407
+10´INDICE
+6.2.1 Circuito detector de secuencias . . . . . . . . . . . . . . . . 408
+6.3 S´ ıntesis de l´ ogica secuencial . . . . . . . . . . . . . . . . . . . . . . 410
+6.3.1 Sentencias condicionales incompletas . . . . . . . . . . . . . 411
+6.3.2 Sentencias condicionales completas . . . . . . . . . . . . . . 411
+6.3.3 Retardos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
+6.3.4 Inicializaci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+6.3.5 Bloques process . . . . . . . . . . . . . . . . . . . . . . . . . 412
+6.4 Flip-ﬂop JK . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413
+6.4.1 Dise˜ no del ﬂip-ﬂop . . . . . . . . . . . . . . . . . . . . . . . 414
+6.4.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 415
+6.5 M´ aquinas de estado ﬁnito de Moore . . . . . . . . . . . . . . . . . . 418
+6.5.1 Dise˜ no de la m´ aquina . . . . . . . . . . . . . . . . . . . . . . 418
+6.5.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 421
+6.5.3 Modelado estructural . . . . . . . . . . . . . . . . . . . . . . 424
+6.6 M´ aquinas de estado ﬁnito de Mealy . . . . . . . . . . . . . . . . . . 426
+6.6.1 Dise˜ no de la m´ aquina . . . . . . . . . . . . . . . . . . . . . . 427
+6.6.2 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 433
+6.7 M´ aquinas de estado ﬁnito seguras . . . . . . . . . . . . . . . . . . . 436
+6.8 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 437
+6.9 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 439
+6.10 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 449
+7 Metodolog´ ıa de transferencia entre registros 501
+7.1 Introducci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 505
+7.2 Operaciones de transferencia entre registros . . . . . . . . . . . . . 506
+7.2.1 Operaci´ on RT b´ asica . . . . . . . . . . . . . . . . . . . . . . 506
+7.2.2 Programa RT . . . . . . . . . . . . . . . . . . . . . . . . . . 508
+7.3 M´ aquinas de estado ﬁnito con camino de datos . . . . . . . . . . . . 509
+7.3.1 M´ ultiples operaciones RT y camino de datos . . . . . . . . . 510
+11DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+7.3.2 L´ ogica de control mediante FSM . . . . . . . . . . . . . . . 510
+7.3.3 Diagrama de bloques b´ asico de la FSMD . . . . . . . . . . . 511
+7.4 Descripci´ on del programa RT usando VHDL . . . . . . . . . . . . . 513
+7.5 Circuito detector de secuencia . . . . . . . . . . . . . . . . . . . . . 516
+7.6 Control de una m´ aquina expendedora . . . . . . . . . . . . . . . . . 518
+7.6.1 Protocolo de handshaking . . . . . . . . . . . . . . . . . . . 519
+7.6.2 Descripci´ on del algoritmo . . . . . . . . . . . . . . . . . . . 520
+7.6.3 Dise˜ no del circuito de control . . . . . . . . . . . . . . . . . 522
+7.6.4 Programaci´ on del banco de pruebas . . . . . . . . . . . . . . 525
+7.7 Lecturas recomendadas . . . . . . . . . . . . . . . . . . . . . . . . . 527
+7.8 Ejercicios de autocomprobaci´ on . . . . . . . . . . . . . . . . . . . . 528
+7.9 Soluciones de los ejercicios . . . . . . . . . . . . . . . . . . . . . . . 532
+A Introducci´ on al uso de ModelSim 547
+A.1 Instalaci´ on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 549
+A.2 Edici´ on y compilaci´ on de un modelo . . . . . . . . . . . . . . . . . . 549
+A.2.1 Ventana principal del simulador . . . . . . . . . . . . . . . . 549
+A.2.2 Pasos para crear un proyecto . . . . . . . . . . . . . . . . . . 550
+A.2.3 A˜ nadir ﬁcheros al proyecto . . . . . . . . . . . . . . . . . . . 551
+A.2.4 Compilaci´ on de los ﬁcheros . . . . . . . . . . . . . . . . . . . 556
+A.2.5 Banco de pruebas . . . . . . . . . . . . . . . . . . . . . . . . 558
+A.3 Simulaci´ on, visualizaci´ on y depurado . . . . . . . . . . . . . . . . . 560
+A.3.1 Activaci´ on del modo simulaci´ on . . . . . . . . . . . . . . . . 560
+A.3.2 Visualizaci´ on de los resultados . . . . . . . . . . . . . . . . . 562
+A.3.3 Ejecuci´ on de la simulaci´ on . . . . . . . . . . . . . . . . . . . 563
+A.3.4 Inserci´ on de puntos de ruptura . . . . . . . . . . . . . . . . 564
+´Indice alfab´ etico 567
+Bibliograf´ ıa 573
+12LISTADO DE C ´ODIGO VHDL
+1.1Entitydel circuito detector de paridad. . . . . . . . . . . . . . . . . . 60
+1.2Architecture del detector de paridad describiendo el comportamiento
+mediante la funci´ on l´ ogica. . . . . . . . . . . . . . . . . . . . . . . . . 60
+1.3Architecture del detector de paridad describiendo el comportamiento
+mediante la funci´ on l´ ogica XOR. . . . . . . . . . . . . . . . . . . . . . 63
+1.4 Puerta inversora. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+1.5 Puerta XOR con dos entradas. . . . . . . . . . . . . . . . . . . . . . . 65
+1.6Architecture del detector de paridad describiendo la estructura del
+circuito. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+1.7Architecture del detector de paridad descrita mediante una red XOR. 67
+1.8Architecture del detector de paridad descrita mediante un algoritmo. 68
+1.9 Banco de pruebas del detector de paridad. . . . . . . . . . . . . . . . 70
+1.10Conﬁguration para la simulaci´ on del banco de pruebas del detector de
+paridad. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+1.11 Buﬀer triestado. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+1.12 Banco de pruebas del buﬀer triestado. . . . . . . . . . . . . . . . . . . 74
+1.13 Dise˜ no del circuito de control de la alarma de seguridad de un co che.79
+1.14 Dise˜ no alternativo del circuito de control de la alarma de un coc he.. 79
+2.1 Circuito detector de paridad. . . . . . . . . . . . . . . . . . . . . . . . 88
+2.2 C´ odigo incorrecto, que produce un error de compilaci´ on. . . . . . . . 92
+2.3 Descripci´ on correcta del circuito mostrado en la Figura 2.3. . . . . . . 92
+2.4 Multiplexor de 4 entradas de 8 bits. . . . . . . . . . . . . . . . . . . . 100
+2.5 Decodiﬁcador binario de 2 entradas. . . . . . . . . . . . . . . . . . . . 100
+2.6 Codiﬁcador 4 a 2 con prioridad. . . . . . . . . . . . . . . . . . . . . . 100
+13DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+2.7 Multiplexor de 4 entradas de 8 bits. . . . . . . . . . . . . . . . . . . . 103
+2.8 Decodiﬁcador binario de 2 entradas. . . . . . . . . . . . . . . . . . . . 103
+2.9 Codiﬁcador 4 a 2 con prioridad. . . . . . . . . . . . . . . . . . . . . . 103
+2.10 Biestable D con reset as´ ıncrono activado al nivel LOW. . . . . . . . . 112
+2.11 Multiplexor de 4 entradas de 8 bits. . . . . . . . . . . . . . . . . . . . 116
+2.12 Decodiﬁcador binario de 2 entradas. . . . . . . . . . . . . . . . . . . . 116
+2.13 Codiﬁcador 4 a 2 con prioridad. . . . . . . . . . . . . . . . . . . . . . 117
+2.14 Multiplexor de 4 entradas de 8 bits. . . . . . . . . . . . . . . . . . . . 120
+2.15 Decodiﬁcador binario de 2 entradas. . . . . . . . . . . . . . . . . . . . 120
+2.16 Codiﬁcador 4 a 2 con prioridad. . . . . . . . . . . . . . . . . . . . . . 121
+2.17 XOR bit a bit de dos se˜ nales de 4 bits. . . . . . . . . . . . . . . . . . 124
+2.18 XOR de los bits de una se˜ nal de 4 bits. . . . . . . . . . . . . . . . . . 124
+2.19 Descripci´ on estructural al nivel de puertas l´ ogicas de un mu ltiplexor
+de dos se˜ nales de un bit. . . . . . . . . . . . . . . . . . . . . . . . . . 128
+2.20 Descripci´ on estructural de un multiplexor de 2 se˜ nales de 4 bit .. . . 129
+2.21 Array de 8 puertas AND. . . . . . . . . . . . . . . . . . . . . . . . . . 131
+2.22 Detector de paridad de 8 bits. . . . . . . . . . . . . . . . . . . . . . . 132
+2.23 La funci´ on conv integer convierte un par´ ametro del tipo stdlogic-
+vectora un entero. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+2.24 Procedimiento que devuelve dos par´ ametros de entrada orde nados.. . 164
+2.25 Deﬁnici´ on de una funci´ on en un package.. . . . . . . . . . . . . . . . 167
+2.26 Uso de una funci´ on deﬁnida en un package.. . . . . . . . . . . . . . 167
+2.27 Dise˜ no correspondiente al Ejercicio 2.3. . . . . . . . . . . . . . . . . . 169
+2.28 Dise˜ no correspondiente al Ejercicio 2.1. . . . . . . . . . . . . . . . . . 176
+2.29 Banco de pruebas correspondiente al Ejercicio 2.1. . . . . . . . . . . . 176
+2.30 Dise˜ no correspondiente al Ejercicio 2.2. . . . . . . . . . . . . . . . . . 177
+2.31 Dise˜ no del circuito“ one-shot”.. . . . . . . . . . . . . . . . . . . . . . 179
+2.32 Banco de pruebas del circuito“ one-shot”.. . . . . . . . . . . . . . . . 179
+2.33 Dise˜ no de un decodiﬁcador 2:4 con entrada enable.. . . . . . . . . . . 180
+14LISTADO DE C ´ODIGO VHDL
+2.34 Banco de pruebas de un decodiﬁcador 2:4 con entrada enable.. . . . 181
+3.1 C´ odigo correspondiente al Ejercicio 3.1. . . . . . . . . . . . . . . . . . 218
+3.2 C´ odigo correspondiente al Ejercicio 3.2. . . . . . . . . . . . . . . . . . 219
+3.3 Dise˜ no del Ejercicio 3.3. . . . . . . . . . . . . . . . . . . . . . . . . . 219
+3.4 Banco de pruebas del Ejercicio 3.3. . . . . . . . . . . . . . . . . . . . 220
+3.5 Dise˜ no del Ejercicio 3.4. . . . . . . . . . . . . . . . . . . . . . . . . . 221
+3.6 Banco de pruebas del Ejercicio 3.4. . . . . . . . . . . . . . . . . . . . 221
+3.7 Dise˜ no correspondiente al Ejercicio 3.5. . . . . . . . . . . . . . . . . . 222
+3.8 Banco de pruebas correspondiente al Ejercicio 3.5. . . . . . . . . . . . 223
+3.9 Dise˜ no correspondiente al Ejercicio 3.6. . . . . . . . . . . . . . . . . . 223
+3.10 Banco de pruebas correspondiente al Ejercicio 3.6. . . . . . . . . . . . 224
+3.11 Dise˜ no correspondiente al Ejercicio 3.7. . . . . . . . . . . . . . . . . . 225
+3.12 Dise˜ no correspondiente al Ejercicio 3.8. . . . . . . . . . . . . . . . . . 226
+3.13 Dise˜ no correspondiente al Ejercicio 3.9. . . . . . . . . . . . . . . . . . 227
+3.14 Dise˜ no correspondiente al Ejercicio 3.10. . . . . . . . . . . . . . . . . 228
+4.1 Dise˜ no mediante la descripci´ on de las funciones l´ ogicas. . . . . . . . . 272
+4.2 Banco de pruebas del circuito que implementa las dos funciones l´ o gicas.272
+4.3 Dise˜ no de un MUX 4:1 mediante una sentencia if.. . . . . . . . . . . 275
+4.4 Descripci´ on del MUX 4:1 mediante sentencias ifycase.. . . . . . . . 276
+4.5 Banco de pruebas del MUX 4:1. . . . . . . . . . . . . . . . . . . . . . 277
+4.6 Descripci´ on err´ onea de la architecture del MUX 4:1. . . . . . . . . . 279
+4.7 Dise˜ no de un MUX 4:1 mediante una sentencia concurrente. . . . . . 280
+4.8 Dise˜ no de un MUX 4:1 mediante dos sentencias concurrentes. . . . . 280
+4.9 Descripci´ on del comportamiento de un restador completo de un bit.. 282
+4.10 Puerta OR exclusiva de 2 entradas. . . . . . . . . . . . . . . . . . . . 284
+4.11 Inversor de 1 entrada. . . . . . . . . . . . . . . . . . . . . . . . . . . . 284
+4.12 Puerta AND de 2 entradas. . . . . . . . . . . . . . . . . . . . . . . . 284
+4.13 Puerta OR de 3 entradas. . . . . . . . . . . . . . . . . . . . . . . . . 284
+15DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+4.14 Descripci´ on de la estructura de un restador completo de un bit .. . . 285
+4.15 Banco de pruebas del restador completo de un bit. . . . . . . . . . . . 287
+4.16 Banco de pruebas del restador completo de un bit usando un pr ocedi-
+miento.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 289
+4.17 Banco de pruebas del restador completo de un bit usando una f unci´ on. 290
+4.18 AND de 2 entradas con retardo. . . . . . . . . . . . . . . . . . . . . . 292
+4.19 OR de 3 entradas con retardo. . . . . . . . . . . . . . . . . . . . . . . 292
+4.20 OR exclusiva de 2 entradas con retardo . . . . . . . . . . . . . . . . . 293
+4.21Package en el que se declaran las puertas l´ ogicas. . . . . . . . . . . . 293
+4.22 Sumador completo de 1 bit. . . . . . . . . . . . . . . . . . . . . . . . 294
+4.23 Banco de pruebas del sumador completo de 1 bit. . . . . . . . . . . . 295
+4.24 Deﬁnici´ on de constantes globales de la ALU. . . . . . . . . . . . . . . 297
+4.25 ALU dise˜ nada mediante una sentencia concurrente. . . . . . . . . . . 297
+4.26 ALU dise˜ nada mediante un bloque process.. . . . . . . . . . . . . . 298
+4.27 Constantes globales del banco de pruebas de la ALU. . . . . . . . . . 299
+4.28 Banco de pruebas de la ALU. . . . . . . . . . . . . . . . . . . . . . . 299
+4.29 Dise˜ no de un codiﬁcador 4:2 con prioridad. . . . . . . . . . . . . . . . 310
+4.30 Banco de pruebas de un codiﬁcador 4:2 con prioridad. . . . . . . . . . 311
+4.31 Dise˜ no del circuito comparador de 4 bit para X <5.. . . . . . . . . 313
+4.32 Banco de pruebas del circuito comparador de 4 bit para X <5.. . . 314
+4.33 Decodiﬁcador BCD a 7 segmentos descrito empleando una sente ncia
+case.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 315
+4.34 Banco de pruebas del decodiﬁcador BCD. . . . . . . . . . . . . . . . . 316
+4.35 Decodiﬁcador BCD descrito empleando una sentencia if.. . . . . . . 317
+4.36 Decodiﬁcador BCD descrito empleando una sentencia de asignac i´ on
+concurrente condicional. . . . . . . . . . . . . . . . . . . . . . . . . . 318
+4.37 Decodiﬁcador BCD descrito empleando una sentencia with select .. . 319
+4.38 Dise˜ no del sumador de Nbits.. . . . . . . . . . . . . . . . . . . . . . 320
+4.39 Banco de pruebas del sumador de 4 bits. . . . . . . . . . . . . . . . . 321
+16LISTADO DE C ´ODIGO VHDL
+4.40 Dise˜ no del circuito desplazador. . . . . . . . . . . . . . . . . . . . . . 322
+4.41 Banco de pruebas del circuito desplazador. . . . . . . . . . . . . . . . 323
+4.42 Comparador de igualdad de dos n´ umeros de 1 bit. . . . . . . . . . . . 325
+4.43 Comparador de igualdad de dos n´ umeros de Nbits.. . . . . . . . . . 325
+4.44 Banco de pruebas del comparador de igualdad de dos n´ umeros deN
+bits.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 326
+4.45Package con las constantes globales de la ALU. . . . . . . . . . . . . 327
+4.46 Dise˜ no de la ALU cuyo circuito se muestra en la Figura 4.12. . . . . . 328
+4.47Package con las constantes usadas en el banco de pruebas de la ALU. 329
+4.48 Banco de pruebas de la ALU. . . . . . . . . . . . . . . . . . . . . . . 329
+4.49 Dise˜ no de una puerta NOT de 1 entrada. . . . . . . . . . . . . . . . . 333
+4.50 Dise˜ no de una puerta AND de 4 entradas. . . . . . . . . . . . . . . . 335
+4.51 Dise˜ no de un decodiﬁcador de 3 a 8 bits. . . . . . . . . . . . . . . . . 335
+4.52 Banco de pruebas de un decodiﬁcador de 3 a 8 bits. . . . . . . . . . . 336
+4.53 Dise˜ no del conversor de c´ odigo binario a c´ odigo Gray, emplea ndo un
+bloqueprocesscon una sentencia case.. . . . . . . . . . . . . . . . . 338
+4.54 Dise˜ no del conversor de c´ odigo binario a c´ odigo Gray, emplea ndo una
+asignaci´ on concurrente de selecci´ on ( with-select).. . . . . . . . . . 339
+4.55 Dise˜ no del conversor de c´ odigo binario a c´ odigo Gray, descr ibiendo la
+estructura del circuito al nivel de puertas l´ ogicas. . . . . . . . . . . . 339
+4.56 Banco de pruebas del conversor de c´ odigo binario a c´ odigo Gr ay.. . . 340
+5.1 Dise˜ no de un registro de 4 bits con reset s´ ıncrono. . . . . . . . . . . . 346
+5.2 Banco de pruebas de un registro de 4 bits con reset s´ ıncrono. . . . . . 348
+5.3 Dise˜ no de un registro multifunci´ on de 4 bits. . . . . . . . . . . . . . . 350
+5.4 Banco de pruebas de un registro multifunci´ on de 4 bits. . . . . . . . . 352
+5.5 Dise˜ no de un registro de desplazamiento de 32 bits. . . . . . . . . . . 356
+5.6 Banco de pruebas del registro de desplazamiento de 32 bits. . . . . . 357
+5.7 Banco de pruebas del registro con acceso a ﬁchero. . . . . . . . . . . . 359
+5.8 Dise˜ no de un registro triestado. . . . . . . . . . . . . . . . . . . . . . 365
+17DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+5.9 Dise˜ no estructural del register ﬁle. . . . . . . . . . . . . . . . . . . . . 366
+5.10 Banco de pruebas del register ﬁle, con acceso a ﬁchero. . . . . . . . . 368
+5.11 Dise˜ no del register ﬁle mediante la descripci´ on del comportam iento.. 372
+5.12 Memoria de s´ olo lectura. . . . . . . . . . . . . . . . . . . . . . . . . . 374
+5.13 Memoria de lectura y escritura. . . . . . . . . . . . . . . . . . . . . . 375
+5.14 Bus bidireccional. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 376
+5.15 Dise˜ no de un registro de desplazamiento de 4 bits empleando var iables.385
+5.16 Dise˜ no de un registro de desplazamiento de 4 bits empleando se˜ nales. 386
+5.17 Dise˜ no err´ oneode un registro de desplazamiento de 4 bits. . . . . . . 386
+5.18 Banco de pruebas de un registro de desplazamiento de 4 bits con
+entrada y salida serie. . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+5.19 Registro de desplazamiento de Nbits, con entrada y salida serie. . . . 388
+5.20 Registro serie-a-paralelo y paralelo-a-serie de 4 bits. . . . . . . . . . . 389
+5.21 Banco de pruebas para el registro serie-a-paralelo y paralelo- a-serie de
+4 bits.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 390
+5.22 Constantes globales de la ALU y el registro. . . . . . . . . . . . . . . 392
+5.23 Dise˜ no del circuito ALU y registro mostrado en la Figura 5.15. . . . . 393
+5.24 Constantes globales del banco de pruebas. . . . . . . . . . . . . . . . 394
+5.25 Banco de pruebas del circuito ALU y registro. . . . . . . . . . . . . . 394
+5.26 Dise˜ no de la ROM. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 397
+5.27 Banco de pruebas de la ROM. . . . . . . . . . . . . . . . . . . . . . . 398
+5.28 Dise˜ no de la RAM. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+5.29 Banco de pruebas de la RAM. . . . . . . . . . . . . . . . . . . . . . . 400
+5.30 Dise˜ no del circuito detector. . . . . . . . . . . . . . . . . . . . . . . . 401
+5.31 Banco de pruebas del circuito detector. . . . . . . . . . . . . . . . . . 402
+6.1 Dise˜ no de un ﬂip-ﬂop JK con reset as´ ıncrono. . . . . . . . . . . . . . 414
+6.2 Banco de pruebas de un ﬂip-ﬂop JK. . . . . . . . . . . . . . . . . . . 416
+6.3Package con la codiﬁcaci´ on de los estados. . . . . . . . . . . . . . . . 418
+6.4 Dise˜ no de la m´ aquina de Moore de la Figura 6.7. . . . . . . . . . . . 419
+18LISTADO DE C ´ODIGO VHDL
+6.5 Banco de pruebas de la m´ aquina de Moore de la Figura 6.7. . . . . . 422
+6.6 Dise˜ no estructural de la m´ aquina de Moore. . . . . . . . . . . . . . . 425
+6.7Package con la codiﬁcaci´ on de los estados. . . . . . . . . . . . . . . . 427
+6.8 Dise˜ no de la m´ aquina de Mealy de la Figura 6.11. . . . . . . . . . . . 427
+6.9 Dise˜ no alternativo de la m´ aquina de Mealy de la Figura 6.11. . . . . . 430
+6.10 Banco de pruebas no exhaustivo de la m´ aquina de Mealy de la Figu-
+ra 6.11.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432
+6.11 Banco de pruebas de la m´ aquina de Mealy de la Figura 6.11. . . . . . 433
+6.12 Dise˜ no de una FSM segura. . . . . . . . . . . . . . . . . . . . . . . . 438
+6.13 Dise˜ no de un latch D. . . . . . . . . . . . . . . . . . . . . . . . . . . . 449
+6.14 Banco de pruebas del latch D. . . . . . . . . . . . . . . . . . . . . . . 449
+6.15 Dise˜ no de un ﬂip-ﬂop RS. . . . . . . . . . . . . . . . . . . . . . . . . 451
+6.16 Banco de pruebas de un ﬂip-ﬂop RS. . . . . . . . . . . . . . . . . . . 452
+6.17 Dise˜ no de un ﬂip-ﬂop D con se˜ nales enable,setyclear.. . . . . . . . 454
+6.18 Banco de pruebas de un ﬂip-ﬂop D. . . . . . . . . . . . . . . . . . . . 455
+6.19 Constantes del dise˜ no del contador ascendente m´ odulo 4. . . . . . . . 457
+6.20 Dise˜ no de un contador ascendente m´ odulo 4. . . . . . . . . . . . . . . 458
+6.21 Banco de pruebas de un contador ascendente m´ odulo 4. . . . . . . . . 459
+6.22 Dise˜ no estructural del contador ascendente m´ odulo 4. . . . . . . . . . 462
+6.23 Constantes globales que codiﬁcan los estados. . . . . . . . . . . . . . 464
+6.24 Dise˜ no del generador de se˜ nal. . . . . . . . . . . . . . . . . . . . . . . 464
+6.25 Banco de pruebas del generador de se˜ nal. . . . . . . . . . . . . . . . . 465
+6.26 Dise˜ no del divisor de frecuencia por 3. . . . . . . . . . . . . . . . . . 467
+6.27 Banco de pruebas del divisor de frecuencia por 3. . . . . . . . . . . . 468
+6.28 Circuito generador de se˜ nales. . . . . . . . . . . . . . . . . . . . . . . 469
+6.29 Banco de pruebas del circuito generador de se˜ nales. . . . . . . . . . . 471
+6.30 Circuito detector de 3 o m´ as unos consecutivos. . . . . . . . . . . . . 472
+6.31 Banco de pruebas del circuito detector de secuencia. . . . . . . . . . . 474
+6.32 Dise˜ no del contador BCD. . . . . . . . . . . . . . . . . . . . . . . . . 477
+19DISE˜NO Y AN ´ALISIS DE CIRCUITOS DIGITALES CON VHDL
+6.33 Banco de pruebas del contador BCD. . . . . . . . . . . . . . . . . . . 478
+6.34 Dise˜ no del detector de la secuencia“1011”. . . . . . . . . . . . . . . . 480
+6.35 Banco de pruebas del detector de la secuencia“1011”. . . . . . . . . . 482
+6.36 Dise˜ no del contador binario ascendente y descendente de 4 b its.. . . 484
+6.37 Banco de pruebas del contador binario ascendente y descend ente de 4
+bits.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 485
+6.38 Constantes globales del controlador de dos sem´ aforos. . . . . . . . . . 487
+6.39 Dise˜ no del controlador de dos sem´ aforos. . . . . . . . . . . . . . . . . 488
+6.40 Banco de pruebas del controlador de dos sem´ aforos. . . . . . . . . . . 490
+6.41 Constantes globales del controlador del microondas. . . . . . . . . . . 493
+6.42 Dise˜ no del controlador del microondas. . . . . . . . . . . . . . . . . . 493
+6.43 Banco de pruebas del controlador del microondas. . . . . . . . . . . . 496
+7.1 Codiﬁcaci´ on en VHDL de un algoritmo RT. . . . . . . . . . . . . . . 515
+7.2 Dos dise˜ nos de un circuito detector de la secuencia 0111 1110. . . . . 517
+7.3 Constantes del circuito de la m´ aquina expendedora. . . . . . . . . . . 522
+7.4 Circuito de control de la m´ aquina expendedora. . . . . . . . . . . . . 523
+7.5 Banco de pruebas del circuito de control de la m´ aquina expende dora.525
+7.6 Circuito que calcula el m´ aximo com´ un divisor de dos n´ umeros. . . . . 534
+7.7 Banco de pruebas del circuito que calcula el m´ aximo com´ un diviso r de
+dos n´ umeros. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 535
+7.8 Circuito que calcula la media de 4 n´ umeros de 4 bits. . . . . . . . . . 537
+7.9 Banco de pruebas del circuito que calcula la media de 4 n´ umeros de 4
+bits.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 538
+7.10 Declaraci´ on de la constante global. . . . . . . . . . . . . . . . . . . . 539
+7.11 Conversor de c´ odigo BCD a binario. . . . . . . . . . . . . . . . . . . . 540
+7.12 Banco de pruebas del conversor de c´ odigo BCD a binario. . . . . . . . 540
+7.13 Declaraci´ on de las constantes globales del dise˜ no. . . . . . . . . . . . 542
+7.14 Circuito que calcula la exponenciaci´ on dedos n´ umeros binarioss in signo. 542
+7.15 Banco de pruebas del circuito que calcula la exponenciaci´ on. . . . . . 544
+20

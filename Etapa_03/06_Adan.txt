@@ -1,0 +1,59 @@
+Circuitos digitales. Problemas y ejercicios resueltos
+© Antonio Adán Oliver, Inocente Sánchez Ciudad, Blanca Quintana Galera
+© De la edición: Ra-Ma 2018
+MARCAS COMERCIALES. Las designaciones utilizadas por las empresas para distinguir sus productos (hardware, 
+software, sistemas operativos, etc.) suelen ser marcas registradas. RA-MA ha intentado a lo largo de este libro distinguir 
+las marcas comerciales de los términos descriptivos, siguiendo el estilo que utiliza el fabricante, sin intención de 
+infringir la marca y solo en beneficio del propietario de la misma. Los datos de los ejemplos y pantallas son ficticios a 
+no ser que se especifique lo contrario.
+RA-MA es marca comercial registrada.
+Se ha puesto el máximo empeño en ofrecer al lector una información completa y precisa. Sin embargo, RA-MA 
+Editorial no asume ninguna responsabilidad derivada de su uso ni tampoco de cualquier violación de patentes ni otros 
+derechos de terceras partes que pudieran ocurrir. Esta publicación tiene por objeto proporcionar unos conocimientos 
+precisos y acreditados sobre el tema tratado. Su venta no supone para el editor ninguna forma de asistencia legal, 
+administrativa o de ningún otro tipo. En caso de precisarse asesoría legal u otra forma de ayuda experta, deben buscarse 
+los servicios de un profesional competente.
+Reservados todos los derechos de publicación en cualquier idioma.
+Según lo dispuesto en el Código Penal vigente, ninguna parte de este libro puede ser reproducida, grabada en sistema 
+de almacenamiento o transmitida en forma alguna ni por cualquier procedimiento, ya sea electrónico, mecánico, 
+reprográfico, magnético o cualquier otro sin autorización previa y por escrito de RA-MA; su contenido está protegido 
+por la ley vigente, que establece penas de prisión y/o multas a quienes, intencionadamente, reprodujeren o plagiaren, en 
+todo o en parte, una obra literaria, artística o científica.
+Editado por:
+RA-MA Editorial
+Calle Jarama, 3A, Polígono Industrial Igarsa
+28860 PARACUELLOS DE JARAMA, Madrid
+Teléfono: 91 658 42 80
+Fax: 91 662 81 39
+Correo electrónico: editorial@ra-ma.com
+Internet: www.ra-ma.es  y www.ra-ma.com
+ISBN: 978-84-9964-761-6
+Depósito legal: M-28957-2018
+Maquetación: Antonio García Tomé
+Diseño de portada: Antonio García Tomé
+Filmación e impresión: Safekat
+Impreso en España en octubre de 2018
+La ley prohíbe
+fotocopiar este libroÍNDICE
+ACERCA DE LOS AUTORES  ............................................................................................ 7
+INTRODUCCIÓN  ................................................................................................................ 9
+CAPÍTULO 1. REPRESENTACIÓN DE LA INFORMACIÓN  ................................... 11
+CONTENIDOS  .............................................................................................................. 11
+EJERCICIOS RESUELTOS  .......................................................................................... 12
+TEST Y PREGUNTAS CORTAS  .................................................................................. 26
+CAPÍTULO 2. FUNCIONES LÓGICAS  ......................................................................... 33
+CONTENIDOS  .............................................................................................................. 33
+EJERCICIOS RESUELTOS  .......................................................................................... 34
+TEST Y PREGUNTAS CORTAS  .................................................................................. 51
+CAPÍTULO 3. SISTEMAS COMBINACIONALES: PUERTAS  .................................. 55
+CONTENIDOS  .............................................................................................................. 55
+EJERCICIOS RESUELTOS  .......................................................................................... 56
+TEST Y PREGUNTAS CORTAS  .................................................................................. 88
+CAPÍTULO 4. SISTEMAS COMBINACIONALES: MÓDULOS................................93
+CONTENIDOS  .............................................................................................................. 93
+EJERCICIOS RESUELTOS  .......................................................................................... 94
+TEST Y PREGUNTAS CORTAS  ................................................................................ 178
+CAPÍTULO 5. CIRCUITOS ARITMÉTICOS Y LÓGICOS  ....................................... 189
+CONTENIDOS  ............................................................................................................ 189
+EJERCICIOS RESUELTOS  ........................................................................................ 190
+TEST Y PREGUNTAS CORTAS  ................................................................................ 227

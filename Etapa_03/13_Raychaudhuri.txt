@@ -1,0 +1,456 @@
+Contents
+Preface  xvii
+Chapter 1.  Origin of Electronics  1
+ 1.1 What is Electronics  1
+ 1.2 Evolution of Electronics  2
+  1.2.1  Revisiting the History  2
+  1.2.2  Trends of Development  4
+ 1.3 Widespread Applications  5
+ 1.4 Electrons, Electricity and Electronics  6
+  1.4.1  Electric Current  7
+  1.4.2  Drift Velocity, Mobility and Conductivity  8
+  1.4.3  Electron Emission from Metal  10
+ 1.5 Circuits and Sources  11
+  1.5.1  Types of Circuits  11
+  1.5.2  Voltage and Current Sources  12
+ 1.6 Active and Passive Device  14
+ Multiple Choice-Type Questions and Answers  15
+ Reasoning-Type Questions and Answers  16
+ Solved Numerical Problems  16
+ Exercise  18
+Chapter 2.  Semiconductor Fundamentals  20
+ 2.1 Crystalline Solids  20
+  2.1.1  Lattice, Basis and Unit Cell  21
+  2.1.2  Bravais Lattice and Miller Indices  22
+ 2.2 Energy Band  24
+ 2.3 Semiconductors  26
+  2.3.1  Electron and Hole  27
+  2.3.2  Intrinsic Semiconductor  29
+  2.3.3  Doping and Extrinsic Semiconductor  30
+  2.3.4  Doping in Compound Semiconductor  32
+ 2.4 Direct and Indirect Band Gap  32
+ 2.5 Effective Mass  33
+ISTUDYvi Contents
+ 2.6 Fermi Level, Energy Band and Semiconductors  35
+  2.6.1  Energy Band of n-type Semiconductors  38
+  2.6.2  Energy Band of p-type Semiconductors  39
+ 2.7 Equilibrium Carrier Concentrations  40
+ 2.8 Drift and Diffusion of Carriers  43
+  2.8.1  Drift Current Density  44
+  2.8.2  Diffusion Current Density  45
+  2.8.3  Semiconductor Current Density  45
+  2.8.4  Einstein Relation  46
+  2.8.5  Continuity Equation  47
+ 2.9 Hall Effect  48
+ 2.10 Resistivity and Four-Probe Technique  49
+ Multiple Choice-Type Questions and Answers  50
+ Reasoning-Type Questions and Answers  53
+ Solved Numerical Problems  55
+ Exercise  57
+ Project Work on Chapter 2  60
+Chapter 3.  p–n Junction Diodes  61
+ 3.1 Fabrication of p–n Junction  61
+ 3.2 Barrier Formation in p–n Junction  62
+  3.2.1  Built-in Potential  64
+  3.2.2  Fermi Level in p–n Junction  65
+  3.2.3  Energy Band Diagram of p–n Junction  66
+ 3.3 Forward and Reverse Bias  67
+  3.3.1  Unbiased Diode  68
+  3.3.2  Forward Biased Diode  69
+  3.3.3  Reverse Biased Diode  69
+ 3.4 Diode Current–voltage Characteristics  70
+  3.4.1  Static and Dynamic Resistance  72
+  3.4.2   Cut-in Voltage  74
+ 3.5 Junction Capacitances  74
+  3.5.1  Depletion Capacitance  74
+  3.5.2  Diffusion Capacitance  75
+ 3.6 Zener Diode  76
+  3.6.1  Zener Breakdown  76
+  3.6.2  Avalanche Breakdown  77
+  3.6.3  Zener Diode Characteristics  79
+  3.6.4  Zener Voltage Regulator  80
+ 3.7 Light-Emitting Diode (LED)  82
+ISTUDYvii Contents
+ 3.8 Photodiode and Solar Cell  84
+ 3.9 Metal–Semiconductor Contacts  86
+ Multiple Choice-Type Questions and Answers  87
+ Reasoning-Type Questions and Answers  91
+ Solved Numerical Problems  92
+ Exercise  95
+ Project Work on Chapter 3  99
+Chapter 4.  Diode Applications  101
+ 4.1 Piecewise Linear Model  101
+ 4.2 Load Line and Q-Point  102
+ 4.3 Rectifiers  104
+  4.3.1  Half-Wave Rectifier  105
+  4.3.2  Full-Wave Rectifier  111
+  4.3.3  Bridge Rectifier  114
+ 4.4 Filters  117
+  4.4.1  Capacitor Filter  117
+  4.4.2  Inductor Filter  119
+ 4.5 Clippers  120
+  4.5.1  Shunt Clipper  120
+  4.5.2  Series Clipper  120
+ 4.6 Clamper  123
+ 4.7 Voltage Multiplier  125
+ Multiple Choice-Type Questions and Answers  127
+ Reasoning-Type Questions and Answers  131
+ Solved Numerical Problems  132
+ Exercise  134
+ Project Work on Chapter 4  138
+Chapter 5.  Bipolar Junction Transistor (BJT)  141
+ 5.1 Transistors: n–p–n and p–n–p  141
+ 5.2 Transistor Operating Principle  142
+ 5.3 Common-Emitter Configuration  143
+  5.3.1  Current Amplification in Transistor  144
+  5.3.2  Transistor Current Components  145
+  5.3.3  Common-Emitter Output Characteristics  148
+  5.3.4  Early Effect  150
+  5.3.5  CE Input Characteristics  150
+  5.3.6  CE Transfer Characteristics  150
+ 5.4 Common-Base Characteristics  151
+ 5.5 Common-Collector Configuration  153
+ISTUDYviii Contents
+ Multiple Choice-Type Questions and Answers  155
+ Reasoning-Type Questions and Answers  157
+ Solved Numerical Problems  159
+ Exercise  160
+ Project Work on Chapter 5  161
+Chapter 6.  Transistor Biasing and Amplification  163
+ 6.1 Load Line and Q-Point  163
+ 6.2 Transistor Biasing and Stability  165
+ 6.3 Base Bias  167
+ 6.4 Emitter–Feedback Bias  169
+ 6.5 Collector–Feedback Bias  171
+ 6.6 Voltage-Divider Bias  172
+ 6.7 Load: DC and AC  175
+ 6.8 BJT Small Signal Voltage Amplifiers  177
+  6.8.1  Common-Emitter (CE) Amplifier  178
+  6.8.2  Common-Collector (CC) Amplifier  182
+  6.8.3  Common-Base (CB) Amplifier  184
+ Multiple Choice-type Questions and Answers  186
+ Reasoning-Type Questions and Answers  188
+ Solved Numerical Problems  189
+ Exercise  194
+ Project Work on Chapter 6  197
+Chapter 7.  Network Theorems and Transistor  200
+ 7.1 Thevenin’s Theorem  200
+ 7.2 Norton’s Theorem  202
+ 7.3 Other Useful Theorems  203
+  7.3.1  Superposition Theorem  203
+  7.3.2  Maximum Power Transfer Theorem  204
+ 7.4 Two-Port Model and Hybrid Parameters  205
+  7.4.1  Transistor as Two-port Network  207
+  7.4.2  Significance of h Parameters  209
+ 7.5 Transistor Amplifier with h Parameters  211
+ 7.6 Simplified Hybrid Model  214
+ 7.7 re-Model and h-Model  215
+ 7.8 Transistor: Thevenin and Norton Equivalents  216
+ 7.9 Frequency Dependence of Gain  219
+ 7.10 Hybrid-Π Model  221
+ 7.11 Transistor Gain at High Frequency  224
+ 7.12 Gain and Decibel  227
+ISTUDYix Contents
+ Multiple Choice-Type Questions and Answers  228
+ Reasoning-Type Questions and Answers  229
+ Solved Numerical Problems  229
+ Exercise  235
+ Project Work on Chapter 7  237
+Chapter 8.  Transistor Power and Multistage Amplifiers  239
+ 8.1 Need for Power Amplification  239
+ 8.2 Conditions for Power Amplification  241
+ 8.3 Distortions due to Nonlinearity  242
+  8.3.1  Amplitude Distortion  243
+  8.3.2  Harmonic Distortion  243
+  8.3.3  Intermodulation Distortion  244
+ 8.4 Amplifier Classes  245
+ 8.5 Class A Amplifier  246
+  8.5.1  Bias for Voltage Amplifier  246
+  8.5.2  Resistive Load Power Amplifier  247
+  8.5.3  Transformer Coupled Amplifier  249
+ 8.6 Class B Amplifier  253
+ 8.7 Push–Pull Amplifier  254
+  8.7.1  Class A Push–Pull Amplifier  254
+  8.7.2  Class B Push–Pull Amplifier  255
+  8.7.3  Crossover Distortion  258
+  8.7.4  Class AB Amplifier  259
+  8.7.5  Complementary Symmetry Amplifier  260
+ 8.8 Class C Amplifier  262
+ 8.9 Multistage Amplifiers  264
+ Multiple Choice-Type Questions and Answers  267
+ Reasoning-Type Questions and Answers  269
+ Solved Numerical Problems  270
+ Exercise  274
+Chapter 9.  Field-Effect Transistor (FET)  276
+ 9.1 ‘Field-Effect’ and ‘Transistor’  276
+ 9.2 Junction Field-Effect Transistor (JFET)  277
+  9.2.1  JFET Current–Voltage Characteristics  278
+  9.2.2  JFET Transfer Characteristics  282
+ 9.3 FET Parameters  283
+ 9.4 FET versus BJT  284
+ 9.5 MOSFET  286
+  9.5.1  n-Channel Depletion-Type MOSFET  286
+  9.5.2  n-Channel Enhancement-Type MOSFET  289
+ISTUDYx Contents
+ 9.6 FET Model  293
+ 9.7 FET Biasing  294
+  9.7.1  Self-Bias  294
+  9.7.2  Drain-Feedback Bias  296
+  9.7.3  Gate Bias  297
+  9.7.4  Voltage-Divider Bias  298
+ 9.8 FET Amplifiers  300
+  9.8.1  Common-Source (CS) Amplifier  300
+  9.8.2  Common-Drain (CD) Amplifier  301
+  9.8.3  Common-Gate (CG) Amplifier  302
+ Multiple Choice-Type Questions and Answers  304
+ Reasoning-Type Questions and Answers  306
+ Solved Numerical Problems  307
+ Exercise  308
+ Project Work on Chapter 9  310
+Chapter 10.  Feedback Amplifiers and Oscillators  313
+ 10.1 Concept of Feedback  313
+ 10.2 Types of Feedback  316
+  10.2.1  Voltage–series Feedback  317
+  10.2.2  Voltage–shunt Feedback  318
+  10.2.3  Current–series Feedback  319
+  10.2.4  Current–shunt Feedback  320
+ 10.3 Advantages of Negative Feedback  321
+  10.3.1  Stability Improvement  322
+  10.3.2  Impedance Improvement  322
+  10.3.3  Bandwidth Enhancement  324
+  10.3.4  Noise Reduction  326
+  10.3.5  Reduction of Nonlinear Distortion  326
+ 10.4 Oscillators  327
+  10.4.1  Positive Feedback and Oscillation  328
+  10.4.2  Resonant Circuit Oscillators  329
+  10.4.3  Colpitts Oscillator  331
+  10.4.4  Hartley Oscillator  332
+  10.4.5  Wien Bridge Oscillator  333
+  10.4.6  Phase-Shift Oscillator  338
+  10.4.7  Crystal Oscillator  341
+ 10.5 Multivibrators  345
+  10.5.1  Astable Multivibrator  345
+  10.5.2  Monostable Multivibrator  348
+ISTUDYxi Contents
+ Multiple Choice-Type Questions and Answers  350
+ Reasoning-Type Questions and Answers  352
+ Solved Numerical Problems  353
+ Exercise  357
+ Project Work on Chapter 10  359
+Chapter 11.  Operational Amplifier  362
+ 11.1 A Review on Amplifiers  362
+ 11.2 Features of Op-Amp  363
+ 11.3 Differential Amplifier  365
+ 11.4 Common Mode Rejection Ratio  368
+ 11.5 Diff-Amp to Op-Amp  369
+ 11.6 Offset Parameters  370
+ 11.7 Slew Rate  373
+ 11.8 Linear Op-Amp Circuits  374
+  11.8.1  Inverting Amplifier  375
+  11.8.2  Noninverting Amplifier  377
+  11.8.3  Virtual Short and Virtual Ground  382
+  11.8.4  Voltage Follower  383
+  11.8.5  Op-Amp Adder (Inverting)  384
+  11.8.6  Op-Amp Adder (Noninverting)  385
+  11.8.7  Differential Amplifier  386
+  11.8.8  Instrumentation Amplifier  388
+  11.8.9  Passive and Active Filters  389
+  11.8.10  Active Low-Pass Filter  392
+  11.8.11  Active High-Pass Filter  394
+  11.8.12  Active Band-Pass and Band-Stop Filters  395
+ 11.9 Nonlinear Op-Amp Circuits  396
+  11.9.1  Integrator  396
+  11.9.2  Differentiator  398
+  11.9.3  Comparator  400
+  11.9.4  Schmitt Trigger  401
+  11.9.5  Logarithmic Amplifier  402
+  11.9.6  Solving Algebraic Equation  403
+  11.9.7  Solving Differential Equation  404
+  11.9.8  Precision Rectifier  405
+ 11.10  Op-Amp Waveform Generators  406
+  11.10.1  Square Wave Generator  406
+  11.10.2  Triangular Wave Generator  407
+  11.10.3  Sine Wave Generator  409
+ISTUDYxii Contents
+ Multiple Choice-Type Questions and Answers  409
+ Reasoning-Type Questions and Answers  414
+ Solved Numerical Problems  415
+ Exercise  422
+ Projects on Chapter 11  428
+Chapter 12.  IC Technology and Instrumentation  432
+ 12.1 Integrated Circuit (IC)  432
+ 12.2 IC Classification  433
+ 12.3 IC Fabrication  436
+ 12.4 IC Components: Active and Passive  437
+ 12.5 Regulated Power Supply  439
+ 12.6 Cathode Ray Oscilloscope (CRO)  442
+  12.6.1  Construction of CRO  444
+  12.6.2  Working Principle  445
+  12.6.3  Electrostatic Focusing  446
+  12.6.4  Electrostatic Deflection  447
+  12.6.5  Waveform Display  449
+  12.6.6  Applications of CRO  451
+ 12.7 Digital Storage Oscilloscope  454
+ Multiple Choice-Type Questions and Answers  456
+ Reasoning-Type Questions and Answers  457
+ Solved Numerical/Analytic Problems  458
+ Exercise  459
+Chapter 13.  Digital Principles and Boolean Algebra  460
+ 13.1 The Digital System  460
+  13.1.1  Analog and Digital  460
+  13.1.2  Pros and Cons of Digital System  461
+ 13.2 Number Systems and Conversions  462
+  13.2.1  Binary Numbers  463
+  13.2.2  Binary to Decimal Conversion  464
+  13.2.3  Decimal to Binary Conversion  464
+  13.2.4  Octal Numbers  467
+  13.2.5  Hexadecimal Numbers  469
+ 13.3 Digital Codes  470
+ 13.4 Binary Arithmetic  472
+  13.4.1  1’s Complement and 2’s Complement  473
+  13.4.2  Radix Complements  477
+  13.4.3  Signed Binary Numbers  478
+ISTUDYxiii Contents
+ 13.5 Boolean Algebra  479
+  13.5.1  OR Operation  482
+  13.5.2  AND Operation  483
+  13.5.3  NOT Operation  483
+  13.5.4  De Morgan’s Theorems  484
+ 13.6 Boolean Simplification  485
+ 13.7 Sum-of-Products and Product-of-Sums  488
+  13.7.1  Sum-of-Products (SOP)  488
+  13.7.2  Product-of-Sums (POS)  490
+ 13.8 Karnaugh Map  493
+  13.8.1  Don’t Care Conditions  498
+  13.8.2  Simplification is not Unique  499
+  13.8.3  SOP and POS are Equivalent  499
+ Multiple Choice-Type Questions and Answers  500
+ Reasoning-Type Questions and Answers  503
+ Solved Numerical and Logical Problems  503
+ Exercise  507
+ Projects on Chapter 13  508
+Chapter 14.  Combinational Logic Circuits  510
+ 14.1 Boolean Algebra and Digital Electronics  510
+  14.1.1  Combinational and Sequential Logic  511
+  14.1.2  Positive and Negative Logic  512
+ 14.2 Logic Gates  513
+  14.2.1  OR Gate  513
+  14.2.2  AND Gate  513
+  14.2.3  NOT Gate  515
+  14.2.4  NOR Gate (Universal Gate)  516
+  14.2.5  NAND Gate (Universal Gate)  517
+  14.2.6  Bubbled Gates  518
+  14.2.7  Exclusive-OR (XOR) Gate  519
+  14.2.8  Timing Diagram  522
+ 14.3 Logic Families  522
+  14.3.1  Transistor–Transistor Logic (TTL)  523
+  14.3.2  MOS Logic  525
+ 14.4 Arithmetic and Logic Circuits  527
+  14.4.1  Half Adder  527
+  14.4.2  Full Adder  528
+  14.4.3  Half and Full Subtractors  530
+  14.4.4  Adder–Subtractor  531
+  14.4.5  Digital Comparators  532
+ISTUDYxiv Contents
+ 14.5 Data Processing Circuits  533
+  14.5.1  Multiplexer  533
+  14.5.2  Demultiplexer  536
+  14.5.3  Decoders  536
+  14.5.4  Seven-Segment Display  537
+  14.5.5  Encoders  540
+  14.5.6  Parity Checker and Generator  541
+ Multiple Choice-Type Questions and Answers  542
+ Reasoning-Type Questions and Answers  546
+ Solved Logical Problems  547
+ Exercise  552
+ Project Work on Chapter 14  555
+Chapter 15.  Sequential Logic Circuits  557
+ 15.1 Clock and Timer  557
+  15.1.1  Clock Parameters  558
+  15.1.2  Working Principles of IC 555  559
+  15.1.3  Astable Multivibrator with IC 555  560
+  15.1.4  Monostable Multivibrator with IC 555  562
+ 15.2 Latch and Flip-Flop  563
+  15.2.1  Bistable Multivibrator  564
+  15.2.2  RS Flip-Flop with NOR Gates  565
+  15.2.3  RS Flip-Flop with NAND Gates  567
+  15.2.4  Clocked RS Flip-Flop  569
+  15.2.5  D Flip-Flop  570
+  15.2.6  JK Flip-Flop  571
+  15.2.7  Racing and Propagation Delay  572
+  15.2.8  Edge- and Pulse-Triggering  573
+  15.2.9  JK Master–Slave Flip-Flop  575
+  15.2.10  T Flip-Flop  577
+ 15.3 Flip-Flop Characterization  578
+  15.3.1  Characteristic Equation  579
+  15.3.2  State Diagram  579
+  15.3.3  Preset and Clear  580
+ 15.4 Register  581
+  15.4.1  Register with Series and Parallel Shifting  583
+  15.4.2  Ring Counter  586
+  15.4.3  Johnson Counter  587
+  15.4.4  Register Applications  588
+ 15.5 Counters  588
+  15.5.1  Asynchronous Counter  589
+  15.5.2  Synchronous Counter  591
+ISTUDYxv Contents
+ 15.6 Changing Counter Modulus  592
+  15.6.1  Mod-3 Counter  593
+  15.6.2  Mod-6 Counter  593
+  15.6.3  Mod-5 Counter  594
+  15.6.4  Decade (Mod-10) Counter  595
+  15.6.5  Decade Counter using Preset-Clear  596
+  15.6.6  Applications of the Counter  598
+ Multiple Choice-Type Questions and Answers  598
+ Reasoning-Type Questions and Answers  600
+ Solved Numerical Problems  602
+ Exercise  604
+Chapter 16.  Analog–Digital Conversion and Memory  609
+ 16.1 Why D/A and A/D Conversions  609
+ 16.2 Binary Equivalent Weight  610
+ 16.3 Digital-to-Analog (D/A) Conversion  611
+  16.3.1  Weighted Resistor D/A Converter  611
+  16.3.2  R-2R ladder D/A Converter  614
+  16.3.3  D/A Converter Performance  617
+ 16.4 Analog-to-Digital (A/D) Conversion  618
+  16.4.1  Flash A/D Converter  618
+  16.4.2  Counter-Type A/D Converter  620
+  16.4.3  Successive-Approximation A/D Converter  622
+ 16.5 Memory  622
+  16.5.1  Read-Only Memory (ROM)  625
+  16.5.2  Random Access Memory (RAM)  627
+  16.5.3  Memory Addressing  629
+  16.5.4  Memory Read/Write  630
+ Multiple Choice-Type Questions and Answers  631
+ Reasoning-Type Questions and Answers  633
+ Solved Numerical Problems  633
+ Exercise  634
+ Project Work on Chapter 16  635
+Chapter 17.  Microcomputer and Microprocessor  637
+ 17.1 Evolution of Computer  637
+  17.1.1  Historical Background  637
+  17.1.2  Modern Computer  639
+ 17.2 Computer, Microprocessor and Microcontroller  641
+  17.2.1  Computer Organization  641
+  17.2.2  Use of Microprocessor  643
+  17.2.3  Use of Microcontroller  644
+ISTUDYxvi Contents
+ 17.3 Hardware and Software  646
+  17.3.1  Operating System  646
+  17.3.2  Computer Languages  648
+ 17.4 Microprocessor 8085  650
+  17.4.1  Pin Configuration  652
+  17.4.2  Operational Code (Opcode)  653
+ 17.5 8085 Programming  654
+ 17.6 Types of 8085 Instructions  668
+ 17.7 Use of Subroutine  669
+ 17.8 Arduino Programming  669
+  17.8.1  Arduino Board  670
+  17.8.2  Arduino IDE  670
+ Multiple Choice-Type Questions and Answers  673
+ Reasoning-Type Questions and Answers  674
+ Solved Examples  675
+ Exercise  677
+Bibliography  679
+Index  681
+ISTUDY

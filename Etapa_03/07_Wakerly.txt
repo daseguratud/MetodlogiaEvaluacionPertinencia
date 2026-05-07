@@ -1,0 +1,303 @@
+viiCONTENTS
+Preface xv
+1 INTRODUCTION 1
+1.1 About Digital Design 1
+1.2 Analog versus Digital 3
+1.3 Analog Signals 7
+1.4 Digital Logic Signals 7
+1.5 Logic Circuits and Gates 9
+1.6 Software Aspects of Digital Design 13
+1.7 Integrated Circuits 16
+1.8 Logic Families and CMOS 19
+1.9 CMOS Logic Circuits 20
+1.10 Programmable Devices 25
+1.11 Application-Specific ICs 27
+1.12 Printed-Circuit Boards 28
+1.13 Digital-Design Levels 29
+1.14 The Name of the Game 33
+1.15 Going Forward 34
+Drill Problems 34
+2 NUMBER SYSTEMS AND CODES 35
+2.1 Positional Number Systems 36
+2.2 Binary, Octal, and Hexadecimal Numbers 37
+2.3 Binary-Decimal Conversions 39
+2.4 Addition and Subtraction of Binary Numbers 42
+2.5 Representation of Negative Numbers 44
+2.5.1 Signed-Magnitude Representation 2.5.2 Complement Number Systems
+2.5.3 Two’s-Complement Representation
+2.5.4 Ones’-Complement Representation 2.5.5 Excess Representations
+2.6 Two’s-Complement Addi tion and Subtraction 48
+2.6.1 Addition Rules 2.6.2 A Graphical View 2.6.3 Overflow
+2.6.4 Subtraction Rules 2.6.5 Two’s-Complement and Unsigned Binary NumbersDDPP5.book  Page vii  Tuesd ay, March 28, 2017  5:46 PMviii Contents
+2.7 Ones’-Complement Addition and Subtraction 52
+2.8 Binary Multiplication 54
+2.9 Binary Division 56
+2.10 Binary Codes for Decimal Numbers 57
+2.11 Gray Code 60
+2.12 Character Codes 62
+2.13 Codes for Actions, Conditions, and States 64
+2.14 n-Cubes and Distance 66
+2.15 Codes for Detecting and Correcting Errors 67
+2.15.1 Error-Detecting Codes
+2.15.2 Error-Correcting and Mu ltiple-Error-Detecting Codes
+2.15.3 Hamming Codes 2.15.4 CRC Codes
+2.15.5 Two-Dimensional Codes 2.15.6 Checksum Codes
+2.15.7 m-out-of-n Codes
+2.16 Codes for Transmitting and Storing Serial Data 78
+2.16.1 Parallel and Serial Data 2.16.2 Serial Line Codes
+References 82
+Drill Problems 83
+Exercises 85
+3 SWITCHING ALGEBRA AND COMBINATIONAL LOGIC 89
+3.1 Switching Algebra 91
+3.1.1 Axioms 3.1.2 Single-Variable Theorems
+3.1.3 Two- and Three-Variable Theorems 3.1.4 n-Variable Theorems
+3.1.5 Duality 3.1.6 Standard Repres entations of Logic Functions
+3.2 Combinational-Circuit Analysis 104
+3.3 Combinational-Ci rcuit Synthesis 110
+3.3.1 Circuit Descriptions and Designs 3.3.2 Circuit Manipulations
+3.3.3 Combinational-Circuit Minimization 3.3.4 Karnaugh Maps
+3.4 Timing Hazards 122
+3.4.1 Static Hazards 3.4.2 Finding Static Hazards Using Maps
+3.4.3 Dynamic Hazards 3.4.4 Designing Hazard-Free Circuits
+References 126
+Drill Problems 128
+Exercises 129
+4 DIGITAL DESIGN PRACTICES 133
+4.1 Documentation Standards 133
+4.1.1 Block Diagrams 4.1.2 Gate Symbols
+4.1.3 Signal Names and Active Levels 4.1.4 Active Levels for Pins
+4.1.5 Constant Logic Signals 4.1.6 Bubble-to-Bubble Logic Design
+4.1.7 Signal Naming in HDL Models 4.1.8 Drawing Layout
+4.1.9 Buses 4.1.10 Additional Schematic Information
+4.2 Circuit Timing 154
+4.2.1 Timing Diagrams 4.2.2 Propagation Delay
+4.2.3 Timing Specifications 4.2.4 Sample Timing Specifications
+4.2.5 Timing Analysis ToolsDDPP5.book  Page viii  Tue sday, March 28, 2017  5:46 PMContents ix
+4.3 HDL-Based Digital Design 165
+4.3.1 HDL History 4.3.2 Why HDLs?
+4.3.3 EDA Tool Suites for HDLs 4.3.4 HDL-Based Design Flow
+References 172
+Drill Problems 174
+Exercises 176
+5 VERILOG HARDWARE DESCRIPTION LANGUAGE 177
+5.1 Verilog Models and Modules 179
+5.2 Logic System, Nets, Va riables, and Constants 184
+5.3 Vectors and Operators 189
+5.4 Arrays 193
+5.5 Logical Operators and Expressions 194
+5.6 Compiler Directives 197
+5.7 Structural Models 198
+5.8 Dataflow Models 203
+5.9 Behavioral Models (Procedural Code) 205
+5.9.1 Always Statements and Blocks 5.9.2 Procedural Statements
+5.9.3 Inferred Latches 5.9.4 Assignment Statements
+5.9.5begin -end Blocks 5.9.6 if and if-else  Statements
+5.9.7case  Statements 5.9.8 Looping Statements
+5.10 Functions and Tasks 220
+5.11 The Time Dimension 224
+5.12 Simulation 225
+5.13 Test Benches 226
+5.14 Verilog Features for Sequential Logic Design 232
+5.15 Synthesis 232
+References 233
+Drill Problems 234
+Exercises 235
+6 BASIC COMBINATIONAL LOGIC ELEMENTS 237
+6.1 Read-Only Memories (ROMs) 240
+6.1.1 ROMs and Truth Tables
+6.1.2 Using ROMs for Arbitrary Combinational Logic Functions
+6.1.3 FPGA Lookup Tables (LUTs)
+6.2 Combinational PLDs 246
+6.2.1 Programmable Logic Arrays
+6.2.2 Programmable Array Logic Devices
+6.3 Decoding and Selecting 250
+6.3.1 A More Mathy Decoder Definition 6.3.2 Binary Decoders
+6.3.3 Larger Decoders 6.3.4 Decoders in Verilog
+6.3.5 Custom Decoders 6.3.6 Seven-Segment Decoders
+6.3.7  Binary Encoders
+6.4 Multiplexing 281
+6.4.1 Gate-Level Multiplexer Circuits 6.4.2 Expanding Multiplexers
+6.4.3 Multiplexers, Demultiplexers, and Buses
+6.4.4 Multiplexers in VerilogDDPP5.book  Page ix  Tuesd ay, March 28, 2017  5:46 PMx Contents
+References 294
+Drill Problems 295
+Exercises 296
+7 MORE COMBINATIONAL BUILDING BLOCKS 301
+7.1 Three-State Devices 302
+7.1.1 Three-State Buffers 7.1.2 Standard MSI Three-State Buffers
+7.1.3 Three-State Outputs in Verilog 7.1.4 Three-State Outputs in FPGAs
+7.2 Priority Encoding 312
+7.2.1 Cascading Priority Encoders 7. 2.2 Priority Encoders in Verilog
+7.3 Exclusive-OR Gates and Parity Functions 320
+7.3.1 Exclusive-OR  and Exclusive-NOR  Gates
+7.3.2 Parity Circuits 7.3.3 Parity-Checking Applications
+7.3.4 Exclusive-OR Gates and Parity Circuits in Verilog
+7.4 Comparing 331
+7.4.1 Comparator Structure 7.4.2 Iterative Circuits
+7.4.3 An Iterative Comparator Circuit 7.4.4 Magnitude Comparators
+7.4.5 Comparators in HDLs 7.4.6 Comparators in Verilog
+7.4.7 Comparator Test Benches
+7.4.8 Comparing Comparator Performance
+7.5 A Random-Logic Example in Verilog 356
+Drill Problems 363
+Exercises 364
+8 COMBINATIONAL ARITHMETIC ELEMENTS 371
+8.1 Adding and Subtracting 372
+8.1.1 Half Adders and Full Adders 8.1.2 Ripple Adders
+8.1.3 Subtractors 8.1.4 Carry-Lookahead Adders
+8.1.5 Group Ripple Adders 8.1.6 Group-Carry Lookahead
+8.1.7 MSI Arithmetic and Logic Units 8.1.8 Adders in Verilog
+8.1.9 Parallel-Prefix  Adders 8.1.10 FPGA CARRY4  Element
+8.2 Shifting and Rotating 403
+8.2.1 Barrel Shifters 8.2.2 Bar rel Shifters in Verilog
+8.3 Multiplying 416
+8.3.1 Combinational Multiplier Structures 8.3.2 Multiplication in Verilog
+8.4 Dividing 426
+8.4.1 Basic Unsigned Binary Division Algorithm
+8.4.2 Division in Verilog
+References 433
+Drill Problems 433
+Exercises 434
+9 STATE MACHINES 439
+9.1 State-Machine Basics 440
+9.2 State-Machine Structure and Analysis 443
+9.2.1 State-Machine Structure 9.2.2 Output Logic
+9.2.3 State-Machine Timing
+9.2.4 Analysis of State Machines with D Flip-FlopsDDPP5.book  Page x  Tuesd ay, March 28, 2017  5:46 PMContents xi
+9.3 State-Machine Design with State Tables 455
+9.3.1 State-Table Design Example 9.3.2 State Minimization
+9.3.3 State Assignment 9.3.4 Synthesis Using D Flip-Flops
+9.3.5 Beyond State Tables
+9.4 State-Machine Design with State Diagrams 472
+9.4.1 T-Bird Tail Lights Example
+9.5 State-Machine Design with ASM Charts 478
+9.5.1 T-Bird Tail Lights with ASM Charts
+9.6 State-Machine Design with Verilog 483
+References 486
+Drill Problems 487
+Exercises 490
+10 SEQUENTIAL LOGIC ELEMENTS 495
+10.1 Bistable Elements 496
+10.1.1 Digital Analysis 10.1.2 Analog Analysis
+10.1.3 Metastable Behavior
+10.2 Latches and Flip-Flops 499
+10.2.1 S-R Latch 10.2.2 S-R Latch
+10.2.3 D Latch 10.2.4 Edge-Triggered D Flip-Flop
+10.2.5 Edge-Triggered D Flip-Flop with Enable 10.2.6 T Flip-Flops
+10.3 Latches and Flip-Flops in Verilog 508
+10.3.1 Instance Statements and Library Components
+10.3.2 Behavioral Latch and Flip-Flop Models
+10.3.3 More about clocking in Verilog
+10.4 Multibit Registers and Latches 522
+10.4.1 MSI Registers and Latches
+10.4.2 Multibit Registers and Latches in Verilog
+10.5 Miscellaneous Latch and Bistable Applications 525
+10.5.1 Switch Debouncing 10.5.2 Bus-Holder Circuits
+10.6 Sequential PLDs 528
+10.7 FPGA Sequential Logic Elements 531
+10.8 Feedback Sequential Circuits 534
+10.8.1 Basic Analysis
+10.8.2 Analyzing Circuits with Multiple Feedback Loops
+10.8.3 Feedback Sequential-Circuit Design
+10.8.4 Feedback Sequential Circuits in Verilog
+References 544
+Drill Problems 545
+Exercises 547
+11 COUNTERS AND SHIFT REGISTERS 553
+11.1 Counters 554
+11.1.1 Ripple Counters 11.1.2 Synchronous Counters
+11.1.3 A Universal 4-Bit Counter Circuit
+11.1.4 Decoding Binary-Counter States
+11.1.5 Counters in VerilogDDPP5.book  Page xi  Tuesd ay, March 28, 2017  5:46 PMxii Contents
+11.2 Shift Registers 566
+11.2.1 Shift-Register Structure 11.2.2 Shift-Register Counters
+11.2.3 Ring Counters 11.2.4 Johnson Counters
+11.2.5 Linear Feedback Shift-Register Counters
+11.2.6 Shift Registers in Verilog 11.2.7 Timing-Generator Examples
+11.2.8 LFSR Examples
+11.3 Iterative versus Sequential Circuits 593
+References 596
+Drill Problems 596
+Exercises 599
+12 STATE MACHINES IN VERILOG 605
+12.1 Verilog State-Machine Coding Styles 606
+12.1.1 Basic Coding Style 12.1.2 A Verilog State-Machine Example
+12.1.3 Combined State Memory and Next-State Logic 12.1.4 Reset Inputs
+12.1.5 Pipelined Moore Outputs in Verilog
+12.1.6 Direct Verilog Coding Without a State Table
+12.1.7 State-Machine Extraction
+12.2 Verilog State-Machine Test Benches 616
+12.2.1 State-Machine Test-Bench Construction Methods
+12.2.2 Example Test Benches
+12.2.3 Instrumenting Next-State Logic for Testing
+12.2.4 In Summary
+12.3 Ones Counter 626
+12.4 Combination Lock 628
+12.5 T-Bird Tail Lights 632
+12.6 Reinventing Traffic-Light Controllers 637
+12.7 The Guessing Game 642
+12.8 “Don’t-Care” State Encodings 646
+12.9 Decomposing State Machines 648
+12.9.1 The Guessing Game Again
+12.10 The Trilogy Game 656
+References 664
+Drill Problems 664
+Exercises 666
+13 SEQUENTIAL-CIRCUIT DESIGN PRACTICES 673
+13.1 Sequential-Circuit Documentation Practices 674
+13.1.1 General Requirements 13.1.2 Logic Symbols
+13.1.3 State-Machine Descriptions
+13.1.4 Timing Diagrams and Specifications
+13.2 Synchronous Design Methodology 681
+13.2.1 Synchronous System Structure
+13.2.2 A Synchronous System Design Example
+13.3 Difficulties in Synchronous Design 691
+13.3.1 Clock Skew 13.3.2 Gating the Clock
+13.3.3 Asynchronous InputsDDPP5.book  Page xii  Tuesd ay, March 28, 2017  5:46 PMContents xiii
+13.4 Synchronizer Failure and Metastability 701
+13.4.1 Synchronizer Failure 13.4. 2 Metastability Resolution Time
+13.4.3 Reliable Synchronizer Design 13.4.4 Analysis of Metastable Timing
+13.4.5 Better Synchronizers 13.4. 6 Other Synchronizer Designs
+13.5 Two-Clock Synchronization Example 710
+References 729
+Drill Problems 729
+Exercises 730
+14 DIGITAL CIRCUITS 733
+14.1 CMOS Logic Circuits 735
+14.1.1 CMOS Logic Levels 14.1.2 MOS Transistors
+14.1.3 Basic CMOS Inverter Circuit
+14.1.4 CMOS NAND  and NOR  Gates
+14.1.5 Fan-In 14.1.6 Noninverting Gates
+14.1.7 CMOS AND-OR-INVERT  and OR-AND-INVERT  Gates
+14.2 Electrical Behavior of CMOS Circuits 745
+14.2.1 Overview 14.2.2 Data Sheets and Specifications
+14.3 CMOS Static Electrical Behavior 748
+14.3.1 Logic Levels and Noise Margins
+14.3.2 Circuit Behavior with Resistive Loads
+14.3.3 Circuit Behavior with Nonideal Inputs 14.3.4 Fanout
+14.3.5 Effects of Loading 14.3.6 Unused Inputs
+14.3.7 How to Destroy a CMOS Device
+14.4 CMOS Dynamic Electrical Behavior 764
+14.4.1 Transition Time 14.4.2 Propagation Delay
+14.4.3 Power Consumption
+14.4.4 Current Spikes and Decoupling Capacitors
+14.4.5 Inductive Effects
+14.4.6 Simultaneous Switching and Ground Bounce
+14.5 Other CMOS Input and Output Structures 778
+14.5.1 Transmission Gates 14. 5.2 Schmitt-Trigger Inputs
+14.5.3 Three-State Outputs 14.5.4 Open-Drain Outputs
+14.5.5 Driving LEDs and Relays 14.5.6 Multisource Buses
+14.5.7 Wired Logic 14.5.8 Pull-Up Resistors
+14.6 CMOS Logic Families 790
+14.6.1 HC and HCT 14.6.2 AHC and AHCT
+14.6.3 HC, HCT, AHC, and AHCT Electrical Characteristics
+14.6.4 AC and ACT 14.6.5 FCT and FCT-T
+14.7 Low-Voltage CMOS Logic and Interfacing 798
+14.7.1 3.3-V LVTTL and LVCMOS Logic Levels 14.7.2 5-V Tolerant Inputs
+14.7.3 5-V Tolerant Outputs 14. 7.4 TTL/LVTTL Interfacing Summary
+14.7.5 Logic Levels Less Than 3.3 V
+14.8 Differential Signaling 803
+References 804
+Drill Problems 805
+Exercises 808DDPP5.book  Page xiii  Tue sday, March 28, 2017  5:46 PM

@@ -1,0 +1,646 @@
+CHAPTER 1 Introductory Concepts
+Introduction to Digital 1s and Os 4
+Digital Signals 9
+Need for Timing 10
+Highs and Lows Over Time 11
+Periodic/Aperiodic 11
+Period/Frequency 11
+Duty Cycle 12
+Transitions 12
+Edges/Events 12
+Logic Circuits and Evolving Technology 13
+Logic Circuits 13
+Digital Integrated Circuits 14
+Numerical Representations 14
+Analog Representations 15
+Digital Representations 15
+Digital and Analog Systems 17
+Advantages of Digital Techniques
+Limitations of Digital Techniques 18
+Digital Number Systems 19
+Decimal System 19
+Decimal Counting 20
+Binary System 21
+Binary Counting 22
+Representing Signals with Numeric Quantities 23
+Parallel and Serial Transmission 25
+Memory 27
+Digital Computers 28
+Major Parts of aComputer 28
+Types of Computers 29
+Memory 30
+Digital Progress Today and Tomorrow 31
+
+CHAPTER 2 Number Systems and Codes 36
+Binary-to-Decimal Conversions 38
+Decimal-to-Binary Conversions 39
+Counting Range 41
+Hexadecimal Number System 41
+Hex-to-Decimal Conversion 42
+Decimal-to-Hex Conversion 43
+Hex-to-Binary Conversion 43
+Binary-to-Hex Conversion 44
+Counting in Hexadecimal 44
+Usefulness of Hex 44
+Summary of Conversions 45
+BCD Code 46
+Binary-Coded-Decimal Code 46
+Comparison of BCD and Binary 47
+The Gray Code 48
+Quadrature Encoders 50
+Putting it All Together 51
+The Byte, Nibble, and Word 52
+Bytes 52
+Nibbles 52
+Words 53
+Alphanumeric Codes 53
+ASCII Code 54
+Parity Method For Error Detection 56
+Parity Bit 57
+Error Correction 58
+Applications 59
+
+CHAPTER 3  Describing Logic Circuits 68
+Boolean Constants and Variables 71
+Truth Tables 72
+OR Operation with OR Gates 73
+OR Gate 74
+Summary of the OR Operation 75
+AND Operation with AND Gates 77
+AND Gate 78
+Summary of the AND Operation 79
+NOT Operation 80
+NOT Circuit (INVERTER) 81
+Summary of Boolean Operations 81
+Describing Logic Circuits
+Algebraically 82
+Operator Precedence 82
+Circuits Containing INVERTERs 83
+Evaluating Logic-Circuit Outputs 84
+Analysis Using a Table 85
+Implementing Circuits from Boolean
+Expressions 87
+NOR Gates and NAND Gates 88
+NOR Gate 88
+NAND Gate 90
+Boolean Theorems 92
+Multivariable Theorems 93
+
+CHAPTER 4 Combinational
+Logic Circuits 136
+Sum-of-Products Form 138
+Product-of-Sums 138
+Simplifying Logic Circuits 139
+Algebraic Simplification 140
+Designing Combinational Logic
+Circuits 145
+Complete Design Procedure 147
+Karnaugh Map Method 152
+Karnaugh Map Format 152
+Looping 154
+Looping Groups of Two (Pairs) 154
+Looping Groups of Four (Quads) 155
+Looping Groups of Eight (Octets) 156
+Complete Simplification Process 157
+Filling a K Map from an Output
+Expression 160
+
+
+
+CHAPTER 5 Flip-Flops and Related Devices 236
+NAND Gate Latch 239
+Setting the Latch (FF) 240
+Resetting the Latch (FF) 240
+Simultaneous Setting and Resetting 241
+Summary of NAND Latch 241
+Alternate Representations 242
+Terminology 242
+NOR Gate Latch 245
+Flip-Flop State on Power-Up 247
+Troubleshooting Case Study 247
+Digital Pulses 249
+Clock Signals and Clocked Flip-Flops 251
+Clocked Flip-Flops 252
+Setup and Hold Times 252
+Clocked S-R Flip-Flop 254
+Internal Circuitry of the Edge-
+Triggered S-R Flip-Flop 256
+Clocked J-K Flip-Flop 258
+Internal Circuitry of the Edge=
+Triggered J-K Flip-Flop 259
+Clocked D Flip=Flop 260
+Implementation of the D Flip-Flop 261
+Parallel Data Transfer 262
+D Latch (Transparent Latch) 262
+Asynchronous Inputs 264
+Designations for Asynchronous
+Inputs 266
+Flip-Flop Timing Considerations 267
+Setup and Hold Times 267
+Propagation Delays 268
+Maximum Clocking Frequency, fmax 268
+Clock Pulse HIGH and LOW Times 268
+Asynchronous Active Pulse Width 269
+Clock Transition Times 269
+Potential Timing Problem in FF Circuits 269
+Flip-Flop Applications 271
+Flip-Flop Synchronization 272
+Detecting an Input Sequence 273
+Detecting a Transition or “Event” 275
+Data Storage and Transfer 276
+Parallel Data Transfer 277
+Serial Data Transfer: Shift Registers 278
+Hold Time Requirement 279
+Serial Transfer Between Registers 280
+Shift-Left Operation 281
+Parallel Versus Serial Transfer 281
+Frequency Division and Counting 282
+Counting Operation 283
+State Transition Diagram 284
+MOD Number 284
+Application of Flip-Flops with Timing Constraints 286
+Timing Issues 290
+Microcomputer Application 293
+Schmitt-Trigger Devices 294
+One-Shot (Monostable Multivibrator) 296
+Nonretriggerable One-Shot 296
+Retriggerable One-Shot 297
+Actual Devices 298
+Monostable Multivibrator 298
+Clock Generator Circuits 299
+Schmitt-Trigger Oscillator 299
+555 Timer Used as an Astable Multivibrator 299
+Crystal-Controlled Clock Generators 302
+Troubleshooting Flip-Flop Circuits 302
+Open Inputs 303
+Shorted Outputs 304
+Clock Skew 305
+Sequential Circuits in PLDs Using
+Schematic Entry 307
+Sequential Circuits Using HDL 311
+The DLatch 314
+Edge-Triggered Devices 315
+HDL Circuits with Multiple
+Components 320
+
+
+CHAPTER 6 Digital Arithmetic: Operations and Circuits 340
+Binary Addition and Subtraction 342
+Binary Addition 342
+Binary Subtraction 343
+Representing Signed Numbers 343
+1’s-Complement Form 344
+2’s-Complement Form 345
+Representing Signed Numbers Using
+2’s Complement 345
+Sign Extension 347
+Negation 347
+Special Case in 2’ssComplement
+Representation 348
+Addition in the 2’s-Complement
+System 351
+Subtraction in the 2’ssComplement
+System 352
+Arithmetic Overflow 353
+Number Circles and Binary
+Arithmetic 354
+Multiplication of Binary Numbers 355
+Multiplication in the 2’s-Complement System 356
+Binary Division 357
+BCD Addition 357
+Sum Equals 9 or Less 358
+Sum Greater than9 358
+BCD Subtraction 359
+Hexadecimal Arithmetic 360
+Hex Addition 360
+Hex Subtraction 361
+Hex Representation of Signed Numbers 362
+Arithmetic Circuits 363
+Arithmetic/Logic Unit 363
+Parallel Binary Adder 364
+Design of a Full Adder 366
+K=-Map Simplification 368
+Half Adder 369
+Complete Parallel Adder with
+Registers 369
+Register Notation 370
+Sequence of Operations 371
+Carry Propagation 372
+Integrated-Circuit Parallel
+Adder 373
+Cascading Parallel Adders 373
+2’s-Complement Circuits 375
+Addition 375
+Subtraction 375
+Combined Addition and
+Subtraction 377
+
+
+CHAPTER 7 Counters and Registers 408
+Asynchronous (Ripple) Counters 410
+Signal Flow 411
+MOD Number 412
+Frequency Division 412
+Duty Cycle 413
+Propagation Delay in Ripple
+Counters 414
+Synchronous (Parallel) Counters 416
+Circuit Operation 418
+Advantage of Synchronous Counters
+over Asynchronous 418
+Actual ICs 418
+Counters with Mod Numbers <2" 419
+State Transition Diagram 421
+Displaying Counter States 421
+Changing the MOD Number 423
+General Procedure 423
+Decade Counters/BCD Counters 425
+Synchronous Down and Up/Down
+Counters 426
+Presettable Counters 428
+Synchronous Presetting 430
+IC Synchronous Counters 430
+The 74ALS160-163/74HC160-163
+Series 430
+The 74ALS190-191/74HC190-191
+Series 434
+Multistage Arrangement 439
+Decoding a Counter 440
+Active-HIGH Decoding 441
+Active-LOW Decoding 442
+BCD Counter Decoding 442
+Analyzing Synchronous Counters 444
+Synchronous Counter Design 447
+Basic Idea 447
+J-K Excitation Table 448
+Design Procedure 449
+Stepper Motor Control 452
+Synchronous Counter Design
+with DFF 454
+Altera Library Functions for Counters 45€
+HDL Counters 460
+State Transition Description
+Methods 461
+Behavioral Description 464
+Simulation of Basic Counters 467
+Full-Featured Counters in HDL 467
+Simulation of Full-Featured
+Counter 471
+Wiring HDL Modules Together 473
+MOD-100 BCD Counter 476
+State Machines 481
+Simulation of State Machines 484
+Traffic Light Controller State
+Machine 485
+Choosing HDL Coding Techniques 491
+Register Data Transfer 493
+IC Registers 493
+Parallel In/Parallel Out—The 74ALS174/74HC174 494
+Serial In/Serial Out—The74ALS166/74HC166 496
+Parallel In/Serial Out—The 74ALS165/74HC165 498
+Serial In/Parallel Out—The 74ALS164/74HC164 500
+Shift-Register Counters 502
+Ring Counter 502
+Starting a Ring Counter 502
+Johnson Counter 503
+Decoding a Johnson Counter 505
+IC Shift-Register Counters 506
+Troubleshooting 506
+Megafunction Registers 509
+HDL Registers 513
+HDL Ring Counters 519
+HDL One-Shots 521
+Nonretriggerable One-Shot Simulation 523
+Retriggerable, Edge-Triggered One-Shots in HDL 524
+Edge-Triggered Retriggerable One-Shot Simulation 527
+
+
+CHAPTER 8 _Integrated-Circuit
+Logic Families 550
+Digital IC Terminology 552
+Current and Voltage Parameters (See Figure 8-1) 552
+Fan-Out 553
+Propagation Delays 554
+Power Requirements 554
+Noise Immunity 555
+Invalid Voltage Levels 557
+Current-Sourcing and Current-Sinking
+Action 557
+IC Packages 558
+The TTL Logic Family 561
+Circuit Operation—LOW State 561
+Circuit Operation==HIGH State 562
+Current-Sinking Action 564
+Current=-Sourcing Action 564
+Totem-Pole Output Circuit 564
+TTL NOR Gate 565
+Summary 565
+TTL Data Sheets 566
+Supply Voltage and Temperature Range 567
+Voltage Levels 567
+Maximum Voltage Ratings 568
+Power Dissipation 568
+Propagation Delays 568
+TTL Series Characteristics 569
+Standard TTL, 74 Series 570
+Schottky TTL, 74S Series 570
+Low-Power Schottky TTL, 74LS Series (LS-TTL) 571
+Advanced Schottky TTL, 74AS Series (AS-TTL) 571
+Advanced Low-Power Schottky TTL,74ALS Series 571
+74F—Fast TTL 571
+Comparison of TTL Series Characteristics 572
+TTL Loading and Fan-Out 573
+Determining the Fan-Out 574
+Other TTL Characteristics 578
+Unconnected Inputs (Floating) 578
+Unused Inputs 578
+Tied-Together Inputs 579
+Biasing TTL Inputs Low 580
+Current Transients 581
+MOS Technology 582
+The MOSFET 583
+Basic MOSFET Switch 583
+Complementary MOS Logic 585
+CMOS Inverter 586
+CMOS NAND Gate 586
+CMOS NOR Gate 587
+CMOS SET-RESET FF 588
+CMOS Series Characteristics 588
+4000/14,000 Series 588
+74HC/HCT (High-Speed CMOS) 589
+74AC/ACT (Advanced CMOS) 589
+74AHC/AHCT (Advanced High-Speed CMOS) 589
+BiCMOS 5-V Logic 589
+Power-Supply Voltage 590
+Logic Voltage Levels 590
+Noise Margins 590
+Power Dissipation 591
+Pp Increases with Frequency 591
+Fan-Out 592
+Switching Speed 592
+Unused Inputs 593
+Static Sensitivity 593
+Latch-Up 594
+Low-Voltage Technology 594
+CMOS Family 595
+BiCMOS Family 596
+Open-Collector/Open-Drain Outputs 597
+Open-Collector/Open-Drain Outputs 598
+Open-Collector/Open-Drain Buffer/
+Drivers 600
+IEEE/ANSI Symbol for Open-Collector/Drain Outputs 601
+Tristate (Three-State) Logic Outputs 602
+Advantage of Tristate 602
+Tristate Buffers 603
+Tristate ICs 605
+TEEE/ANSI Symbol for Tristate Outputs 605
+High-Speed Bus Interface Logic 605
+CMOS Transmission Gate (Bilateral Switch) 607
+IC Interfacing 609
+Interfacing 5-V TTL and CMOS 611
+CMOS Driving TTL 612
+CMOS Driving TTL in the HIGH State 612
+CMOS Driving TTL in the LOW State 612
+Mixed-Voltage Interfacing 614
+Low-Voltage Outputs Driving High-Voltage Loads 614
+High-Voltage Outputs Driving Low-Voltage Loads 614
+Analog Voltage Comparators 616
+Troubleshooting 617
+Using a Logic Pulser and Probe to Testa Circuit 618
+Finding Shorted Nodes 618
+Characteristics of an FPGA 619
+Power-Supply Voltage 619
+Logic Voltage Levels 620
+Power Dissipation 620
+Maximum Input Voltage and Output Current Ratings 621
+Switching Sneed 621
+CHAPTER 9 MSI Logic Circuits 638
+Decoders 639
+ENABLE Inputs 640
+BCD-to-Decimal Decoders 644
+BCD-to-Decimal Decoder/Driver 645
+Decoder Applications 645
+BCD-to-7-Segment Decoder/Drivers 647
+Common-Anode Versus Common-Cathode
+LED Displays 648
+Liquid-Crystal Displays 649
+Driving an LCD 650
+Types of LCDs 651
+Encoders 653
+Priority Encoders 655
+74147 Decimal-to-BCD Priority Encoder 655
+Switch Encoder 656
+Troubleshooting 659
+Multiplexers (Data Selectors) 662
+Basic Two-Input Multiplexer 663
+Four-Input Multiplexer 664
+Eight-Input Multiplexer 664
+Quad Two-Input MUX (74ALS157/HC157) 666
+Multiplexer Applications 668
+Data Routing 668
+Parallel-to-Serial Conversion 669
+Operation Sequencing 669
+Logic Function Generation 672
+Demultiplexers (Data Distributors) 673
+1-Line-to-8-Line Demultiplexer 674
+Security Monitoring System 675
+Synchronous Data Transmission System 677
+Time Division Multiplexing 679
+More Troubleshooting 683
+Magnitude Comparator 687
+Data Inputs 688
+Outputs 688
+Cascading Inputs 688
+Applications 689
+Code Converters 690
+Basic Idea 691
+Conversion Process 691
+Circuit Implementation 692
+Other Code Converter
+Implementations 694
+Data Busing 694
+The 74ALS173/HC173 Tristate Register 696
+Data Bus Operation 698
+Data Transfer Operation 699
+Bus Signals 700
+Simplified Bus Timing Diagram 701
+Expanding the Bus 701
+Simplified Bus Representation 703
+Bidirectional Busing 704
+Decoders Using HDL 705
+The HDL 7-Segment Decoder/Driver 709
+Encoders Using HDL 712
+HDL Multiplexers and Demultiplexers 716
+HDL Magnitude Comparators 720
+HDL Code Converters 721
+CHAPTER 10 Digital System
+Projects Using HDL 744
+Small-Project Management 746
+Definition 746
+Strategic Planning/Problem Decomposition 746
+Synthesis and Testing 747
+System Integration and Testing 747
+Stepper Motor Driver Project 747
+Problem Definition 748
+Strategic Planning/Problem Decomposition 749
+Synthesis and Testing 750
+Keypad Encoder Project 755
+Problem Analysis 755
+Strategic Planning/Problem Decomposition 757
+Digital Clock Project 761
+Top-Down Hierarchical Design 764
+Building the Blocks from the Bottom Up 766
+MOD-12 Design 769
+Combining Blocks Graphically 773
+Combining Blocks Using Only
+HDL 774
+Microwave Oven Project 778
+Definition of the Project 779
+Strategic Planning/Problem
+Decomposition 780
+Synthesis/Integration and
+Testing 784
+Frequency Counter Project 785
+CHAPTER 11 Interfacing with the
+Analog World 794
+Review of Digital Versus Analog 795
+Digital-to-Analog Conversion 797
+Analog Output 799
+Input Weights 799
+Resolution (Step Size) 800
+Percentage Resolution 801
+What Does Resolution Mean? 802
+Bipolar DACs 804
+DAC Circuitry 804
+Conversion Accuracy 806
+DAC with Current Output 806
+R/2R Ladder 808
+DAC Specifications 810
+Resolution 810
+Accuracy 810
+Offset Error 811
+Settling Time 811
+Monotonicity 811
+An Integrated-Circuit DAC 812
+DAC Applications 813
+Control 813
+Automatic Testing 813
+Signal Reconstruction 813
+A/D Conversion 813
+Digital Amplitude Control 813
+Serial DACs 814
+Troubleshooting DACs 814
+Analog-to-Digital Conversion 816
+Digital-Ramp ADC 817
+A/D Resolution and Accuracy 820
+Conversion Time, tc 821
+Data Acquisition 822
+Reconstructing a Digitized Signal 824
+Aliasing 825
+Serial ADCs 826
+Successive-Approximation ADC 826
+Conversion Time 829
+An Actual IC: The ADC0804 Successive - Approximation ADC 829
+Flash ADCs 834
+Conversion Time 836
+Other A/D Conversion Methods 836
+Dual-Slope Integrating ADC 837
+Voltage-to-Frequency ADC 838
+Sigma/Delta Modulation 838
+Pipelined ADC 840
+Typical ADC Architectures for Applications 842
+Sample-and-Hold Circuits 843
+Multiplexing 844
+Digital Signal Processing (DSP) 845
+Digital Filtering 846
+Applications of Analog Interfacing 849
+Data Acquisition Systems 849
+Digital Camera 850
+Digital Cellular Telephone 850
+CHAPTER 12 Memory Devices 866
+Memory Terminology 868
+General Memory Operation 872
+Address Inputs 873
+The WE Input 873
+Output Enable (OE) 874
+Memory Enable 874
+CPU-Memory Connections 875
+Read-Only Memories 877
+ROM Block Diagram 877
+The Read Operation 878
+ROM Architecture 879
+Register Array 880
+Address Decoders 880
+Output Buffers 880
+ROM Timing 881
+Types of ROMs 882
+Mask-Programmed ROM 883
+Programmable ROMs (PROMs) 885
+Erasable Programmable ROM (EPROM) 886
+Electrically Erasable PROM (EEPROM) 887
+Flash Memory 889
+A Typical CMOS Flash MemoryIC 890
+Flash Technology: NOR and NAND 891
+ROM Applications 894
+Embedded Microcontroller Program Memory 894
+Data Transfer and Portability 894
+Bootstrap Memory 894
+Data Tables 895
+Data Converter 895
+Function Generator 895
+Semiconductor RAM 896
+RAM Architecture 897
+Read Operation 898
+Write Operation 898
+Chip Select 898
+Common Input/Output Pins 898
+Static RAM (SRAM) 899
+Static-RAM Timing 900
+Read Cycle 900
+Write Cycle 902
+Dynamic RAM (DRAM) 902
+Dynamic RAM Structure and Operation 904
+Address Multiplexing 905
+DRAM Read/Write Cycles 909
+DRAM Read Cycle 909
+DRAM Write Cycle 910
+DRAM Refreshing 910
+DRAM Technology 913
+Memory Modules 913
+FPM DRAM 914
+EDO DRAM 914
+SDRAM 914
+DDRSDRAM 914
+Other Memory Technologies 915
+Magnetic Storage 915
+Optical Memory 916
+Phase Change Ram (PRAM) 917
+Ferroelectric RAM (FRAM) 917
+Expanding Word Size and Capacity 917
+Expanding Word Size 918
+Expanding Capacity 920
+Incomplete Address Decoding 923
+Combining DRAM Chips 924
+Special Memory Functions 925
+Cache Memory 926
+First-In, First-Out Memory (FIFO) 927
+Circular Buffers 928
+
+CHAPTER 13 Programmable
+Logic Device
+Architectures 940
+Digital Systems Family Tree 942
+More on PLDs 944
+Fundamentals of PLD Circuitry 948
+PLD Symbology 949
+PLD Architectures 950
+PROMs 950
+Programmable Array Logic (PAL) 951
+Field Programmable Logic Array (FPLA) 954
+Generic Array Logic (GAL) 954
+The Altera MAX and MAX II Families 955
+Generations of HCPLDs 958
+Glossary 962
+Answers to Selected Problems 975
+Index of ICs 983
+Index 986

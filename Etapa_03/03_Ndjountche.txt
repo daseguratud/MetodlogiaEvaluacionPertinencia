@@ -1,0 +1,101 @@
+Contents
+Preface ........................................ i x
+Chapter 1. Number Systems .......................... 1
+1.1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2. Decimal numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.3. Binary numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.4. Octal numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.5. Hexadecimal numeration . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.6. Representation in a radix B . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.7. Binary-coded decimal numbers . . . . . . . . . . . . . . . . . . . . . . 7
+1.8. Representations of signed integers . . . . . . . . . . . . . . . . . . . . . 8
+1.8.1. Sign-magnitude representation . . . . . . . . . . . . . . . . . . . . . 9
+1.8.2. Two’s complement representation . . . . . . . . . . . . . . . . . . . 10
+1.8.3. Excess-E representation . . . . . . . . . . . . . . . . . . . . . . . . . 12
+1.9. Representation of the fractional part of a number . . . . . . . . . . . . 13
+1.10. Arithmetic operations on binary numbers . . . . . . . . . . . . . . . . 16
+1.10.1. Addition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+1.10.2. Subtraction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+1.10.3. Multiplication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+1.10.4. Division . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+1.11. Representation of real numbers . . . . . . . . . . . . . . . . . . . . . . 20
+1.11.1. Fixed-point representation . . . . . . . . . . . . . . . . . . . . . . . 20
+1.11.2. Floating-point representation . . . . . . . . . . . . . . . . . . . . . 22
+1.12. Data representation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+1.12.1. Gray code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+1.12.2. p-out-of-n code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+1.12.3. ASCII code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+1.12.4. Other codes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+1.13. Codes to protect against errors . . . . . . . . . . . . . . . . . . . . . . 31vi Digital Electronics 1
+1.13.1. Parity bit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+1.13.2. Error correcting codes . . . . . . . . . . . . . . . . . . . . . . . . . 33
+1.14. Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+1.15. Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Chapter 2. Logic Gates ............................. 4 9
+2.1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+2.2. Logic gates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+2.2.1. NOT gate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+2.2.2. AND gate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+2.2.3. OR gate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+2.2.4. XOR gate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+2.2.5. Complementary logic gates . . . . . . . . . . . . . . . . . . . . . . . 53
+2.3. Three-state buffer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+2.4. Logic function . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+2.5. The correspondence between a truth table and a logic function . . . . . 55
+2.6. Boolean algebra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+2.6.1. Boolean algebra theorems . . . . . . . . . . . . . . . . . . . . . . . 59
+2.6.2. Karnaugh maps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+2.6.3. Simpliﬁcation of logic functions with multiple outputs . . . . . . . 73
+2.6.4. Factorization of logic functions . . . . . . . . . . . . . . . . . . . . 74
+2.7. Multi-level logic circuit implementation . . . . . . . . . . . . . . . . . 76
+2.7.1. Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+2.7.2. NAND gate logic circuit . . . . . . . . . . . . . . . . . . . . . . . . 78
+2.7.3. NOR gate based logic circuit . . . . . . . . . . . . . . . . . . . . . . 80
+2.7.4. Representation based on XOR and AND operators . . . . . . . . . 82
+2.8. Practical considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+2.8.1. Timing diagram for a logic circuit . . . . . . . . . . . . . . . . . . . 90
+2.8.2. Static hazard . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+2.8.3. Dynamic hazard . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
+2.9. Demonstration of some Boolean algebra identities . . . . . . . . . . . . 93
+2.10. Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+2.11. Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Chapter 3. Function Blocks of Combinational Logic .......... 1 1 5
+3.1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+3.2. Multiplexer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+3.3. Demultiplexer and decoder . . . . . . . . . . . . . . . . . . . . . . . . . 121
+3.4. Implementation of logic functions using multiplexers or decoders . . . 127
+3.4.1. Multiplexer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+3.4.2. Decoder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+3.5. Encoders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+3.5.1. 4:2 encoder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131Contents vii
+3.5.2. 8:3 encoder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+3.5.3. Priority encoder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+3.6. Transcoders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+3.6.1. Binary code and Gray code . . . . . . . . . . . . . . . . . . . . . . . 143
+3.6.2. BCD and excess-3 code . . . . . . . . . . . . . . . . . . . . . . . . . 149
+3.7. Parity check generator . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
+3.8. Barrel shifter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+3.9. Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165
+3.10. Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173
+Chapter 4. Systematic Methods for the Simpliﬁcation of
+Logic Functions .................................. 2 0 3
+4.1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+4.2. Deﬁnitions and reminders . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+4.2.1. Deﬁnitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204
+4.2.2. Minimization principle of a logic function . . . . . . . . . . . . . . 204
+4.3. Karnaugh maps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+4.3.1. Function of ﬁve variables . . . . . . . . . . . . . . . . . . . . . . . . 205
+4.3.2. Function of six variables . . . . . . . . . . . . . . . . . . . . . . . . 207
+4.3.3. Karnaugh map with entered variable . . . . . . . . . . . . . . . . . 208
+4.3.4. Applications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+4.3.5. Representation based on the XOR and AND operators . . . . . . . 220
+4.4. Systematic methods for simpliﬁcation . . . . . . . . . . . . . . . . . . . 220
+4.4.1. Determination of prime implicants . . . . . . . . . . . . . . . . . . 221
+4.4.2. Finding the constitutive terms of a minimal expression . . . . . . . 224
+4.4.3. Quine–McCluskey technique: simpliﬁcation of incompletely
+deﬁned functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+4.4.4. Simpliﬁcation of functions with multiple outputs . . . . . . . . . . 235
+4.5. Exercises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+4.6. Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 243
+Bibliography .................................... 2 5 7
+Index ......................................... 2 5 9

@@ -1,0 +1,161 @@
+CONTENTS
+CHAPTER 1 Introductory Concepts 15
+1-1  Digital and Analog Quantities 16
+1-2  Binary Digits, Logic Levels, and Digital Waveforms 19
+1-3  Basic Logic Functions 25
+1-4  Combinational and Sequential Logic Functions 27
+1-5  Introduction to Programmable Logic 34
+1-6  Fixed-Function Logic Devices 40
+1-7  Test and Measurement Instruments 43
+1-8  Introduction to Troubleshooting 54
+CHAPTER 2 Number Systems, Operations, and Codes 65
+2-1  Decimal Numbers 66
+2-2  Binary Numbers 67
+2-3  Decimal-to-Binary Conversion 71
+2-4  Binary Arithmetic 74
+2-5  Complements of Binary Numbers 77
+2-6  Signed Numbers 79
+2-7  Arithmetic Operations with Signed Numbers 85
+2-8  Hexadecimal Numbers 92
+2-9  Octal Numbers 98
+2-10 Binary Coded Decimal (BCD) 100
+2-11 Digital Codes 104
+2-12 Error Codes 109
+CHAPTER 3 Logic Gates 125
+3-1  The Inverter 126
+3-2  The AND Gate 129
+3-3  The OR Gate 136
+3-4  The NAND Gate 140
+3-5  The NOR Gate 145
+3-6  The Exclusive-OR and Exclusive-NOR Gates 149
+3-7  Programmable Logic 153
+3-8  Fixed-Function Logic Gates 160
+3-9  Troubleshooting 170
+CHAPTER 4 Boolean Algebra and Logic Simplification 191
+4-1  Boolean Operations and Expressions 192
+4-2  Laws and Rules of Boolean Algebra 193
+4-3  DeMorgan’s Theorems 199
+11
+12 Contents
+4-4  Boolean Analysis of Logic Circuits 203
+4-5  Logic Simplification Using Boolean Algebra 205
+4-6  Standard Forms of Boolean Expressions 209
+4-7  Boolean Expressions and Truth Tables 216
+4-8  The Karnaugh Map 219
+4-9  Karnaugh Map SOP Minimization 222
+4-10 Karnaugh Map POS Minimization 233
+4-11 The Quine-McCluskey Method 237
+4-12 Boolean Expressions with VHDL 240
+Applied Logic 244
+CHAPTER 5 Combinational Logic Analysis 261
+5-1  Basic Combinational Logic Circuits 262
+5-2  Implementing Combinational Logic 267
+5-3  The Universal Property of NAND and NOR gates 272
+5-4  Combinational Logic Using NAND and NOR Gates 274
+5-5  Pulse Waveform Operation 279
+5-6  Combinational Logic with VHDL 283
+5-7  Troubleshooting 288
+Applied Logic 294
+CHAPTER 6 Functions of Combinational Logic 313
+6-1  Half and Full Adders 314
+6-2  Parallel Binary Adders 317
+6-3  Ripple Carry and Look-Ahead Carry Adders 324
+6-4  Comparators 327
+6-5  Decoders 331
+6-6  Encoders 341
+6-7  Code Converters 345
+6-8  Multiplexers (Data Selectors) 347
+6-9  Demultiplexers 356
+6-10 Parity Generators/Checkers 358
+6-11 Troubleshooting 362
+Applied Logic 365
+CHAPTER 7 Latches, Flip-Flops, and Timers 387
+7-1  Latches 388
+7-2  Flip-Flops 395
+7-3  Flip-Flop Operating Characteristics 406
+7-4  Flip-Flop Applications 409
+7-5  One-Shots 414
+7-6  The Astable Multivibrator 423
+7-7  Troubleshooting 427
+Applied Logic 429 Contents  13
+CHAPTER 8 Shift Registers 449
+8-1  Shift Register Operations 450
+8-2  Types of Shift Register Data I/Os 451
+8-3  Bidirectional Shift Registers 462
+8-4  Shift Register Counters 465
+8-5  Shift Register Applications 469
+8-6  Logic Symbols with Dependency Notation 476
+8-7  Troubleshooting 478
+Applied Logic 480
+CHAPTER 9 Counters 497
+9-1  Finite State Machines 498
+9-2  Asynchronous Counters 500
+9-3  Synchronous Counters 507
+9-4  Up/Down Synchronous Counters 515
+9-5  Design of Synchronous Counters 519
+9-6  Cascaded Counters 527
+9-7  Counter Decoding 531
+9-8  Counter Applications 534
+9-9  Logic Symbols with Dependency Notation 539
+9-10 Troubleshooting 541
+Applied Logic 545
+CHAPTER 10 Programmable Logic 561
+10-1  Simple Programmable Logic Devices (SPLDs) 562
+10-2  Complex Programmable Logic Devices (CPLDs) 567
+10-3  Macrocell Modes 574
+10-4  Field-Programmable Gate Arrays (FPGAs) 577
+10-5  Programmable Logic software 585
+10-6  Boundary Scan Logic 595
+10-7  Troubleshooting 602
+Applied Logic 608
+CHAPTER 11 Data Storage 627
+11-1  Semiconductor Memory Basics 628
+11-2  The Random-Access Memory (RAM) 633
+11-3  The Read-Only Memory (ROM) 646
+11-4  Programmable ROMs 652
+11-5  The Flash Memory 655
+11-6  Memory Expansion 660
+11-7  Special Types of Memories 666
+11-8  Magnetic and Optical Storage 670
+11-9  Memory Hierarchy 676
+11-10 Cloud Storage 680
+11-11 Troubleshooting 68314 Contents
+CHAPTER 12 Signal Conversion and Processing 697
+12-1  Analog-to-Digital Conversion 698
+12-2  Methods of Analog-to-Digital Conversion 704
+12-3  Methods of Digital-to-Analog Conversion 715
+12-4  Digital Signal Processing 723
+12-5  The Digital Signal Processor (DSP) 724
+CHAPTER 13 Data Transmission 739
+13-1  Data Transmission Media 740
+13-2  Methods and Modes of Data Transmission 745
+13-3  Modulation of Analog Signals with Digital Data 750
+13-4  Modulation of Digital Signals with Analog Data 753
+13-5  Multiplexing and Demultiplexing 759
+13-6  Bus Basics 764
+13-7  Parallel Buses 769
+13-8  The Universal Serial Bus (USB) 775
+13-9  Other Serial Buses 778
+13-10 Bus Interfacing 784
+CHAPTER 14 Data Processing and Control 801
+14-1  The Computer System 802
+14-2  Practical Computer System Considerations 806
+14-3  The Processor: Basic Operation 812
+14-4  The Processor: Addressing Modes 817
+14-5  The Processor: Special Operations 823
+14-6  Operating Systems and Hardware 828
+14-7  Programming 831
+14-8  Microcontrollers and Embedded Systems 838
+14-9  System on Chip (SoC) 844
+ON WEBSITE: http://www.pearsonglobaleditions.com/floyd
+CHAPTER 15 Integrated Circuit Technologies 855
+15-1  Basic Operational Characteristics and Parameters 856
+15-2  CMOS Circuits 863
+15-3  TTL (Bipolar) Circuits 868
+15-4  Practical Considerations in the Use of TTL 873
+15-5  Comparison of CMOS and TTL Performance 880
+15-6  Emitter-Coupled Logic (ECL) Circuits 881
+15-7  PMOS, NMOS, and E2CMOS 883
+ANSWERS TO ODD-NUMBERED PROBLEMS A-1
+GLOSSARY A-31
+INDEX A-42
