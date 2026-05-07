@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Experimento/Experimento.csproj" />
+  <Project Path="GoogleTranslateLib_Net/GoogleTranslateLib_Net.csproj" />
+  <Project Path="ProcessTools/LifaeTools.csproj" />
+  <Project Path="TextProcessor/TextProcessorTools.csproj" />
+</Solution>
