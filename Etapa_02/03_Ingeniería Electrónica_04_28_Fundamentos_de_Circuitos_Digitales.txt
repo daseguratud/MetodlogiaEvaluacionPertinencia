@@ -1,0 +1,30 @@
+Desarrollar en el estudiante habilidades y destrezas en el análisis, diseño e implementación tanto de circuitos combinacionales como secuenciales.
+OBJETIVOS ESPECÍFICOS
+1.	Proporcionar al estudiante los conceptos básicos de algebra booleana para el análisis y síntesis de circuitos combinacionales.
+2.	Familiarizar al estudiante con el concepto de memoria y su forma de concepción a nivel hardware para el desarrollo de circuitos secuenciales.
+3.	Dar al estudiante el conocimiento sobre la forma de implementación en hardware de máquinas de estado finito.
+RESULTADOS DE APRENDIZAJE
+1.	Diseñar, simular e implementar circuitos digitales a partir de diagramas esquemáticos, ecuaciones booleanas, tablas de verdad y lenguajes de descripción de hardware. 
+2.	Diseñar compuertas lógicas a nivel esquemático usando tecnología CMOS. 
+3.	Reconocer las diferencias entre las representaciones de números enteros, decimales, signados y no signados a nivel de circuitos digitales, y su impacto en la implementación de soluciones aritméticas. 
+4.	Identificar los bloques combinacionales más relevantes en la implementación de sistemas digitales como: multiplexores, decodificadores, conversores de código o memorias ROM, y analizar su comportamiento. 
+5.	Usar las técnicas de síntesis de circuitos combinacionales como reducción algebraica o métodos tabulares. 
+6.	Representar cualquier circuito secuencial sincrónico a partir de su modelo de ecuaciones de estado, tablas de estado, esquemático o en un lenguaje de descripción de hardware.
+7.	Evaluar el desempeño de circuitos digitales en términos de métricas como: tiempo de retardo, potencia, velocidad de conmutación o número de recursos hardware. 
+8.	Comunicar de manera eficaz el desarrollo y resultados de los proyectos de laboratorio de manera verbal y escrita.
+PROPOSITOS DE FORMACIÓN
+Competencias que compromete la asignatura:
+BASICAS 
+Diseñar y construir herramientas para la solución de problemas.
+Emplear métodos formales de diseño.
+Formular, desarrollar y documentar proyectos de ingeniería.
+Desarrollar pensamiento estructurado para abordar problemas complejos.
+Interpretar las bases de algebra booleana y aplicarlas en el análisis de circuitos combinacionales.
+Emplear métodos de síntesis estructurados de circuitos digitales con características combinacionales y/o secuenciales.
+Reconocer las diferentes opciones tecnológicas a nivel hardware y sus características para la implementación de sistemas digitales.
+Analizar y diseñar máquinas de estado finito.
+UNIDADES TEMATICAS Y/O PROBLEMÁTICAS
+Unidad 1: Algebra de variables lógicas.
+Unidad 2: Síntesis de circuitos combinacionales.
+Unidad 3: Análisis de circuitos sincrónicos y asincrónicos.
+Unidad 4: Diseño de Máquinas de Estado Finito.

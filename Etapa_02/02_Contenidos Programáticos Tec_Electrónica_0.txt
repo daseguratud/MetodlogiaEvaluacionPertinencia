@@ -1,0 +1,32 @@
+lenguaje de descripción de hardware 2 semanas
+Elementos básicos VHDL, definición entidades, arquitecturas, identificadores, operadores, tipos de sentencias, descripción
+estructural, simulación y fases de simulación.
+Principios de diseño de lógica combinatoria 2 semanas
+Algebra de Boole, Síntesis lógica de circuitos combinatorios, representación por suma de productos y por producto de sumas,
+mapas de Karnaugh, algoritmo de Quine – McCluskeyn
+Circuitos lógicos combinatorios 3 semanas
+Decodificadores binarios de 2 a 4, de 3 a 8 y de 4 a 16 líneas, ejemplos de aplicación en los computadores, decodificadores
+BCD a 7 segmentos, registros de 3 estados, codificadores, multiplexores y demultiplexores, generadores de paridad,
+comparadores, circuitos aritméticos, sumador y restador de 4 bits, sumador BCD, unidad aritmética y lógica ALU, multiplicador
+combinatorio
+Dispositivos lógicos programables 1 semana
+Diseño lógico hoy día, herramientas computacionales utilizadas en las metodologías de diseño descendente (top/down),
+herramientas para la automatización del diseño electrónico (EDA tools), principios y aplicaciones de los dispositivos lógicos
+programables como los PALs y los PLDs, programación en lenguaje CUPL.
+Cerrojos y flip-flops 2 semanas
+Definición de la lógica secuencial, cerrojos con compuertas, estado metaestable, interruptor sin rebote, flip-Flops, flip-Flops
+construidos con compuertas de transmisión e inversores,
+Contadores y registros 1 semana
+Contadores de propagación, contadores sincrónicos, ejemplos de contadores en circuito integrado, registros de corrimiento,
+contador en anillo, circuitos integrados para relojes, laboratorio 5. Contador con Detector Fotoeléctrico
+Análisis y diseño de circuitos secuenciales 2 semanas
+Teoría de máquinas de estado (FSM), análisis y diseño de circuitos secuenciales sincrónicos, análisis de circuitos secuenciales
+asincrónicos, ejemplos de Control Secuencial.
+Plds secuenciales 1 semana
+Arquitectura de diversos PLDs secuenciales, ejemplos de programación.
+Memorias 2 semanas
+Aspectos Generales sobre Memorias, memorias de Acceso Aleatorio, memorias de solo Lectura (ROM), aplicaciones de las
+Memorias, ejemplos de memorias comerciales.
+Procesadores digitales 2 semanas
+Configuración, arquitectura de un microprocesador, decodificadores, puertos, memorias, instrucciones en lenguaje
+ensamblador, microcontroladores.

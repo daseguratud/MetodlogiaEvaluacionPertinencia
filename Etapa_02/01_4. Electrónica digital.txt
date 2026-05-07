@@ -1,0 +1,44 @@
+1. Introducción a los sistemas digitales.
+1.1 Descripción y definición de sistemas digitales.
+1.2 Niveles de abstracción.
+2. Sistemas de numeración y códigos.
+2.1 Códigos alfanumas de numeración, BCD, ASCII, EBCDIC, otros).
+2.2 Sistemas de numeración (binario, octal, decimal, hexadecimal, gray).
+2.3 Conversión entre bases y aritmética de la base.
+2.4 Códigos numéricos ponderados y no ponderados.
+2.5 Representación de los números enteros (magnitud y signo, complemento).
+2.6 Representación en coma fija y flotante.
+2.7 Operaciones aritméticas (suma, resta, multiplicación, división, banderas de Overflow, carry).
+2.8 Códigos de detección y corrección de errores (códigos Hamming).
+3. Funciones lógicas y álgebra de Boole.
+3.1 Algebra de Boole.
+3.2 Axiomas, propiedades y teoremas.
+3.3 Operaciones y funciones lógicas.
+3.4 Compuertas lógicas (AND, OR, NOT, XOR, tablas de verdad).
+3.5 Expresiones canónicas suma y producto estándar.
+3.6 Expresiones simplificadas por álgebra de Boole.
+4. Tecnologías de realización de circuitos integrados.
+4.1 Características eléctricas y dinámicas; explicación de hojas de datos (disipación de potencia, voltajes y corrientes, fan-in, fan-out, retardos, tiempos de propagación, niveles de integración, etc.).
+4.2 Conexiones AND y OR alambrado, salidas Totem pole, Open Colector.
+4.2 Buffer tres estados TTL y MOS.
+5. Análisis y diseño de sistemas combinacionales.
+5.1 Definición de sistema combinacional.
+5.2 Técnicas de simplificación de las funciones lógicas (Mapas de Karnaugth).
+5.3 Implementación de funciones lógicas con compuertas NAND o NOR.
+5.4 Aplicaciones (Codificadores, Decodificadores, Multiplexores, Demultiplexores).
+5.5 Semisumador, Sumador Completo, Sumador Integrado.
+5.6 Semirestador, Restador Completo, Resta por complemento.
+5.7 Sumador-restador, Comparadores de magnitud, ALU.
+5.8 Memorias ROM.
+6. Análisis y diseño de sistemas secuenciales.
+6.1 Clasificación de sistemas secuenciales.
+6.2 Flip Flops, (SR, D,T,JK, Preset, Clear, maestro esclavo).
+6.3 Análisis y diseño de un sistema secuencial con máquinas de estados finitos (FSM) (Autómatas de Mealy y de Moore).
+6.4 Aplicación con sistemas secuenciales sincrónicos (Registros, Contadores, Registros de desplazamiento).
+6.5 PWM.
+7. Introducción y visión de la tecnología micro procesada en la actualidad. Dispositivos a nivel de procesador.
+7.1 Dispositivos lógicos programables.
+7.2 FPGA- Field-programmable gate array.
+7.3 CEPLD- Complex Programmable Logic Device.
+7.4 PSoC- Programmable System on Chip.
+7.5 Microcontrolador.

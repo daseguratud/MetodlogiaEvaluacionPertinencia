@@ -1,0 +1,784 @@
+1. Introducción a los sistemas digitales.
+1.1 Descripción y definición de sistemas digitales.
+1.2 Niveles de abstracción.
+2. Sistemas de numeración y códigos.
+2.1 Códigos alfanumas de numeración, BCD, ASCII, EBCDIC, otros).
+2.2 Sistemas de numeración (binario, octal, decimal, hexadecimal, gray).
+2.3 Conversión entre bases y aritmética de la base.
+2.4 Códigos numéricos ponderados y no ponderados.
+2.5 Representación de los números enteros (magnitud y signo, complemento).
+2.6 Representación en coma fija y flotante.
+2.7 Operaciones aritméticas (suma, resta, multiplicación, división, banderas de Overflow, carry).
+2.8 Códigos de detección y corrección de errores (códigos Hamming).
+3. Funciones lógicas y álgebra de Boole.
+3.1 Algebra de Boole.
+3.2 Axiomas, propiedades y teoremas.
+3.3 Operaciones y funciones lógicas.
+3.4 Compuertas lógicas (AND, OR, NOT, XOR, tablas de verdad).
+3.5 Expresiones canónicas suma y producto estándar.
+3.6 Expresiones simplificadas por álgebra de Boole.
+4. Tecnologías de realización de circuitos integrados.
+4.1 Características eléctricas y dinámicas; explicación de hojas de datos (disipación de potencia, voltajes y corrientes, fan-in, fan-out, retardos, tiempos de propagación, niveles de integración, etc.).
+4.2 Conexiones AND y OR alambrado, salidas Totem pole, Open Colector.
+4.2 Buffer tres estados TTL y MOS.
+5. Análisis y diseño de sistemas combinacionales.
+5.1 Definición de sistema combinacional.
+5.2 Técnicas de simplificación de las funciones lógicas (Mapas de Karnaugth).
+5.3 Implementación de funciones lógicas con compuertas NAND o NOR.
+5.4 Aplicaciones (Codificadores, Decodificadores, Multiplexores, Demultiplexores).
+5.5 Semisumador, Sumador Completo, Sumador Integrado.
+5.6 Semirestador, Restador Completo, Resta por complemento.
+5.7 Sumador-restador, Comparadores de magnitud, ALU.
+5.8 Memorias ROM.
+6. Análisis y diseño de sistemas secuenciales.
+6.1 Clasificación de sistemas secuenciales.
+6.2 Flip Flops, (SR, D,T,JK, Preset, Clear, maestro esclavo).
+6.3 Análisis y diseño de un sistema secuencial con máquinas de estados finitos (FSM) (Autómatas de Mealy y de Moore).
+6.4 Aplicación con sistemas secuenciales sincrónicos (Registros, Contadores, Registros de desplazamiento).
+6.5 PWM.
+7. Introducción y visión de la tecnología micro procesada en la actualidad. Dispositivos a nivel de procesador.
+7.1 Dispositivos lógicos programables.
+7.2 FPGA- Field-programmable gate array.
+7.3 CEPLD- Complex Programmable Logic Device.
+7.4 PSoC- Programmable System on Chip.
+7.5 Microcontrolador.
+
+lenguaje de descripción de hardware 2 semanas
+Elementos básicos VHDL, definición entidades, arquitecturas, identificadores, operadores, tipos de sentencias, descripción
+estructural, simulación y fases de simulación.
+Principios de diseño de lógica combinatoria 2 semanas
+Algebra de Boole, Síntesis lógica de circuitos combinatorios, representación por suma de productos y por producto de sumas,
+mapas de Karnaugh, algoritmo de Quine – McCluskeyn
+Circuitos lógicos combinatorios 3 semanas
+Decodificadores binarios de 2 a 4, de 3 a 8 y de 4 a 16 líneas, ejemplos de aplicación en los computadores, decodificadores
+BCD a 7 segmentos, registros de 3 estados, codificadores, multiplexores y demultiplexores, generadores de paridad,
+comparadores, circuitos aritméticos, sumador y restador de 4 bits, sumador BCD, unidad aritmética y lógica ALU, multiplicador
+combinatorio
+Dispositivos lógicos programables 1 semana
+Diseño lógico hoy día, herramientas computacionales utilizadas en las metodologías de diseño descendente (top/down),
+herramientas para la automatización del diseño electrónico (EDA tools), principios y aplicaciones de los dispositivos lógicos
+programables como los PALs y los PLDs, programación en lenguaje CUPL.
+Cerrojos y flip-flops 2 semanas
+Definición de la lógica secuencial, cerrojos con compuertas, estado metaestable, interruptor sin rebote, flip-Flops, flip-Flops
+construidos con compuertas de transmisión e inversores,
+Contadores y registros 1 semana
+Contadores de propagación, contadores sincrónicos, ejemplos de contadores en circuito integrado, registros de corrimiento,
+contador en anillo, circuitos integrados para relojes, laboratorio 5. Contador con Detector Fotoeléctrico
+Análisis y diseño de circuitos secuenciales 2 semanas
+Teoría de máquinas de estado (FSM), análisis y diseño de circuitos secuenciales sincrónicos, análisis de circuitos secuenciales
+asincrónicos, ejemplos de Control Secuencial.
+Plds secuenciales 1 semana
+Arquitectura de diversos PLDs secuenciales, ejemplos de programación.
+Memorias 2 semanas
+Aspectos Generales sobre Memorias, memorias de Acceso Aleatorio, memorias de solo Lectura (ROM), aplicaciones de las
+Memorias, ejemplos de memorias comerciales.
+Procesadores digitales 2 semanas
+Configuración, arquitectura de un microprocesador, decodificadores, puertos, memorias, instrucciones en lenguaje
+ensamblador, microcontroladores.
+
+Desarrollar en el estudiante habilidades y destrezas en el análisis, diseño e implementación tanto de circuitos combinacionales como secuenciales.
+OBJETIVOS ESPECÍFICOS
+1.	Proporcionar al estudiante los conceptos básicos de algebra booleana para el análisis y síntesis de circuitos combinacionales.
+2.	Familiarizar al estudiante con el concepto de memoria y su forma de concepción a nivel hardware para el desarrollo de circuitos secuenciales.
+3.	Dar al estudiante el conocimiento sobre la forma de implementación en hardware de máquinas de estado finito.
+RESULTADOS DE APRENDIZAJE
+1.	Diseñar, simular e implementar circuitos digitales a partir de diagramas esquemáticos, ecuaciones booleanas, tablas de verdad y lenguajes de descripción de hardware. 
+2.	Diseñar compuertas lógicas a nivel esquemático usando tecnología CMOS. 
+3.	Reconocer las diferencias entre las representaciones de números enteros, decimales, signados y no signados a nivel de circuitos digitales, y su impacto en la implementación de soluciones aritméticas. 
+4.	Identificar los bloques combinacionales más relevantes en la implementación de sistemas digitales como: multiplexores, decodificadores, conversores de código o memorias ROM, y analizar su comportamiento. 
+5.	Usar las técnicas de síntesis de circuitos combinacionales como reducción algebraica o métodos tabulares. 
+6.	Representar cualquier circuito secuencial sincrónico a partir de su modelo de ecuaciones de estado, tablas de estado, esquemático o en un lenguaje de descripción de hardware.
+7.	Evaluar el desempeño de circuitos digitales en términos de métricas como: tiempo de retardo, potencia, velocidad de conmutación o número de recursos hardware. 
+8.	Comunicar de manera eficaz el desarrollo y resultados de los proyectos de laboratorio de manera verbal y escrita.
+PROPOSITOS DE FORMACIÓN
+Competencias que compromete la asignatura:
+BASICAS 
+Diseñar y construir herramientas para la solución de problemas.
+Emplear métodos formales de diseño.
+Formular, desarrollar y documentar proyectos de ingeniería.
+Desarrollar pensamiento estructurado para abordar problemas complejos.
+Interpretar las bases de algebra booleana y aplicarlas en el análisis de circuitos combinacionales.
+Emplear métodos de síntesis estructurados de circuitos digitales con características combinacionales y/o secuenciales.
+Reconocer las diferentes opciones tecnológicas a nivel hardware y sus características para la implementación de sistemas digitales.
+Analizar y diseñar máquinas de estado finito.
+UNIDADES TEMATICAS Y/O PROBLEMÁTICAS
+Unidad 1: Algebra de variables lógicas.
+Unidad 2: Síntesis de circuitos combinacionales.
+Unidad 3: Análisis de circuitos sincrónicos y asincrónicos.
+Unidad 4: Diseño de Máquinas de Estado Finito.
+
+
+Presentación del curso
+Introducción
+Magnitudes analógicas y digitales.
+Diseño digital vs diseño análogo.
+Dígitos binarios, niveles lógicos y formas de onda digitales.
+Introducción a las funciones lógicas básicas.
+Circuitos integrados de función fija. CMOS/TTL.
+2
+2
+4
+Sistemas de
+numeración y
+operaciones
+1/2
+Sistema decimal
+Sistema binario
+Sistema Octal
+Sistema Hexadecimal
+Sistema BCD
+Sistema Gray
+2
+2
+4
+1/3
+Aritmética Binaria
+Complemento a1 y a2
+Números con signo
+2
+2
+4
+Algebra de Boole
+2/1
+Puertas lógicas
+Propiedades de Boole
+Leyes de Boole
+Teorema de Demorgan
+2
+2
+4
+2/2
+Funciones Booleanas
+Minterminos y maxterminos
+Función canónica
+Simplificación por algebra de Boole
+2
+2
+4
+2/3
+Mapas de Karnaugh
+2
+2
+4
+Lógica combinacional
+3/1
+Diseño de sistemas combinacionales
+Sumador completo
+Sumador – restador
+Comparador
+2
+2
+4
+3/2
+Diseño de sistemas combinacionales misceláneos
+2
+2
+4
+3/3
+Practica 1:
+Diseño discreto, tipos de sangre
+2
+2
+4
+UNIVERSIDAD DISTRITAL “FRANCISCO JOSÉ DE CALDAS”
+Facultad Tecnológica
+Tecnología en Sistemas Eléctricos de Media y Baja Tensión
+articulado por ciclos propedéuticos con Ingeniería Eléctrica 2016-I
+5
+Unidad
+Temática
+Semana/Sesión
+HSP
+HSA
+Lineamientos THS
+4/1
+Multiplexores
+Demultiplexores
+Codificadores
+Decodificadores
+2
+2
+4
+4/2
+Display de 7 segmentos
+Conversores de código
+Dispositivos Three-State
+Codigo Hamming
+2
+2
+4
+4/3
+Practica 2:
+Diseño discreto, conversor de código
+2
+2
+4
+5/1
+Taller y solución de dudas
+2
+2
+4
+5/2
+Examen parcial 1
+2
+2
+4
+5/3
+Practica 3:
+Introducción a Xilinx, diseño esquemático
+2
+2
+4
+Arquitecturas
+reconfigurables
+6/1
+Arquitectura de los SPLD: GAL, PLA y PAL.
+Arquitectura de los CPLDs.
+Arquitectura de los FPGAs.
+2
+2
+4
+6/2
+Introducción al lenguaje VHDL.
+Metodologías de Diseño: Bottom-Up y Top-Down.
+Descripción del Diseño: Esquemático, Comportamental o
+Funcional y Estructural.
+2
+2
+4
+Lenguaje VHDL
+6/3
+Practica 4:
+Sumador completo
+Proceso de Diseño.
+Sistemas de Desarrollo Xilinx (ISE y ModelSim).
+Descripción del circuito digital.
+Simulación funcional y con retardos.
+Síntesis de la descripción del circuito.
+Restricciones de usuario.
+Implementación y enrutamiento del CPLD o FPGA.
+Programación del CPLD o FPGA.
+Verificación y pruebas.
+2
+2
+4
+7/1
+Concepto de Entidad y Arquitectura.
+Estructura de un programa en VHDL
+Ejemplos
+2
+2
+4
+7/2
+Símbolos especiales
+Palabras reservadas.
+Operadores y expresiones.
+Tipos de datos.
+Atributos de los elementos.
+Genéricos, Constantes, Señales y Variables.
+Declaraciones de Genéricos, Constantes, Señales y Variables.
+2
+2
+4
+7/3
+Practica 5:
+Conversor de código
+2
+2
+4
+UNIVERSIDAD DISTRITAL “FRANCISCO JOSÉ DE CALDAS”
+Facultad Tecnológica
+Tecnología en Sistemas Eléctricos de Media y Baja Tensión
+articulado por ciclos propedéuticos con Ingeniería Eléctrica 2016-I
+6
+Almacenamiento
+Unidad
+Temática
+Semana/Sesión
+HSP
+HSA
+Lineamientos THS
+8/1
+Ejecución concurrente y ejecución serie: descripción por flujo
+de datos y algorítmica.
+Bloque de ejecución serie: PROCESS
+Sentencia condicional: IF … THEN … ELSE
+Sentencia de selección: CASE
+Ejemplos
+2
+2
+4
+8/2
+Asignación condicional: WHEN … ELSE
+Asignación con selección: WITH ... SELECT … WHEN
+Ejemplos.
+2
+2
+4
+8/3
+Practica 6:
+Multiplexor, Decodificador, Practica 1 y 2.
+2
+2
+4
+9/1
+Bloque concurrente: BLOCK
+Sentencia de espera: WAIT
+Bucles: LOOP, FOR y WHILE
+Llamado de procedimientos
+Definición de componentes
+Referencia de componentes
+Enlace entre componentes y entidades
+Ejemplos
+2
+2
+4
+9/2
+Taller y solución de dudas
+2
+2
+4
+9/3
+Practica 7:
+ALU 4 funciones 4 bits
+2
+2
+4
+10/1
+Examen parcial 2
+2
+2
+4
+Lógica secuencial
+10/2
+Definición de sistemas digitales secuenciales
+Señal de reloj
+Registros
+Circuito Integrado 555
+2
+2
+4
+10/3
+Practica 8:
+Prescaler
+2
+2
+4
+11/1
+Flip-Flops
+Contadores
+Registros de desplazamiento
+2
+2
+4
+Máquinas de Estados
+Finitos
+11/2
+Máquina de Estados Finitos (FSM)
+FSM Tipo Moore y Tipo Mealy
+Ejemplos
+2
+2
+4
+11/3
+Practica 9:
+Contador sencillo 0-9
+2
+2
+4
+12/1
+Análisis y diseño de FSM con VHDL
+2
+2
+4
+Memorias y
+12/2
+Concepto de memoria
+Funcionamiento de una Memoria
+Memorias de acceso aleatorio (RAM)
+Memorias de solo lectura (ROM)
+Tipos de memoria ROM
+2
+2
+4
+12/3
+Practica 10:
+Cronometro 0-99
+2
+2
+4
+UNIVERSIDAD DISTRITAL “FRANCISCO JOSÉ DE CALDAS”
+Facultad Tecnológica
+Tecnología en Sistemas Eléctricos de Media y Baja Tensión
+articulado por ciclos propedéuticos con Ingeniería Eléctrica 2016-I
+7
+Unidad
+Temática
+Semana/Sesión
+HSP
+HSA
+Lineamientos THS
+13/1
+Diseño de circuitos digitales con ROM
+2
+2
+4
+13/2
+Otras arquitecturas digitales
+2
+2
+4
+13/3
+Practica 11:
+Control motor paso a paso
+2
+2
+4
+14/1
+Taller y solución de dudas
+2
+2
+4
+14/2
+Examen parcial 3
+2
+2
+4
+Proyecto de investigación
+14/3
+Practica 12:
+Practica libre
+2
+2
+4
+15/1
+Proyecto de investigación
+2
+2
+4
+15/2
+Proyecto de investigación
+2
+2
+4
+15/3
+Practica 13:
+Proyecto de Investigador
+2
+2
+4
+16/1
+Proyecto de investigación
+2
+2
+4
+16/2
+Proyecto de investigación
+2
+2
+4
+16/3
+Practica 14:
+Presentación del Proyecto de Investigación
+2
+2
+4
+
+Capítulo 1: INTRODUCCIÓN
+Objetivo: Ubicar al estudiante dentro del contexto de la materia
+Competencia: Desarrollo contextual en el ámbito de los circuitos digitales
+1.1 Conceptos fundamentales de los circuitos digitales
+1.1.1 Diseño digital vs. Diseño análogo
+1.1.2 Software de diseño digital
+1.1.3 Circuitos integrados
+1.1.4 Niveles de diseño digital
+1.2 Familias lógicas
+1.2.1 Familia CMOS
+1.2.2 Familia TTL
+1.2.3 Interfases CMOS/TTL
+Capítulo 2: INFORMACIÓN DIGITAL BINARIA
+Objetivo: Dar al estudiante las herramientas necesarias para manejar numeración binaria, hexadecimal y octal.
+Competencia: Desarrollo de destrezas en la manipulación operatoria de la conversión de bases y su aplicación a estructuras reales
+2.1 Aspectos básicos. Concepto de sistema posicional.
+2.2 Sistemas binario, octal y hexadecimal.
+2.2.1 Conversiones
+2.2.2 Operaciones aritméticas
+2.3 Codificación binario-decimal (BCD)
+2.4 Sistemas de numeración binaria
+2.4.1 Enteros sin signo
+2.4.2 Enteros complemento a dos
+2.4.3 Fraccional sin signo
+2.4.4 Fraccional con signo complemento a dos
+2.4.5 Código Gray
+2.4.6 Magnitud con signo
+2.4.7 Complemento a dos con corrimiento
+2.4.8 Complemento a uno
+2.4.9 Punto flotante
+2.5 Códigos para detección y corrección de errores
+2.6 Códigos para transmisión serial de datos y almacenamiento
+2.7 Ejercicios y simulaciones
+Capítulo 3: FUNCIONES LÓGICAS
+Objetivo: Introducir al estudiante en el conocimiento de la lógica Booleana, así como en los teoremas básicos de ésta.
+Competencia: Desarrollo de las capacidades para interpretar, aplicar y establecer conexiones con operadores lógicos entre proposiciones lógicas
+3.1 Lógica Booleana en electrónica
+3.2 Operaciones lógicas elementales
+3.3 Tabla de verdad
+3.4 Expresiones funcionales
+3.5 Ejercicios y simulaciones
+Capítulo 4: CIRCUITOS DIGITALES ELEMENTALES
+Objetivo: Dar a conocer a los estudiantes los circuitos existentes con compuertas básicas e introducirlo al diseño de hardware específico aplicando simplificación de funciones
+Competencia: Desarrollo de su capacidad de análisis y diseño de circuitos sencillos de lógica combinacional para interpretarlos y con ellos proponer algunos nuevos.
+4.1 Compuertas lógicas
+4.1.1 Compuerta AND
+4.1.2 Compuerta OR
+4.1.3 Compuerta NOT
+4.1.4 Compuertas adicionales
+4.2 Análisis de circuitos
+4.3 Circuitos equivalentes
+4.4 Diseño de circuitos
+4.4.1 Directo y simplificado
+4.4.2 Condicionado por un tipo de compuerta
+4.5 Ejercicios y simulaciones
+Capítulo 5: SISTEMAS COMBINACIONALES
+Objetivo: Analizar, diseñar e implementar circuitos combinacionales básicos.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos combinacionales, mediante la resolución de problemas fuerte y medianamente estructurados usando diferentes componentes o circuitos integrados y herramientas de software.
+5.1 Definición de un sistema combinacional
+5.2 Análisis de circuitos combinacionales
+5.3 Subsistemas combinacionales
+5.3.1 Codificadores
+5.3.2 Decodificadores
+5.3.3 Multiplexores
+5.3.4 Demultiplexores
+5.3.5 Circuitos aritméticos
+5.4 Síntesis de circuitos combinacionales
+5.5 Métodos de simplificación en programación
+5.6 El lenguaje de descripción de Hardware ABEL
+5.7 El lenguaje de descripción de Hardware VHDL
+5.8 Ejercicios y simulaciones
+Capítulo 6: DISEÑO COMBINACIONAL APLICADO
+Objetivo: Analizar e implementar circuitos combinacionales con circuitos MSL básicos.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos combinacionales, mediante la resolución de problemas fuerte y medianamente estructurados) y usando componentes o circuitos integrados MSL y herramientas de software.
+6.1 Documentación de Standards
+6.2 Circuitos de tiempo
+6.3 PLDs
+6.3.1 Decoders
+6.3.2 Encoders
+6.3.3 Dispositivos Three-State
+6.3.4 Multiplexores
+6.3.5 OR exclusiva, compuertas y circuitos de paridad
+6.3.6 Comparadores
+6.3.7 Sumadores, restadores y ALUs
+6.3.8 Multiplicadores
+6.4 Ejercicios y simulaciones utilizando ABEL y VHDL
+Capítulo 7: SISTEMAS SECUENCIALES
+Objetivo: Conocer y desarrollar sistemas con memoria.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos secuenciales, mediante la resolución de problemas fuerte y medianamente estructurados usando componentes o circuitos integrados MSL y herramientas de software.
+Desarrollo de su habilidades comunicativas mediante planos e informes
+7.1 Definición de un sistema secuencial
+7.2 Biestables
+7.3 Análisis de circuitos con biestables
+7.3.1 Análisis lógico
+7.3.2 Análisis temporal
+7.3.3 Análisis de máquinas de estado
+7.4 Diseño de sistemas secuenciales
+7.7.1. Caso Síncrono
+7.7.2. Caso Asíncrono
+7.5 Subsistemas secuenciales
+7.5.1 Registros de desplazamiento
+7.5.2 Contadores
+7.6 Características del diseño secuencial en ABEL y VHDL
+7.7 Ejercicios y simulaciones
+Capítulo 8: MEMORIAS Y DISPOSITIVOS LÓGICOS PROGRAMABLES
+Objetivo: Mezclar circuitos combinacionales y secuenciales para realizar memorias y aplicaciones con ellas.
+Competencias: Desarrollará las siguientes capacidades:
+Ubicar el desarrollo de la electrónica digital dentro del desarrollo mundial de estas áreas e Identificar, apropiar y
+Hacer uso de Tecnologías dispuestas en el mercado para usuario final analizando sus potencialidades en el desarrollo de producción de fuerzas productivas para el desarrollo del país.
+8.1 Concepto de memoria
+8.1.1 Decodificación de direcciones
+8.1.2 Tipos de memoria (RAM y ROM)
+8.2 Realización de circuitos lógicos con ROM
+8.3 Dispositivos lógicos programables (CPLDs y FPGAs)
+8.4 Diseño de circuitos
+Capítulo 9: MÁQUINAS DE ESTADO
+Objetivo: Diseñar y analizar máquinas de estado aplicables a la actividad académica y al entorno laboral.
+Competencia: Enfrentarse con éxito a problemas débil y medianamente estructurados en el campo de la electrónica digital con aplicaciones concretas de electrónica, la arquitectura de computadores, los procesos de automatización y control y las telecomunicaciones haciendo análisis y diseño de máquinas de estado finitas síncronas y asíncronas.
+9.1. Definición de maquina de estado
+9.2. Clasificación
+9.2.1. Tipo Moore – Tipo Mealy
+9.2.2. MSF y ASF
+9.3. Análisis y diseño de MSF
+9.4. Análisis y diseño de ASF
+9.5. Aplicaciones con VHDL - ALTERA
+Capítulo 10: ARQUITECTURA DE LOS PROCESADORES
+Objetivo: Entender la forma en que se entrelazan los subcircuitos secuenciales y combinacionales para conformar sistemas de procesamiento de información.
+Competencia: Desarrollar su capacidad interpretativa y de contexto al enlazar conceptualmente aplicaciones del curso en desarrollo a los procesos de tratamiento de la información.
+10.1 Arquitecturas básicas
+10.1.1 Von Newman
+10.1.2 Harvard
+10.1.3 Harvard modificada
+10.2 Microprocesadores y microcontroladores
+10.2.1 Microprocesador 8080
+10.2.2 Microcontrolador PIC16C8X
+10.2.3 Microcontrolador HC908
+10.2.4 DSP TMS320C24X
+10.3 Microprogramación
+
+Capítulo 1: INTRODUCCIÓN
+Objetivo: Ubicar al estudiante dentro del contexto de la materia
+Competencia: Desarrollo contextual en el ámbito de los circuitos digitales
+1.1 Conceptos fundamentales de los circuitos digitales
+1.1.1 Diseño digital vs. Diseño análogo
+1.1.2 Software de diseño digital
+1.1.3 Circuitos integrados
+1.1.4 Niveles de diseño digital
+1.2 Familias lógicas
+1.2.1 Familia CMOS
+1.2.2 Familia TTL
+1.2.3 Interfases CMOS/TTL
+Capítulo 2: INFORMACIÓN DIGITAL BINARIA
+Objetivo: Dar al estudiante las herramientas necesarias para manejar numeración binaria, hexadecimal y octal.
+Competencia: Desarrollo de destrezas en la manipulación operatoria de la conversión de bases y su aplicación a estructuras reales
+2.1 Aspectos básicos. Concepto de sistema posicional.
+Universidad Distrital Francisco José de Caldas
+Página 74 de 144
+Facultad Tecnológica
+Tecnología en Sistematización de Datos por Ciclos Propedéuticos
+Contenidos Programáticos Reforma curricular aplicada a partir del 2012-III
+2.2 Sistemas binario, octal y hexadecimal.
+2.2.1 Conversiones
+2.2.2 Operaciones aritméticas
+2.3 Codificación binario-decimal (BCD)
+2.4 Sistemas de numeración binaria
+2.4.1 Enteros sin signo
+2.4.2 Enteros complemento a dos
+2.4.3 Fraccional sin signo
+2.4.4 Fraccional con signo complemento a dos
+2.4.5 Código Gray
+2.4.6 Magnitud con signo
+2.4.7 Complemento a dos con corrimiento
+2.4.8 Complemento a uno
+2.4.9 Punto flotante
+2.5 Códigos para detección y corrección de errores
+2.6 Códigos para transmisión serial de datos y almacenamiento
+2.7 Ejercicios y simulaciones
+Capítulo 3: FUNCIONES LÓGICAS
+Objetivo: Introducir al estudiante en el conocimiento de la lógica Booleana, así como en los teoremas básicos de ésta.
+Competencia: Desarrollo de las capacidades para interpretar, aplicar y establecer conexiones con operadores lógicos entre proposiciones lógicas
+3.1 Lógica Booleana en electrónica
+3.2 Operaciones lógicas elementales
+3.3 Tabla de verdad
+3.4 Expresiones funcionales
+3.5 Ejercicios y simulaciones
+Capítulo 4: CIRCUITOS DIGITALES ELEMENTALES
+Objetivo: Dar a conocer a los estudiantes los circuitos existentes con compuertas básicas e introducirlo al diseño de hardware específico aplicando simplificación de funciones
+Competencia: Desarrollo de su capacidad de análisis y diseño de circuitos sencillos de lógica combinacional para interpretarlos y con ellos proponer algunos nuevos.
+4.1 Compuertas lógicas
+4.1.1 Compuerta AND
+4.1.2 Compuerta OR
+4.1.3 Compuerta NOT
+4.1.4 Compuertas adicionales
+4.2 Análisis de circuitos
+4.3 Circuitos equivalentes
+4.4 Diseño de circuitos
+4.4.1 Directo y simplificado
+4.4.2 Condicionado por un tipo de compuerta
+4.5 Ejercicios y simulaciones
+Capítulo 5: SISTEMAS COMBINACIONALES
+Universidad Distrital Francisco José de Caldas
+Página 75 de 144
+Facultad Tecnológica
+Tecnología en Sistematización de Datos por Ciclos Propedéuticos
+Contenidos Programáticos Reforma curricular aplicada a partir del 2012-III
+Objetivo: Analizar, diseñar e implementar circuitos combinacionales básicos.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos combinacionales, mediante la resolución de problemas fuerte y medianamente estructurados usando diferentes componentes o circuitos integrados y herramientas de software.
+5.1 Definición de un sistema combinacional
+5.2 Análisis de circuitos combinacionales
+5.3 Subsistemas combinacionales
+5.3.1 Codificadores
+5.3.2 Decodificadores
+5.3.3 Multiplexores
+5.3.4 Demultiplexores
+5.3.5 Circuitos aritméticos
+5.4 Síntesis de circuitos combinacionales
+5.5 Métodos de simplificación en programación
+5.6 El lenguaje de descripción de Hardware ABEL
+5.7 El lenguaje de descripción de Hardware VHDL
+5.8 Ejercicios y simulaciones
+Capítulo 6: DISEÑO COMBINACIONAL APLICADO
+Objetivo: Analizar e implementar circuitos combinacionales con circuitos MSL básicos.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos combinacionales, mediante la resolución de problemas fuerte y medianamente estructurados) y usando componentes o circuitos integrados MSL y herramientas de software.
+6.1 Documentación de Standards
+6.2 Circuitos de tiempo
+6.3 PLDs
+6.3.1 Decoders
+6.3.2 Encoders
+6.3.3 Dispositivos Three-State
+6.3.4 Multiplexores
+6.3.5 OR exclusiva, compuertas y circuitos de paridad
+6.3.6 Comparadores
+6.3.7 Sumadores, restadores y ALUs
+6.3.8 Multiplicadores
+6.4 Ejercicios y simulaciones utilizando ABEL y VHDL
+Capítulo 7: SISTEMAS SECUENCIALES
+Objetivo: Conocer y desarrollar sistemas con memoria.
+Competencia: Desarrollo de la capacidad de diseño y análisis de circuitos secuenciales, mediante la resolución de problemas fuerte y medianamente estructurados usando componentes o circuitos integrados MSL y herramientas de software.
+Desarrollo de su habilidades comunicativas mediante planos e informes
+7.1 Definición de un sistema secuencial
+Universidad Distrital Francisco José de Caldas
+Página 76 de 144
+Facultad Tecnológica
+Tecnología en Sistematización de Datos por Ciclos Propedéuticos
+Contenidos Programáticos Reforma curricular aplicada a partir del 2012-III
+7.2 Biestables
+7.3 Análisis de circuitos con biestables
+7.3.1 Análisis lógico
+7.3.2 Análisis temporal
+7.3.3 Análisis de máquinas de estado
+7.4 Diseño de sistemas secuenciales
+7.7.1. Caso Síncrono
+7.7.2. Caso Asíncrono
+7.5 Subsistemas secuenciales
+7.5.1 Registros de desplazamiento
+7.5.2 Contadores
+7.6 Características del diseño secuencial en ABEL y VHDL
+7.7 Ejercicios y simulaciones
+Capítulo 8: MEMORIAS Y DISPOSITIVOS LÓGICOS PROGRAMABLES
+Objetivo: Mezclar circuitos combinacionales y secuenciales para realizar memorias y aplicaciones con ellas.
+Competencias: Desarrollará las siguientes capacidades:
+Ubicar el desarrollo de la electrónica digital dentro del desarrollo mundial de estas áreas e Identificar, apropiar y
+Hacer uso de Tecnologías dispuestas en el mercado para usuario final analizando sus potencialidades en el desarrollo de producción de fuerzas productivas para el desarrollo del país.
+8.1 Concepto de memoria
+8.1.1 Decodificación de direcciones
+8.1.2 Tipos de memoria (RAM y ROM)
+8.2 Realización de circuitos lógicos con ROM
+8.3 Dispositivos lógicos programables (CPLDs y FPGAs)
+8.4 Diseño de circuitos
+Capítulo 9: MÁQUINAS DE ESTADO
+Objetivo: Diseñar y analizar máquinas de estado aplicables a la actividad académica y al entorno laboral.
+Competencia: Enfrentarse con éxito a problemas débil y medianamente estructurados en el campo de la electrónica digital con aplicaciones concretas de electrónica, la arquitectura de computadores, los procesos de automatización y control y las telecomunicaciones haciendo análisis y diseño de máquinas de estado finitas síncronas y asíncronas.
+9.1. Definición de maquina de estado
+9.2. Clasificación
+9.2.1. Tipo Moore – Tipo Mealy
+9.2.2. MSF y ASF
+9.3. Análisis y diseño de MSF
+9.4. Análisis y diseño de ASF
+9.5. Aplicaciones con VHDL - ALTERA
+Capítulo 10: ARQUITECTURA DE LOS PROCESADORES
+Universidad Distrital Francisco José de Caldas
+Página 77 de 144
+Facultad Tecnológica
+Tecnología en Sistematización de Datos por Ciclos Propedéuticos
+Contenidos Programáticos Reforma curricular aplicada a partir del 2012-III
+Objetivo: Entender la forma en que se entrelazan los subcircuitos secuenciales y combinacionales para conformar sistemas de procesamiento de información.
+Competencia: Desarrollar su capacidad interpretativa y de contexto al enlazar conceptualmente aplicaciones del curso en desarrollo a los procesos de tratamiento de la información.
+10.1 Arquitecturas básicas
+10.1.1 Von Newman
+10.1.2 Harvard
+10.1.3 Harvard modificada
+10.2 Microprocesadores y microcontroladores
+10.2.1 Microprocesador 8080
+10.2.2 Microcontrolador PIC16C8X
+10.2.3 Microcontrolador HC908
+10.2.4 DSP TMS320C24X
+10.3 Microprogramación
+
