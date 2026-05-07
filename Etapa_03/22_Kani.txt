@@ -1,0 +1,499 @@
+Preface  vii
+Chapter  1: Introduction to Digital Systems  1.1-1.6
+ 1.1 Analog and Digital Electronics 1.1
+ 1.2 Analog and Digital Signal 1.2
+ 1.3 Binary Representation in Digital Systems 1.2
+ 1.4 Digital Integrated Circuits (ICs)  1.3
+ 1.5 Digital Systems  1.4
+ 1.6 Binary Storage Devices: Registers and Memory 1.4
+ 1.7 Binary Logic and Arithmetic 1.6
+ 1.8 Logic Families  1.6
+ 1.9 Hardware Discription Languages (HDLs) 1.6
+Chapter  2: Number Systems  2.1–2.54
+ 2.1 Review of Number Systems Representation and Conversions 2.1
+ 2.1.1 Number Represe ntation 2.2
+ 2.1.2  Decimal Number System 2.2
+ 2.1.3  Binary Number System 2.3
+ 2.1.4  Octal Number System 2.7
+ 2.1.5  Hexadecimal Number System 2.10
+ 2.1.6  Relation between Binary, Octal and Hexadecimal Number Systems 2.13
+ 2.2 Binary Arithmetic 2.15
+ 2.2.1 Binary Addition 2.16
+ 2.2.2 Binary Subtraction 2.16
+ 2.2.3 Binary Multiplication 2.17
+ 2.2.4 Binary Division 2.20
+ 2.3 Unsigned and Signed Binary Number Systems 2.23
+ 2.3.1  Unsigned Binary 2.23
+ 2.3.2  Sign-Magnitude Form 2.24
+ 2.3.3  Complement of Number Systems (r’s and (r - 1)’s Complement) 2.25
+ 2.3.4  One’s Complement 2.26
+ 2.3.5 Two’s Complement 2.28
+ 2.3.6 One’s and Two’s Complement Addition  2.30
+ 2.3.7 One’s and Two’s Complement Subtraction 2.33
+ 2.4 Nine’s and Ten’s Complement 2.34
+ 2.4.1 Nine’s and Ten’s Complement Addition 2.36
+ 2.4.2 Nine’s and Ten’s Complement Subtraction  2.39Contentsxii Digital Logic Circuits
+ 2.5 Summary of Important Concepts 2.40 
+ 2.6 Short-Answer Questions 2.42
+ 2.7 Exercises 2.49
+Chapter  3: Binary Codes  3.1–3.64
+ 3.1 Introduction  3.1
+ 3.1.1  Classification of Binary Codes 3.1
+ 3.2 BCD Codes 3.3
+ 3.2.1  8421 BCD 3.5
+ 3.2.2 BCD Addition 3.6
+ 3.2.3 BCD Subtraction 3.8
+ 3.2.4  2421 Code  3.13
+ 3.2.5  5421 Code 3.14 
+ 3.2.6  8, 4, - 2, -1 Code 3.16
+ 3.2.7  Excess-3 Code 3.17
+ 3.2.8 Excess-3 Addition 3.19
+ 3.2.9 Excess-3 Subtraction 3.21
+ 3.3 Gray Code 3.25
+ 3.4 Alphanumeric Code  3.30
+ 3.4.1 ASCII Code 3.30
+ 3.4.2 EBCDIC Code 3.33
+ 3.5 Error Detection and Correction 3.36
+ 3.5.1 Parity 3.36
+ 3.5.2 Hamming Code 3.37
+ 3.5.3 Checksum 3.50
+ 3.6 Summary of Important Concepts 3.54 
+ 3.7 Short-Answer Questions 3.56
+ 3.8 Exercises 3.59
+Chapter  4: Boolean Algebra and Logic Gates  4.1–4.114
+ 4.1 Boolean Algebra 4.1
+ 4.1.1  Duality  4.2
+ 4.1.2 Postulates of Boolean Algebra 4.2 
+ 4.1.3  Boolean Theorems 4.5
+ 4.2 Binary Logic 4.8
+ 4.3 Logic Gates  4.9
+ 4.3.1 Universal Gates  4.13
+ 4.3.2 Positive and Negative Logic Gates  4.17
+ 4.4 Boolean Functions 4.20
+ 4.4.1 Implementation of Boolean Functions by Logic Gates  4.23
+ 4.4.2 Minterms  4.24
+ 4.4.3 Maxterms 4.25
+ 4.4.4 Standard Forms  4.26
+ 4.4.5 Sum-of-Products and Product-of-Sums Simplification  4.27Contents xiii
+ 4.4.6 Canonical Form 4.28
+ 4.4.7 Complement of a Function  4.28
+ 4.4.8 Implementation of Boolean Functions using Universal Gates 4.29
+ 4.4.9 Implementation of Logic Design using Standard Logic Gate IC’s  4.38
+ 4.4.10 Implementation of Logic Design using Standard Universal Gate IC’s 4.40 
+ 4.5 Simplification of Boolean Expressions or Functions 4.43 
+ 4.6 Karnaugh Map (or K-map) M inimization 4.44 
+ 4.6.1 Realization of Sum-of-Products Form using K-map 4.44 
+ 4.6.2 Two-Variable K-map 4.45
+ 4.6.3 Three-Variable K-map 4.47
+ 4.6.4 Four-Variable K-map 4.50 
+ 4.6.5 Five-Variable K-map  4.53
+ 4.6.6 Realization of Product-of-Sums Form using K-map  4.63
+ 4.6.7 Completely and Incompletely Specified Functions  4.64
+  (K-map with Don’t-Care Conditions) 
+ 4.7 Quine-McCluskey (QM) Method of Minimization  4.78
+  (Table Method of Minimization)
+ 4.8 Summary of Important Concepts  4.87
+ 4.9 Short-Answer Questions 4.89
+ 4.10 Exercises 4.100
+Chapter  5: Combinational Logic Circuits 5.1–5.190
+ 5.1 Introduction 5.1
+ 5.2 Combinati onal C ircuits  5.1
+ 5.2.1 K-map Representation and Minimization using K-maps 5.2
+ 5.2.2 Problem Formulation and Design of Combinational Circuits 5.2 
+ 5.3 Code Converters 5.7
+ 5.4 Decoders  5.16
+ 5.4.1 Logic High 2-to-4 Decoder  5.17
+ 5.4.2 Logic Low 2-to-4 Decoder 5.19 
+ 5.4.3 Logic High 2-to-4 Decoder with Logic High Enable 5.20
+ 5.4.4 Logic High 2-to-4 Decoder with Logic Low Enable  5.22
+ 5.4.5 Logic Low 2-to-4 Decoder with Logic High Enable  5.25
+ 5.4.6 Logic Low 2-to-4 Decoder with Logic Low Enable  5.28
+ 5.4.7 Logic High 3-to-8 Decoder  5.31
+ 5.4.8 Logic Low 3-to-8 Decoder  5.33
+ 5.4.9 Expanding the Decoder 5.36
+ 5.4.10 Combinational Circuit Design using Decoder 5.40
+  5.4.11 Implementation of Combinational Logic Design using 5.46
+  Standard Decoder IC’s 
+ 5.5 Encoders 5.50
+ 5.5.1 Logic High 4-to-2 Encoder  5.50
+ 5.5.2 Logic High 8-to-3 Encoder 5.52xiv Digital Logic Circuits
+ 5.6 Priority Encoders 5.54
+ 5.6.1 Logic High 4-to-2 Priority Encoder  5.55
+ 5.6.2 Logic High 4-to-2 Priority Encoder Design using K-maps  5.57
+ 5.6.3 Logic High 8-to-3 Priority Encoder 5.58
+ 5.7 Multiplexer  5.62
+ 5.7.1 Expanding the Multiplexer  5.67
+ 5.7.2 Combinational Circuit Design using Multiplexer 5.74
+ 5.7.3 Implementation of Combinational Logic Design using 5.86
+  Standard Multiplexer IC’s 
+ 5.8 Demultiplexer  5.95
+ 5.8.1 Expanding the Demultiplexer 5.101
+ 5.8.2 Demultiplexers and Decoders  5.102
+ 5.9 Adders  5.103
+ 5.9.1 Half A dder 5.103
+ 5.9.2 Full Adder 5.104
+ 5.9.3 Binary Parallel Adder 5.112
+ 5.9.4 Carry Look Ahead Adder  5.115
+ 5.9.5 BCD Adder 5.118
+ 5.10 Subtractors  5.122
+ 5.10.1 Half Subtractor 5.122
+ 5.10.2 Full Subtractor 5.123
+ 5.11 Parallel Adder/Subtractor 5.128
+ 5.11.1 Binary Parallel Adder/Subtractor 5.128
+ 5.11.2 BCD Subtractor  5.130
+ 5.11.3 BCD Adder/Subtractor  5.131
+ 5.12 Magnitude Comparator  5.131
+ 5.12.1 4-bit Magnitude Comparator 5.131
+ 5.12.2 3-bit Magnitude Comparator 5.137
+ 5.12.3 2-bit Magnitude Comparator 5.138
+ 5.13 Combinational Multiplier 5.139
+ 5.13.1 Combinational 2-bit Binary Multiplier 5.139 
+ 5.13.2 Combinational 4-bit Binary Multiplier 5.140
+ 5.14 Arithmetic and Logic Unit 5.142
+ 5.14.1 Design of 4-bit ALU 5.142
+ 5.14.2 ALU using Standard IC’s  5.147
+ 5.14.3  8-bit and 16-bit ALU using 74381/382  5.147
+ 5.14.4 8-bit and 16-bit ALU using 74181  5.150
+ 5.15 Combinational Systems Case Study 5.153
+ 5.15.1 Digital Trans-Receiver  5.153
+ 5.15.2 Parallel Data Trans-Receiver  5.153
+ 5.15.3 Serial Data Trans-Receiver 5.154
+ 5.15.4 Parity Generator and Checker 5.155
+ 5.15.5 BCD to 7-Segment Decoder 5.160Contents xvContents xv
+ 5.16 Summary of Important Concepts 5.166
+ 5.17 Short-Answer Questions 5.167
+ 5.18 Exercises 5.174
+Chapter  6: Latches and Flip-Flops  6.1–6.80
+ 6.1 Bistable Element and Latches  6.1
+ 6.1.1 SR Latch  6.2
+ 6.1.2 Analysis of SR Latch using NOR Gates  6.2
+ 6.1.3 Analysis of SR Latch using NAND Gates  6.5
+ 6.1.4 D Latch 6.10
+ 6.1.5 Application of Latches-Swith Debouncing 6.11
+ 6.2 Flip-Flops  6.14
+ 6.2.1 Clock and Triggering of Flip- Flops 6.14
+ 6.2.2 SR Flip-Flop  6.16
+ 6.2.3 JK Flip-Flop  6.22
+ 6.2.4 T Flip-Flop (Toggle Flip-Flop)  6.29
+ 6.2.5 D Flip-Flop (Data Flip-Flop)  6.31
+ 6.2.6 Flip-Flop with Preset and Reset Facility 6.33
+ 6.3 Master-Slave Flip-Flop  6.34
+ 6.4 Excitation Table and Characteristic Equation of Flip-Flops  6.36
+ 6.4.1 Excitation Table of D Flip-Flop  6.36
+ 6.4.2 Excitation Table of JK Flip-Flop  6.38
+ 6.4.3 Excitation Table of T Flip-Flop  6.40
+ 6.4.4 Excitation Table of SR Flip-Flop 6.41
+ 6.5 Conversion of Flip-Flops  6.43
+ 6.5.1 Conversion of SR to JK Flip-Flop 6.43 
+ 6.5.2 Conversion of SR to D Flip-Flop  6.44
+ 6.5.3 Conversion of SR to T Flip-Flop  6.45
+ 6.5.4 Conversion of JK Flip-Flop to SR, D and T Flip-Flops  6.46
+ 6.5.5 Conversion of D to SR Flip-Flop  6.46
+ 6.5.6 Conversion of D to JK Flip-Flop  6.48
+ 6.5.7 Conversion of D to T Flip-Flop  6.49
+ 6.5.8 Conversion of T to SR Flip-Flop 6.50 
+ 6.5.9 Conversion of T to JK Flip-Flop  6.51
+ 6.5.10 Conversion of T to D Flip-Flop 6.53
+ 6.6 Summary of Important Concepts 6.68 
+ 6.7 Short-Answer Questions 6.69
+ 6.8 Exercises 6.70
+Chapter  7: Synchronous Sequential Circuits 7.1–7.84
+ 7.1 Introduction 7.1
+ 7.2 Analysis and Design of Syn chronous (or Clocked) Sequential Circuits  7.2
+ 7.2.1 Design of Mealy and Moore Models  7.2xvi Digital Logic Circuits
+ 7.3 State and State Equations 7.3 
+ 7.3.1 State Table and State Diagram 7.4 
+ 7.3.2 State Reduction 7.5 
+ 7.3.3 State Assignment 7.6 
+ 7.3.4 Lock-out Condition Circuit Implementation 7.7
+ 7.4 Implementation of Sequential Logic Design using Standard IC’s 7.68 
+ 7.5 Summary of Important Concepts 7.73
+ 7.6 Short-Answer Questions 7.74
+ 7.7 Exercises 7.75 
+Chapter  8: Sequential Logic-Counters and Registers 8.1–8.134
+ 8.1 Design of Counters 8.1
+ 8.2 Asynchronous or  Ripple Counter 8.2 
+ 8.2.1 Up Counter 8.2 
+ 8.2.2 Down Counter  8.4
+ 8.2.3 Up/Down Counter using T Flip-Flop 8.6 
+ 8.2.4 Down Counter with Positive Clock 8.7
+ 8.2.5 BCD Counter 8.8
+ 8.2.6 MOD Counter 8.11
+ 8.3 Synchronous Counter 8.15
+ 8.3.1 Synchronous Binary Up Counter 8.16 
+ 8.3.2 Synchronous Binary Down Counter  8.19
+ 8.3.3 Synchronous Up/Down Counter  8.21
+ 8.3.4 Synchronous BCD Counter 8.22 
+ 8.3.5 Ring Counter 8.26 
+ 8.3.6 Johnson Counter 8.27
+ 8.3.7 Application of Counter  8.104
+ 8.4 Implementation of Counters using Standard ICs 8.104
+ 8.5 Register 8.111
+ 8.6 Shift Register 8.113 
+ 8.6.1 Serial-in Serial-out Shift Register 8.113 
+ 8.6.2 Serial-in Parallel-out Shift Register 8.116 
+ 8.6.3 Parallel-in Serial-out Shift Register 8.116 
+ 8.6.4 Parallel-in Parallel-out Shift Register 8.117 
+ 8.6.5 Universal Shift Register 8.117
+ 8.6.6 Application of Shift Register  8.121
+ 8.7 Synchronous Systems Model Development 8.122
+ 8.7.1 Designing of Rolling Display 8.123 
+ 8.7.2 Designing of Real Time Clock 8.123
+ 8.8 Summary of Important Concepts 8.125
+ 8.9 Short-Answer Questions 8.126
+ 8.10 Exercises 8.128Contents xvii
+Chapter  9: Asynchronous Sequential Circuits  9.1–9.110
+ 9.1 Introduction to Asynchronous Sequential Logic Circuits 9.1
+ 9.1.1 Fundamental and  Pulse Mode Sequential Circuits  9.2
+ 9.1.2 Transition Table 9.2
+ 9.1.3 Stable and Unstable States  9.5
+ 9.1.4 Flow Table 9.6
+ 9.1.5 Cycles and Races 9.6
+ 9.1.6 Race-Free Assignment 9.25
+ 9.1.7 Transition Diagram 9.26
+ 9.2 State Reduction  9.32
+ 9.2.1 Implication Table  9.33
+ 9.2.2 Merger Diagram to find Equivalent State Groups  9.36
+ 9.2.3 Merging of Rows of Flow Tables with Incompletely Specified States 9.42
+ 9.2.4 Merger Diagram to find Maximum Compatible States 9.42
+ 9.2.5 Maximum Compatible 9.43
+ 9.2.6 Closed-Covering Condition 9.43 
+ 9.2.7 Assigning Outputs in Flow Table with Incompletely Specified States 9.43
+ 9.3 Asynchronous Circuits with SR Latches 9.52
+ 9.3.1 NOR based SR Latch  9.52
+ 9.3.2 NAND based SR Latch  9.53
+ 9.3.3 Design using SR Latches 9.54
+ 9.4 Design of Pulse Mode Asynchronous Sequential Circuits 9.72
+ 9.5 Summary of Important Concepts 9.90
+ 9.6 Short-Answer Questions 9.92
+ 9.7 Exercises 9.97
+Chapter  10: Hazards 10.1–10.50
+ 10.1 Hazards 10.1
+ 10.2 Hazards in Combinational Circuits 10.1 
+ 10.2.1 Static-0 and Static-1 Hazards 10.1 
+ 10.2.2 Dynamic Hazard 10.6 
+ 10.3 Hazards in Sequential Circuits  10.7
+ 10.4 Essential Hazards 10.7
+ 10.5 Design of Hazard Free Circuits  10.12
+ 10.5.1 Elimination of Hazards in Combinational Circuits  10.12
+ 10.5.2 Elimination of Hazards in Sequential Circuits 10.18
+ 10.6 Summary of Important Concepts 10.39
+ 10.7 Short-Answer Questions 10.40
+ 10.8 Exercises 10.41
+Chapter  11: Logic Families 11.1–11.74
+ 11.1 Logic Families 11.1
+ 11.1.1 Evolution  of Logic Family 11.1xviii Digital Logic Circuits
+ 11.2 Operation and Characteristics of Digitial Logic Families 11.2
+ 11.2.1 Logic Levels  11.2
+ 11.2.2 Propagation Delay  11.3
+ 11.2.3 Power Requirement  11.4
+ 11.2.4 Fan-out and Fan-in  11.5
+ 11.2.5 Noise Margin 11.5
+ 11.2.6 ON-OFF Characteristics of Bipolar Junction Transistors  11.7
+ 11.2.7 ON-OFF Characteristics of CMOS Field Effect Transistors  11.8
+ 11.3 RTL (Resistor-Transistor Logic)  11.10
+ 11.3.1 RTL NOR Gate  11.10
+ 11.3.2 RTL OR Gate 11.11
+ 11.3.3 RTL NAND Gate  11.12
+ 11.3.4 RTL AND Gate 11.14
+ 11.3.5 RTL NOT Gate 11.15
+ 11.4 DTL (Diode-Transistor Logic)  11.15
+ 11.4.1 DTL NAND Gate  11.15
+ 11.4.2 DTL NOR Gate 11.17
+ 11.4.3 DTL NOT Gate  11.18
+ 11.4.4 DTL AND Gate 11.19
+ 11.4.5 DTL OR Gate 11.20
+ 11.5 TTL (Transistor-Transistor Logic)  11.20
+ 11.5.1 Types of Output in TTL Devices  11.20
+ 11.5.2 TTL NAND Gate  11.22
+ 11.5.3 TTL NOT Gate  11.24
+ 11.5.4 TTL AND Gate  11.25
+ 11.5.5 TTL NOR Gate  11.25
+ 11.5.6 TTL OR Gate 11.27
+ 11.6 ECL (Emitter Coupled Logic)  11.27
+ 11.6.1 Emitter Coupled Current Switch  11.28
+ 11.6.2 Emitter Coupled Basic Gate Circuit  11.29
+ 11.6.3 ECL NOR Gate 11.33
+ 11.6.4 ECL OR Gate  11.35
+ 11.6.5 ECL NOT Gate  11.37
+ 11.6.6 ECL NAND Gate  11.38
+ 11.6.7 ECL AND Gate 11.41
+ 11.7 CMOS (Complementary MOSFET)  11.43
+ 11.7.1 CMOS NOT Gate  11.44
+ 11.7.2 CMOS NOR Gate  11.44
+ 11.7.3 CMOS OR Gate 11.46 
+ 11.7.4 CMOS NAND Gate 11.47 
+ 11.7.5 CMOS AND Gate 11.48
+ 11.7.6 Buffered and Unbuffered CMOD Devices  11.49
+ 11.7.7 Combinational Logic Implementation in CMOS  11.49Contents xix
+ 11.8 Comparison of Logic Families  11.60
+ 11.8.1 Resistor-Transistor Logic (RTL) Family 11.61 
+ 11.8.2 Diode-Transistor Logic (DTL) Family 11.61 
+ 11.8.3 Transistor-Transistor Logic (TTL) Family  11.62
+ 11.8.4 Emitter-Coupled Logic (ECL) Family 11.63
+ 11.8.5 Complementary MOSFET Logic (CMOS) Family 11.63
+ 11.9 Summary of Important Concepts 11.64
+ 11.10 Short-Answer Questions 11.66
+ 11.11 Exercises 11.68
+Chapter  12: Memory and Programmable Logic Devices  12.1–12.78
+ 12.1 Basic Concepts of Memory 12.1
+ 12.1.1 Types of Semi conductor Memories  12.2
+ 12.1.2 Functional Block Diagram of Semiconductor Memory  12.3
+ 12.1.3 Memory or Binary Cell (BC) 12.5
+ 12.1.4 Address Decoding in Memory 12.7 
+ 12.1.5 Address Multiplexing in Memory 12.8
+ 12.2 ROM and PROM 12.11
+ 12.2.1 Custom or Mask Programmed ROM 12.11 
+ 12.2.2 Programmable or Field Programmable ROM 12.12
+ 12.2.3 EPROM 12.13
+ 12.2.4 EEPROM/EAPROM 12.16
+ 12.3 RAM  12.17
+ 12.3.1 Static RAM  12.17
+ 12.3.2 DRAM 12.21
+ 12.3.3 Content-Addressable Memory (CAM) 12.23
+ 12.4 Programmable Logic Devices 12.27
+ 12.5 PROM as PLD 12.27
+ 12.6 PLA (Programmable Logic Array) 12.31
+ 12.6.1 Implementation of Combinational Circuit using PLA 12.33
+ 12.7 PAL (Programmable Array Logic) 12.44
+ 12.7.1 Implementation of Combinational Circuit using PAL 12.46
+ 12.8 Sequential Programmable Logic Device (SPLD) 12.53
+ 12.9 Complex Programmable Logic Device (CPLD) 12.54
+ 12.10 Field Programmable Gate Array (FPGA) 12.55
+ 12.10.1  Basic Architecture of FPGA  12.55 
+ 12.10.2  Xilinx FPGA Family of Devices 12.58
+ 12.10.3  Spartan-6 Family of FPGA  12.58
+ 12.10.4  Spartan-6 FPGA Architecture  12.60
+ 12.11 Summary of Important Concepts 12.63
+ 12.12 Short-Answer Questions 12.64
+ 12.13 Exercises 12.69xx Digital Logic Circuits
+Chapter  13: Data Converters  13.1–13.30
+ 13.1 Introduction 13.1
+ 13.1.1 Param eters of Data Converters  13.2
+ 13.2 Digital to Analog Converter (DAC) 13.3
+ 13.2.1 R-2R Ladder Type DAC 13.4
+ 13.2.2 Weighted-Resistor Type DAC 13.5
+ 13.2.3 Switched Current-Source Type DAC 13.6
+ 13.2.4 Switched Capacitor Type DAC 13.7
+ 13.2.5  DAC0800 13.9 
+ 13.3 Analog to Digital Converter (ADC)  13.10
+ 13.3.1 Flash Type ADC 13.11
+ 13.3.2 Counter Type ADC  13.13
+ 13.3.3 Tracking Type ADC  13.14
+ 13.3.4 Dual-Slope Type ADC 13.15
+ 13.3.5 Successive-Approximation Type ADC  13.16
+ 13.3.6 ADC0809 13.17
+ 13.4 Summary of Important Concepts  13.22
+ 13.5 Short-Answer Questions 13.23
+ 13.6 Exercises 13.26
+Chapter  14: VHDL  14.1–14.140
+ 14.1 Introduction to VHDL 14.1
+ 14.2 Elements of VHDL Language  14.2
+ 14.2.1 Literals  14.2
+ 14.2.2 Comments  14.3
+ 14.2.3 Identifiers 14.3
+ 14.2.4 Predefined Data Types  14.4
+ 14.2.5 Data Types and Subtypes  14.6
+ 14.2.6 Scalar Data Types 14.6 
+ 14.2.7 Composite Data Types 14.7
+ 14.2.8 Access Data Types 14.8
+ 14.2.9 Data Objects (or Objects) 14.8
+ 14.2.10 Operators 14.9
+ 14.3 Process and Process Statement  14.11
+ 14.4 Sequential Statements 14.12
+ 14.4.1 Variable Assignment Statement 14.12
+ 14.4.2 Signal Assignment Statement 14.13
+ 14.4.3 Wait Statement 14.13
+ 14.4.4 IF Statement 14.13
+ 14.4.5 Case Statement 14.15
+ 14.4.6 Loop Statement 14.15
+ 14.4.7 Exit Statement 14.17
+ 14.4.8 Next Statement 14.17
+ 14.4.9 Null Statement 14.18
+ 14.4.10 Assertion Statement 14.18Contents xxi
+ 14.5 Concurrent Statements 14.20
+ 14.5.1 Concurrent Signal Assignment Statement 14.20
+ 14.5.2 Conditional Signal Assignment Statement 14.20
+ 14.5.3 Selected Signal Assignment Statement 14.20
+ 14.5.4 Concurrent Assertion Statement 14.21
+ 14.6 VHDL Design Entity (or Model) 14.21
+ 14.6.1 Entity Declaration 14.22
+ 14.6.2 Architeture Body 14.23 
+ 14.6.3 Component Declaration 14.24
+ 14.6.4 Component Instantiation  14.24
+ 14.6.5 VHDL Programs for Half Adder with Three Different Architecture  14.24
+ 14.7 Subprograms  14.26
+ 14.7.1 Procedure  14.26
+ 14.7.2 Functions 14.27
+ 14.8 Introduction to Packages  14.28
+ 14.8.1 Package Body 14.29
+ 14.9 Library  14.30
+ 14.10 Test Bench  14.32
+ 14.11 RTL Design 14.33 
+ 14.11.1 Combinational Logic  14.35
+ 14.11.2 Sequential Logic  14.36
+ 14.12 VHDL Programs without Test Bench 14.37
+ 14.13 VHDL Programs with Test Bench 14.73
+ 14.14 VHDL Programs in RTL Methodology 14.123
+ 14.15 Summary of Important Concepts  14.132
+ 14.16 Short-Answer Questions 14.133
+ 14.17 Exercises 14.137
+Chapter  15: VERILOG   15.1–15.98
+ 15.1 Introduction to Verilog 15.1
+ 15.2 Elements of Verilog Language  15.1
+ 15.2.1 Identifiers 15.2
+ 15.2.2 Keywords  15.2
+ 15.2.3 Comments  15.3
+ 15.2.4 Logic Values in Verilog  15.3
+ 15.2.5 Number Representation in Verilog  15.3
+ 15.3 Operators in Verilog Language  15.3
+ 15.4 Data Types in Verilog  15.5
+ 15.4.1 Net Data Types  15.6
+ 15.4.2 Variable Data Types  15.7
+ 15.5 Verilog Primitives  15.8
+ 15.5.1 User Defined Primitives (UDP)  15.9
+ 15.6 Verilog Statements and Loops  15.10
+ 15.6.1 Continuous Assignment Statement 15.10
+ 15.6.2 Procedural Assignment Statement  15.11xxii Digital Logic Circuits
+ 15.6.3 If and If-else Statement 15.12
+ 15.6.4 Case Statement 15.14
+ 15.6.5 While Loop  15.15
+ 15.6.6 For Loop  15.15
+ 15.6.7 Forever and Repeat Loop  15.16
+ 15.7 Function in Verilog  15.16 
+ 15.8 Task in Verilog  15.17
+ 15.9 Timescale and Timing Control  15.18
+ 15.9.1 Delay Control (#)  15.19
+ 15.9.2 Event Control  15.19
+ 15.9.3 Wait Statement  15.19
+ 15.10 Verilog Program Structure  15.19
+ 15.10.1 Module  15.20
+ 15.10.2 Declarations  15.20
+ 15.10.3 Initial Block  15.21
+ 15.10.4 Always Block  15.21
+ 15.11 Types of Program Modeling in Verilog  15.22
+ 15.11.1 Dataflow Model  15.22
+ 15.11.2 Behavior Model  15.22
+ 15.11.3 Structural Model  15.22
+ 15.12 Test Bench  15.24
+ 15.13 Verilog Programs Without Test Bench  15.24
+ 15.14 Verilog Programs With Test Bench  15.48
+ 15.15 Summary of Important Concepts  15.90
+ 15.16 Short-Answer Questions 15.92
+ 15.17 Exercises 15.94
+Appendices  a.1–a.26
+APPENDIX 1: List of Some Standard IC’s A.1 
+APPENDIX 2:  Pin Configuratio n of Some Standard IC’s  A.2
+APPENDIX 3:  Summary of Various Binary Codes  A.12
+APPENDIX 4:  Unsigned and Signed Binary Number System  A.14
+APPENDIX 5:  Boolean Theorems  A.15
+APPENDIX 6:  Two Variable Boolean Function  A.16
+APPENDIX 7:  Summary of Flip-Flop Tables A.17
+APPENDIX 8:  List of Xillinx FPGAs A.18
+APPENDIX 9:  Spartan-6 FPGA Feature and Logic Resources A.20
+APPENDIX 10: Reserved Words in VHDL  A.21
+APPENDIX 11:  Data Types and Operators in VHDL A.22
+APPENDIX 12:  Keywords in Verilog  A.24
+APPENDIX 13:  Operators and Net Data Types in Verilog  A.25
+University Question Papers  Q.1–Q.48
+Index  I.1–I.6

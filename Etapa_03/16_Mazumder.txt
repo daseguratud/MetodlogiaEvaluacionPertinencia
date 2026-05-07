@@ -1,0 +1,386 @@
+Contents
+ 
+Preface	 xi
+ 
+Ackno wledgement	 xv
+ 
+List of Figur es	 xvii
+ 
+List of T ables	 xxix 
+List of Ab breviations	 xxxi 
+1 Introduction	 1
+ 
+1.1 Objecti ves ........................... 1
+ 
+1.1.1	 Equation representation ............... 1
+ 
+1.1.2	 Hardw are platform implementation ......... 3
+ 
+1.1.3	 Sequential design ................... 4
+ 
+1.1.4	 Datapath components ................. 6
+ 
+1.1.5	 Back endlectures ................... 6
+ 
+1.2 Analog vs.Digital ....................... 7
+ 
+1.3 Digital Design ......................... 11
+ 
+1.3.1	 Levelsofdigital design ................ 12
+ 
+1.3.2	 What dodigital designers do? ............ 13
+ 
+2 Numeral Systems and BCD codes	 17
+ 
+2.1 Introduction .......................... 18
+ 
+2.1.1	 Unary numeral systems ................ 18
+ 
+2.1.2	 The positional numeral system, or the place-v alue
+ 
+system ........................ 19
+ 
+2.1.2.1 Binary numbers .............. 19
+ 
+2.1.2.2 Hexadecimal numbers ........... 20
+ 
+2.1.2.3 Octal numbers ............... 20
+ 
+2.1.2.4 Converting from decimal to dif ferent bases 21
+ 
+v vi Contents  
+2.1.2.5	 Converting from one arbitrary base (p) to
+ 
+another arbitrary base (q) ......... 22
+ 
+2.2 Addition and Subtraction in the Positional Numeral System . 24
+ 
+2.3 NegativeNumbers inBinary ................. 26
+ 
+2.3.1 Signed magnitude .................. 26
+ 
+2.3.2 The1’scomplement ................. 28
+ 
+2.3.2.1	 Addition in the 1’ s complement ...... 30
+ 
+2.3.2.2	 Subtraction in the 1’ s complement .... 31
+ 
+2.3.3 The2’scomplement ................. 32
+ 
+2.3.3.1	 Addition in the 2’ s complement ...... 34
+ 
+2.3.3.2	 Subtraction in the 2’ s complement .... 35
+ 
+2.4 Strings of Bits and Binary-Coded Decimal Representations . 36
+ 
+2.4.1 The8421 BCD code ................. 36
+ 
+2.4.2 The 2421, 631-1, 84-2-1, and Excess-3 BCD codes . 38
+ 
+2.4.3 Thebiquinary code .................. 39
+ 
+2.4.4 Thegray code ..................... 39
+ 
+2.4.5 BCD summary .................... 43
+ 
+2.5 More onNumber Systems .................. 44
+ 
+2.6 Conclusion andKeyPoints .................. 46
+ 
+3 Boolean Algebra and Logic Gates	 51
+ 
+3.1 Moti vation ........................... 52
+ 
+3.2 Huntington Postulates ..................... 52
+ 
+3.3 Basic Theorems ofBoolean Algebra ............. 53
+ 
+3.3.1 Basic postulates with 0and1............. 53
+ 
+3.3.2 Idempotent laws ................... 54
+ 
+3.3.3 TheLawofinvolution ................ 54
+ 
+3.3.4 Complementarity laws ................ 54
+ 
+3.3.5 Commutati velaws .................. 55
+ 
+3.3.6 Associati velaws ................... 55
+ 
+3.3.7 Distrib utivelaws ................... 55
+ 
+3.3.8 DeMor gan’slaws ................... 56
+ 
+3.4 Duality ............................ 59
+ 
+3.4.1 What you should kno w from duality ......... 60
+ 
+3.5 Logic Gates for Implementation of Boolean Netw orks .... 60
+ 
+3.5.1 AND, OR, andNOT ................. 60
+ 
+3.5.2 Implicant gates .................... 61
+ 
+3.5.3 Other logic gates ................... 62
+ 
+3.5.4 Equivalent gates ................... 65
+ Contents  vii
+ 
+3.5.5	 Concept ofcompleteness ............... 67
+ 
+3.6 CMOS Gates ......................... 67
+ 
+3.7 General Complementary Switching Netw ork ......... 70
+ 
+3.8 Conclusion .......................... 71
+ 
+3.9 KeyPoints ........................... 72
+ 
+4 Timing Diagrams	 79
+ 
+4.1 Notion ofTiming Delay inaCircuit ............. 80
+ 
+4.2 Deﬁnition ofPropagation Delay ............... 82
+ 
+4.3	 Timing Diagrams ofaGated Logic .............. 84
+ 
+4.4	 The Ring Oscillator: Good Use of Delays .......... 86
+ 
+4.5	 Glitches and Hazards: Bad Ef fects Due to Unequal P ath
+ 
+Delays ............................. 89
+ 
+4.5.1	 Correction of the static-1 hazard ........... 90
+ 
+4.6 Conclusion andKeyPoints .................. 93
+ 
+5 Combinational Logic Design T echniques : Part I	 99
+ 
+5.1 Designing a Digital System from a Problem Statement . . . 100
+ 
+5.1.1	 Stairwell lamp problem ................ 100
+ 
+5.1.2	 BCD to se ven-se gment con verter ........... 107
+ 
+5.1.3	 Eventdetector .................... 110
+ 
+5.2 Conclusion andKeyPoints .................. 111
+ 
+6 Combinational Logic Design T echniques : Part II	 115
+ 
+6.1 Majority Gate Design ..................... 116
+ 
+6.1.1	 SOP implementation ................. 117
+ 
+6.1.2	 POS implementation ................. 119
+ 
+6.1.3	 Self-duality ...................... 120
+ 
+6.2	 Why Dif ferent Representations: T wo-Level Logic
+ 
+Implementation Styles .................... 121
+ 
+6.2.1	 SOP representations ................. 121
+ 
+6.2.2	 POS representations ................. 122
+ 
+6.2.3	 Compatible representations for CMOS design .... 122
+ 
+6.3 Hardw areDescription Languages ............... 123
+ 
+6.3.1	 Majority gate and stairwell lamp v erilog
+ 
+Implementation .................... 125
+ 
+6.3.2	 Full adder v erilog implementation .......... 126
+ 
+6.3.3	 Ripple carry adder .................. 126
+ 
+6.4 Conclusion andKeyPoints .................. 127
+ viii Contents  
+7 Combinational Logic Minimization	 135
+ 
+7.1 Representation for Minimization: Summarization ...... 1 3 5
+ 
+7.1.1	 Intuitive design approach ............... 1 3 6
+ 
+7.1.2	 Boolean minimization ................ 1 3 6
+ 
+7.2 Graphical Method: The Karnaugh Map ............ 1 3 7
+ 
+7.3 Three- and Four-Variable Karnaugh Maps for Logic Circuits 139
+ 
+7.4 Minimizing with Four-Variable K-maps ........... 1 4 2
+ 
+7.4.1	 Formal deﬁnitions .................. 1 4 3
+ 
+7.4.2	 Example 1: detailed illustration of minimization . . 143
+ 
+7.4.3	 Example 2: prime implicant deﬁnition
+ 
+reinforcement ..................... 1 4 6
+ 
+7.4.4	 Example 3: dealing with “Don’t cares” ....... 1 4 6
+ 
+7.5 Conclusion and Key Points .................. 1 4 9
+ 
+8 Combinational Building Blocks	 155
+ 
+8.1 Decoders ........................... 1 5 5
+ 
+8.1.1	 Implementation of larger-bit decoders ........ 1 5 6
+ 
+8.1.2	 Using decoders to implement boolean functions . . . 158
+ 
+8.1.2.1 Example 1 ................. 1 5 8
+ 
+8.1.2.2 Example 2 ................. 1 5 8
+ 
+8.2 Multiplexers .......................... 1 6 0
+ 
+8.2.1	 Implementation of larger-bit multiplexers ...... 1 6 2
+ 
+8.2.2	 Using multiplexers to implement boolean
+ 
+functions ....................... 1 6 3
+ 
+8.2.2.1 Example 1 ................. 1 6 3
+ 
+8.2.2.2 Example 2 ................. 1 6 7
+ 
+8.3 MSI Building Blocks ..................... 1 6 7
+ 
+8.3.1	 Decoders ....................... 1 6 7
+ 
+8.3.1.1 The 74139 decoder ............ 1 6 7
+ 
+8.3.1.2 The 74138 Decoder ............ 1 7 0
+ 
+8.3.2	 Tri-state buffers .................... 1 7 0
+ 
+8.3.2.1 Application ................ 1 7 1
+ 
+8.3.2.2 The 74541 three-state driver ........ 1 7 3
+ 
+8.3.3	 Encoders ....................... 1 7 3
+ 
+8.3.3.1 The 74148 priority encoder ........ 1 7 4
+ 
+8.3.3.2 Verilog implementation .......... 1 7 6
+ 
+8.3.4	 Multiplexers ..................... 1 7 8
+ 
+8.3.5	 Parity circuits ..................... 1 7 8
+ 
+8.3.6	 Comparison circuits ................. 1 8 1
+ Contents  ix
+ 
+8.3.6.1 Equality .................. 181
+ 
+8.3.6.2 Greater than and less than ......... 182
+ 
+8.3.6.3 The 74682 magnitude comparator IC . . . 182
+ 
+8.4 Conclusion .......................... 183
+ 
+8.5 KeyPoints ........................... 183
+ 
+9 Foundations of Sequential Design: P art I 191
+ 
+9.1 Taxonomy ofSequential Models ............... 191
+ 
+9.1.1 Themealy machine .................. 191
+ 
+9.1.2 Themoore machine .................. 193
+ 
+9.2 Flip-Flops ........................... 193
+ 
+9.2.1 Operation of ﬂip-ﬂops and their applications .... 193
+ 
+9.2.2 Classiﬁcation of ﬂip-ﬂops .............. 194
+ 
+9.2.2.1 S-Rﬂip-ﬂop ................ 194
+ 
+9.2.2.1.1 Characteristic table ....... 194
+ 
+9.2.2.1.2 State diagram .......... 196
+ 
+9.2.2.2 Tﬂip-ﬂop ................. 197
+ 
+9.2.2.2.1 Characteristic table ....... 197
+ 
+9.2.2.2.2 State diagram .......... 198
+ 
+9.2.2.3  J-K ﬂip-ﬂop1................ 198
+ 
+9.2.2.3.1 Characteristic table ....... 199
+ 
+9.2.2.3.2 State diagram .......... 200
+ 
+9.2.2.4 Dﬂip-ﬂop ................. 200
+ 
+9.3 Conclusion andKeyPoints .................. 201
+ 
+10 Foundations of Sequential Design: P art II 207
+ 
+10.1 Gate Implementation of Flip-Flops and T iming Diagrams . . 208
+ 
+10.1.1 Simple in verters without feedback .......... 208
+ 
+10.1.2 Single in verter with feedback (oscillator) ...... 208
+ 
+10.1.3 Two inverters with feedback (ﬂip-ﬂop) ........ 209
+ 
+10.1.4 S-Rlatch ....................... 210
+ 
+10.1.4.1 S-R latch timing diagram ......... 211
+ 
+10.1.4.2 Problems with the S-R latch ........ 213
+ 
+10.2 Clock edFlip-Flops ...................... 214
+ 
+10.2.1 Clock edS-Rﬂip-ﬂop ................. 215
+ 
+10.2.2 Clock edJ-Kﬂip-ﬂop ................. 216
+ 
+10.2.2.1 J-K ﬂip-ﬂop timing diagram ........ 217
+ 
+10.2.2.2 Problems with the J-K ﬂip-ﬂop ...... 218
+ 
+10.2.3 Solutions to the race-around problem ........ 219
+ x Contents  
+10.2.3.1	 Narrowing the clock pulse width ..... 2 2 0
+ 
+10.2.3.2	 Separating the inputs and outputs of the
+ 
+ﬂip-ﬂop .................. 2 2 2
+ 
+10.2.3.2.1 Master-Slave D ﬂip-ﬂop ..... 2 2 3
+ 
+10.2.3.2.2 Master-Slave J-K ﬂip-ﬂop .... 2 2 4
+ 
+10.2.4 IEEE symbols and ﬂip-ﬂop types .......... 2 2 8
+ 
+10.2.5 Timing analysis of ﬂip-ﬂop problems ........ 2 3 0
+ 
+10.2.5.1	 Example 1: timing diagram of a J-K ﬂip-ﬂop 230
+ 
+10.2.5.2	 Example 2: timing diagram of J-K ﬂip-
+ﬂops conﬁgured as a counter/binary divider 231
+ 
+10.2.5.3	 Example 3: Timing diagram of D ﬂip-ﬂops
+ 
+conﬁgured as a ring counter ........ 2 3 2
+ 
+10.2.6 Effect of the width of the set pulse .......... 2 3 3
+ 
+10.2.7 Dealing with metastability and asynchronous inputs . 234
+ 
+10.3 Conclusion and Key Point .................. 2 3 5
+ 
+10.4 Problems on Flip-Flops .................... 2 3 6
+ 
+Index	 243
+ 
+About the Authors	 247
+ 

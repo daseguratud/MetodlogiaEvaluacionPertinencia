@@ -1,0 +1,685 @@
+2.3.22.3.12.32.22.12.1.91.8.51.8.41.8.3.21.8.3.11.8.31.8.2.11.8.21.8.1.31.8.1.21.8.1.11.8.11.81.71.6.21.6.11.61.5.21.5.11.51.4.31.4.21.4.11.41.3.21.3.11.31.21.11.Contenido
+Presentación
+PARTE 1. Familias lógicas
+Puertas lógicas TTL
+Introducción
+Estructura de una puerta TTL NAND de dos entradas
+Cargabilidad de salida de una puerta inversora TTL
+Estimación analítica
+Análisis mediante PSpice
+Características de transferencia
+Puerta inversora TTL estándar
+Puerta inversora (CI 7404)
+Puerta NAND (CI 7400)
+Entradas flotantes en puertas TTL
+El riesgo potencial de las entradas flotantes
+¿Qué hacer con las entradas no utilizadas?
+Caracterización temporal
+Parámetros característicos
+El oscilador en anillo
+Componentes
+Verificación experimental
+Obtención de las tablas de verdad
+Función lógica NOT (inversión)
+Función lógica NAND
+Función lógica NOR
+Cargabilidad de salida
+Estimación de la resistencia de salida de un dispositivo
+Características de transferencia de un inversor
+Característica de transferencia vs(ve)
+Característica de transferencia ie(ve)
+Entradas flotantes en una puerta NAND (CI 74x00)
+Caracterización temporal: oscilador en anillo
+Ejercicios y cuestiones de refuerzo
+Puertas lógicas CMOS
+Introducción
+Estructura de una puerta CMOS NAND de dos entradas
+Cargabilidad de salida de una puerta CMOS NAND
+Consideraciones preliminares
+Análisis mediante PSpice
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 1 of 15
+4.104.94.8.24.8.14.84.7.34.7.24.7.14.74.64.54.44.34.24.14.3.63.5.23.5.13.53.43.3.23.3.13.33.2.23.2.13.23.13.2.82.7.32.7.2.22.7.2.12.7.22.7.12.72.62.52.42.3.2.42.3.2.32.3.2.22.3.2.1 Caso de estudio 1
+Caso de estudio 2
+Caso de estudio 3
+Cargabilidad del CI 4011B
+Características de transferencia
+Entradas flotantes en puertas CMOS
+Componentes
+Verificación experimental
+Cargabilidad de salida
+Características de transferencia de un inversor CMOS
+Característica de transferencia vs(ve)
+Característica de transferencia ie(ve)
+Entradas flotantes en una puerta NAND (CI 4011B)
+Ejercicios y cuestiones de refuerzo
+PARTE 2. Lógica combinacional
+Decodificador binario básico de 2 a 4
+Introducción
+Decodificador binario básico de 2 a 4
+Decodificación con salidas activas a nivel alto
+Decodificación con salidas activas a nivel bajo
+Simulación
+Decodificación con salidas activas a nivel alto
+Decodificación con salidas activas a nivel bajo
+Componentes
+Verificación experimental
+Decodificación con salidas activas a nivel alto
+Decodificación con salidas activas a nivel bajo
+Ejercicios y cuestiones de refuerzo
+Síntesis óptima de circuitos combinacionales
+Introducción
+Síntesis en forma de suma de productos (AND-OR)
+Síntesis en forma de producto de sumas (OR-AND)
+Síntesis de dos niveles NAND-NAND
+Síntesis de dos niveles NOR-NOR
+Síntesis multinivel con puertas NAND de dos entradas
+Análisis transitorio: fenómenos aleatorios
+Tipos de fenómenos aleatorios
+Fenómenos aleatorios de función
+Eliminación de fenómenos aleatorios
+Simulación
+Análisis en régimen permanente
+Análisis transitorio
+Componentes
+Verificación experimental
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 2 of 15
+7.47.37.2.37.2.27.2.17.27.17.6.86.7.36.7.26.7.16.76.66.5.36.5.26.5.16.56.46.36.26.16.5.75.6.25.6.15.65.55.4.2.25.4.2.15.4.25.4.1.25.4.1.15.4.15.45.3.25.3.15.35.2.25.2.15.25.15.4.11 Ejercicios y cuestiones de refuerzo
+Codificador binario básico de 4 a 2
+Introducción
+Codificador binario básico de 4 a 2 sin prioridad
+Codificación con entradas activas a nivel alto
+Codificación con entradas activas a nivel bajo
+Codificador binario básico de 4 a 2 con prioridad
+Codificación con entradas activas a nivel alto
+Codificación con entradas activas a nivel bajo
+Simulación
+Circuitos codificadores de 4 a 2 sin prioridad
+Codificación con entradas activas a nivel alto
+Codificación con entradas activas a nivel bajo
+Circuitos codificadores de 4 a 2 con prioridad
+Codificación con entradas activas a nivel alto
+Codificación con entradas activas a nivel bajo
+Componentes
+Verificación experimental
+Codificación sin prioridad y entradas activas a nivel bajo
+Codificación con prioridad y entradas activas a nivel bajo
+Ejercicios y cuestiones de refuerzo
+Circuitos comparadores, de paridad y conversores de código
+Introducción
+Circuitos aritméticos comparadores
+Circuito generador y circuito detector de paridad
+Circuitos conversores de código
+Simulación
+Circuito comparador
+Circuito generador de paridad
+Circuitos conversores de código
+Componentes
+Verificación experimental
+Circuito comparador
+Circuito generador de paridad
+Circuitos conversores de código
+Ejercicios y cuestiones de refuerzo
+Decodificador binario de 2 a 4 con control de polaridad
+Introducción
+Decodificador binario básico de 2 a 4 con control de polaridad
+Tres síntesis distintas con puertas NAND de dos entradas
+Síntesis con puertas NAND de cualquier número de entradas
+Síntesis basada en puertas XOR
+Simulación
+Componentes
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 3 of 15
+9.89.79.6.3.19.6.39.6.29.6.19.69.59.4.69.4.59.4.49.4.39.4.29.4.19.49.39.29.19.8.78.68.58.4.2.38.4.2.28.4.2.18.4.28.4.1.38.4.1.28.4.1.18.4.18.48.3.48.3.38.3.28.3.18.38.2.48.2.38.2.28.2.18.28.18.7.67.5 Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Detección de números primos con multiplexores
+Introducción
+Diseño de un detector BCD de números primos
+Síntesis mediante puertas lógicas
+Síntesis mediante un multiplexor 16:1
+Síntesis mediante un multiplexor 8:1
+Síntesis alternativa mediante un multiplexor 8:1
+Diseño de un detector de números primos de 4 bits
+Síntesis mediante puertas lógicas
+Síntesis mediante un multiplexor 16:1
+Síntesis mediante dos multiplexores 8:1
+Síntesis alternativa mediante un multiplexor 8:1
+Simulación
+Detectores BCD de números primos con multiplexor
+Síntesis mediante un multiplexor 16:1
+Síntesis mediante un multiplexor 8:1
+Síntesis alternativa mediante un multiplexor 8:1
+Detectores de números primos de 4 bits con multiplexor
+Síntesis mediante un multiplexor 16:1
+Síntesis mediante dos multiplexores 8:1
+Síntesis alternativa mediante un multiplexor 8:1
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Sumador completo y sumador binario en paralelo
+Introducción
+Circuito semisumador
+Circuito sumador completo
+Implementaciones de un sumador completo
+Síntesis de dos niveles AND-OR mediante PAL
+Síntesis de dos niveles NAND-NAND
+Dos síntesis de seis niveles con puertas básicas
+Síntesis de cuatro niveles con puertas NAND de tres entradas
+Síntesis de dos niveles basada en puertas XOR y NAND
+Síntesis de tres niveles basada en puertas XOR y NAND
+Sumador binario en paralelo con acarreo serie
+Simulación
+Semisumador
+Sumador completo
+Sumador binario en paralelo de 4 bits con acarreo en serie
+Propagación del acarreo y retardo asociado
+Componentes
+Verificación experimental
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 4 of 15
+12.612.512.4.2.112.4.212.4.1.112.4.112.412.312.2.212.2.112.212.112.11.711.611.511.411.311.211.111.10.610.5.310.5.210.5.110.510.410.3.310.3.210.3.110.310.2.410.2.310.2.210.2.110.210.110.9.99.8.39.8.29.8.1 Semisumador
+Sumador completo
+Sumador binario en paralelo de 2 bits con acarreo en serie
+Ejercicios y cuestiones de refuerzo
+Unidad aritmética de 4 bits en complemento a dos
+Introducción
+Diseño de una unidad aritmética de 4 bits en C2
+El sumador 74x283
+La puerta XOR como solución para implementar la resta
+El detector de desbordamiento
+Unidad aritmética completa
+Simulación
+Módulo sumador
+Módulo sumador/restador
+Unidad aritmética con detector de desbordamiento
+Componentes
+Verificación experimental
+Módulo sumador
+Módulo sumador/restador
+Unidad aritmética con detector de desbordamiento
+Ejercicios y cuestiones de refuerzo
+PARTE 3. Lógica secuencial síncrona
+Generación de señal de reloj con circuitos astables
+Introducción
+Diseño de un multivibrador astable con puertas lógicas
+Diseño de un multivibrador astable con el 555
+Simulación
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Contador de rizo módulo 8 con biestables T
+Introducción
+Dos implementaciones de un contador de rizo
+Contador módulo 8 diseñado con biestables J – K
+Contador módulo 8 diseñado con biestables D
+La problemática de los estados espurios
+Simulación
+Respuesta del contador diseñado con biestables J – K
+Filtrado de los estados espurios mediante registro
+Respuesta del contador diseñado con biestables D
+Filtrado de los estados espurios mediante registro
+Componentes
+Verificación experimental
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 5 of 15
+16.2.116.216.116.15.615.515.415.3.415.3.315.3.215.3.115.315.2.415.2.315.2.215.2.115.215.115.14.614.514.414.3.214.3.1.414.3.1.314.3.1.214.3.1.114.3.114.314.214.114.13.713.613.513.4.313.4.213.4.113.413.313.213.113.12.7 Ejercicios y cuestiones de refuerzo
+Contador de rizo módulo 8 con el 74x90
+Introducción
+Diseño de un contador módulo 8 con el 74x90
+La problemática de los estados espurios
+Simulación
+Secuencia de estados del contador módulo 8
+Filtrado de los estados espurios mediante registro
+Decodificación de estados con el 7448
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Contador síncrono reversible módulo 4 con biestables J – K
+Introducción
+Diseño de un contador síncrono reversible módulo 4
+Simulación
+Implementación del diseño con el CI 7473
+Entrada de control S constante
+Cambio de nivel lógico de S con señal de reloj en estado bajo
+Cambio de nivel lógico de S con señal de reloj en estado alto
+Conclusiones
+Implementación del diseño con el CI 74LS73A
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Contadores síncronos con el 74x163
+Introducción
+Diseño de contadores con el 74x163
+Contador en modo de carrera libre (módulo 16)
+Contador módulo 13 con la secuencia 0,1,…,12
+Contador módulo 12 con la secuencia 3,4,…,14
+Contador módulo 146 con la secuencia 0,1,…,145
+Simulación
+Contador en modo de carrera libre (módulo 16)
+Contador módulo 13 con la secuencia 0,1,…,12
+Contador módulo 12 con la secuencia 3,4,…,14
+Contador módulo 146 con la secuencia 0,1,…,145
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Segundero digital con contadores modulares
+Introducción
+Tres diseños de un segundero con contadores síncronos
+Combinación de dos 74x163
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 6 of 15
+19.4.219.4.119.419.319.219.119.18.618.518.418.3.218.3.118.318.218.118.17.717.617.517.4.3.217.4.3.117.4.317.4.217.4.117.417.3.1.317.3.1.217.3.1.117.3.117.317.2.217.2.117.217.117.16.616.5.316.5.216.5.116.516.416.316.2.316.2.2 Combinación de un 74x162 y un 74x163
+Combinación de un 74x162 y un 74x161
+Simulación
+Componentes
+Verificación experimental
+Contador módulo 10 (unidades del segundero)
+Contador módulo 6 (decenas del segundero)
+Segundero digital completo
+Ejercicios y cuestiones de refuerzo
+Decodificación de los estados de un contador
+Introducción
+Decodificación de contadores modulares
+Decodificación de un contador asíncrono
+Decodificación de un contador síncrono
+Riesgo de interferencias en las líneas decodificadas
+Eliminación del riesgo de interferencias en la decodificación
+Habilitación desfasada del decodificador
+Filtrado mediante registro
+Decodificación directa con un contador en anillo
+Simulación
+Decodificación de contadores 74x90 con dispositivos 74x138
+Decodificación de contadores 74x163 con dispositivos 74x42
+Eliminación del riesgo de interferencias en la decodificación
+Habilitación desfasada del decodificador
+Filtrado mediante registro
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Registro de desplazamiento de 4 bits con biestables D
+Introducción
+Diseño de un registro de desplazamiento de 4 bits
+Simulación
+Entrada serie y salida en paralelo
+Entrada en paralelo y salida en paralelo
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+Generador de números seudoaleatorios
+Introducción
+Generador seudoaleatorio de 3 bits
+Generador seudoaleatorio de 4 bits
+Simulación
+Generador seudoaleatorio de 3 bits
+Generador seudoaleatorio de 4 bits
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 7 of 15
+22.2.322.2.222.2.122.222.122.21.621.521.421.3.221.3.121.321.2.321.2.221.2.121.221.121.20.620.5.320.5.220.5.120.520.420.3.3.120.3.320.3.2.120.3.220.3.120.320.2.420.2.320.2.220.2.120.220.120.19.719.6.219.6.119.619.5 Componentes
+Verificación experimental
+Generador seudoaleatorio de 3 bits
+Generador seudoaleatorio de 4 bits
+Ejercicios y cuestiones de refuerzo
+Diseños con el registro de desplazamiento 74x194
+Introducción
+Diseño secuencial basado en el 74x194
+Carga e inhibición
+El contador en anillo
+El contador Johnson
+Comunicación serie
+Simulación
+Carga e inhibición
+Contador en anillo
+Comunicación serie
+Contador Johnson
+Comunicación serie
+Componentes
+Verificación experimental
+Carga e inhibición
+Contador en anillo y comunicación serie
+Contador Johnson y comunicación serie
+Ejercicios y cuestiones de refuerzo
+Autómatas de estados finitos de Mealy y de Moore
+Introducción
+Diseño secuencial según los modelos de Mealy y de Moore
+Especificaciones
+Diseño según el modelo de Mealy
+Diseño según el modelo de Moore
+Simulación
+Autómata de estados finitos de Mealy
+Autómata de estados finitos de Moore
+Componentes
+Verificación experimental
+Ejercicios y cuestiones de refuerzo
+PARTE 4. Lógica secuencial asíncrona
+Biestables asíncronos
+Introducción
+Tres tipos de biestables asíncronos
+Biestable asíncrono sin entradas
+Biestable asíncrono S – R
+Biestable asíncrono  – 
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 8 of 15
+25.225.125.24.624.5.324.5.224.5.124.524.424.324.2.224.2.124.224.124.23.723.6.223.6.123.623.523.4.223.4.123.423.3.423.3.323.3.223.3.123.323.223.123.22.622.5.322.5.222.5.122.522.422.3.2.122.3.222.3.1.322.3.1.222.3.1.122.3.122.3 Simulación
+Biestable asíncrono S – R
+Respuesta ante secuencias de entrada permitidas
+Respuesta ante secuencias de entrada no permitidas
+Determinación de la anchura de pulso mínima
+Biestable asíncrono  – 
+Respuesta ante secuencias de entrada permitidas
+Componentes
+Verificación experimental
+Biestable asíncrono sin entradas
+Biestable asíncrono S – R
+Biestable asíncrono  – 
+Ejercicios y cuestiones de refuerzo
+Circuitos antirrebotes con biestables asíncronos
+Introducción
+La problemática de los rebotes en el diseño digital
+El biestable asíncrono como circuito antirrebotes
+Circuito antirrebotes NOR
+Circuito antirrebotes NAND
+Circuito antirrebotes NOT
+Detección del acceso a un aparcamiento
+Simulación
+Funcionamiento del circuito antirrebotes NAND
+Funcionamiento del circuito antirrebotes NOT
+Componentes
+Verificación experimental
+Circuito antirrebotes NAND
+Circuito antirrebotes NOT
+Ejercicios y cuestiones de refuerzo
+Cerradura digital de combinación
+Introducción
+Diseño de un detector de secuencia de modo pulso
+Especificaciones
+Diseño según el modelo de Mealy
+Simulación
+Componentes
+Verificación experimental
+Funcionamiento en ausencia de circuitos antirrebotes
+Empleo de un biestable básico como circuito antirrebotes
+Empleo de un biestable  –  como circuito antirrebotes
+Ejercicios y cuestiones de refuerzo
+Divisor de frecuencia asíncrono
+Introducción
+Diseño de un divisor de frecuencia por dos asíncrono
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 9 of 15
+29.3.229.3.129.329.2.329.2.229.2.129.229.129.28.428.3.328.3.228.3.128.328.228.128.27.427.327.227.127.26.426.326.2.226.2.126.226.126.25.625.5.325.5.225.5.125.525.425.3.325.3.225.3.125.325.2.225.2.1 Especificaciones
+Diseño según el modelo de Moore
+Simulación
+Diseño con biestables asíncronos S – R
+Diseño preliminar fallido basado en realimentación directa
+Diseño correcto basado en realimentación directa
+Componentes
+Verificación experimental
+Diseño con biestables asíncronos S – R
+Diseño preliminar fallido basado en realimentación directa
+Diseño correcto basado en realimentación directa
+Ejercicios y cuestiones de refuerzo
+PARTE 5. Aplicaciones de las funciones lógicas de uso común
+Aplicaciones de la decodificación
+Generación de minitérminos
+Decodificación de líneas de dirección
+Los circuitos de memoria y su capacidad de almacenamiento
+Decodificación de direcciones de memoria en un computador
+Decodificación de BCD a código de siete segmentos
+Decodificación de los estados de un contador
+Aplicaciones de la codificación
+Gestión priorizada de interrupciones en un procesador
+Codificación de un teclado numérico
+Conversión analógico-digital: el convertidor flash
+Codificación de vídeo digital en formato analógico
+Detección de errores con circuitos de paridad
+Los errores de transmisión y su detección
+Transmisión en paralelo con bits de paridad
+Transmisión en serie con bits de paridad
+Comprobación de redundancia vertical
+Comprobación de redundancia horizontal
+Comprobación de redundancia bidimensional
+Otras técnicas de detección de errores
+Aplicaciones aritméticas de comparadores y sumadores
+Selector aritmético con señal de control externa
+El sumador completo en los circuitos multiplicadores
+El multiplicador matricial
+El multiplicador con acarreo reservado
+Otros circuitos multiplicadores
+La ALU como generalización del sumador modular
+Tres circuitos ALU y sus prestaciones
+La ALU en los computadores
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 10 of 15
+32.4.532.4.432.4.332.4.232.4.132.432.3.332.3.232.3.132.332.232.132.31.4.231.4.131.431.331.2.331.2.231.2.131.231.1.531.1.431.1.331.1.231.1.131.131.30.7.630.7.530.7.430.7.330.7.230.7.130.730.630.530.430.330.230.130. Aplicaciones de los contadores
+Contador de pulsos en sistemas automatizados
+Divisor de frecuencia
+Reloj digital
+El temporizador digital
+Sintetizador digital de formas de onda
+Medidor de frecuencia
+El registro-contador en los computadores
+El computador y su estructura interna
+El contador de programa
+El puntero de pila
+El registro-contador de microprograma
+El registro de cuenta de datos en los controladores DMA
+El registro-contador CX de la arquitectura x86
+Aplicaciones de los registros de desplazamiento
+Lógica de interfaz en la transmisión de datos digitales
+El papel del registro de desplazamiento en la codificación de voz
+Tráfico de voz y datos en el bucle de abonado analógico
+Revolución en el bucle de abonado: llega la fibra óptica
+Transmisión serie síncrona
+Transmisión serie asíncrona
+Desplazamientos y rotaciones de bits
+El desplazador combinacional básico
+Desplazadores circulares
+Instrucciones de desplazamiento en ensamblador
+Establecimiento de un retardo en secuencias de bits
+Generación de secuencias seudoaleatorias
+Detección de defectos en circuitos lógicos
+Fuentes de ruido blanco
+Aplicaciones del multiplexado
+Generación de funciones lógicas
+Multiplexado de entradas analógicas en microcontroladores
+Barrido multiplexado de visualizadores dinámicos
+Barrido multiplexado con dispositivos lógicos de función fija
+Barrido multiplexado implementado en un microcontrolador
+Barrido multiplexado con circuitos digitales configurables
+El multiplexado en la Red Telefónica Conmutada
+Sistema de transmisión PCM-TDM de dos canales
+Sistema de portadora digital T-1
+Jerarquía multinivel en la RTC
+Multiplexado y demultiplexado en redes ópticas de acceso
+Un nuevo paradigma de redes y servicios de comunicaciones
+PARTE 6. Introducción al prototipado de sistemas empotrados
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 11 of 15
+35.135.34.634.5.3.234.5.3.134.5.334.5.2.334.5.2.234.5.2.134.5.234.5.134.534.4.234.4.134.434.3.634.3.534.3.434.3.334.3.2.134.3.234.3.134.334.2.534.2.434.2.334.2.234.2.134.234.1.534.1.434.1.334.1.234.1.134.134.33.3.3.233.3.3.133.3.333.3.233.3.133.333.233.133. Estrategias para implementar un circuito digital
+La lógica normalizada de función fija y sus limitaciones
+El diseño lógico personalizado y su ámbito de aplicación
+Visión general del diseño lógico semipersonalizado
+Celdas normalizadas, celdas compiladas y macromódulos
+Núcleos de propiedad intelectual (IP)
+Implementación basada en matrices
+Matrices de puertas
+Matrices preconexionadas
+Microcontroladores: fundamentos y plataformas de prototipado
+Estructura y programación de microcontroladores
+El microcontrolador y sus recursos internos
+Organización del acceso a la memoria
+El repertorio de instrucciones: arquitecturas CISC y RISC
+Del código fuente al código máquina
+El microcontrolador en los sistemas empotrados
+Microcontroladores PIC de Microchip
+Módulos electrónicos de programación
+PICkit  1 Flash Starter KitTM
+Curiosity High Pin Count (HPC)
+PIC18F47Q10 Curiosity Nano
+MPLAB Xpress de propósito general
+Microcontroladores en el ecosistema de Arduino
+Arduino Diecimila y Arduino Duemilanove
+Arduino UNO (versiones R1, R2 y R3)
+Módulos de expansión: los escudos
+Arduino Mega 2560
+Arduino Due y el salto a los 32 bits
+Arduino Nano 33 IoT
+Arduino UNO R4
+Microcontroladores MSP430 y C2000 de Texas Instruments
+MSP-EX430G2 Launchpad
+C2000  DIMM100 Experimenter’s KitTM
+Microcontroladores STM32 de STMicroelectronics
+Blue pill
+La familia de plataformas de prototipado STM32 Discovery
+STM32VLDISCOVERY
+STM32F4DISCOVERY
+B-U585I-IOT02A Discovery kit
+La familia de plataformas de prototipado STM32 Nucleo
+Plataformas representativas de la serie STM32 Nucleo-64
+Plataformas representativas de la serie STM32 Nucleo-144
+Perspectivas de futuro para los microcontroladores
+Circuitos FPGA: fundamentos y plataformas de prototipado
+Estructura interna de los circuitos FPGA
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 12 of 15
+E.D.2D.1D.C.3C.2C.1C.B.3B.2B.1B.A.7.4A.7.3A.7.2A.7.1A.7A.6A.5.4A.5.3A.5.2A.5.1A.5A.4A.3.4A.3.3A.3.2A.3.1A.3A.2A.1A.35.635.535.435.335.235.1.435.1.335.1.235.1.1 Arquitecturas multinivel en la lógica configurable
+Módulos lógicos empotrados en un circuito FPGA
+El reto del sincronismo
+Organización de los bloques lógicos configurables
+Lenguajes HDL para la simulación y la síntesis de circuitos
+Circuitos FPGA de las familias Spartan-3E y Artix-7 de Xilinx
+Circuitos FPGA de la familia Cyclone IV de Altera
+Una aplicación en el ámbito de la electrónica industrial
+Circuitos FPGA vs. microcontroladores
+Apéndices
+El laboratorio docente
+Introducción
+La placa de prototipos
+La fuente de alimentación
+Prestaciones y manejo
+Cableado de la fuente con una carga genérica
+Alimentación de la placa de prototipos
+Desacoplo de la fuente de alimentación
+El polímetro
+El osciloscopio
+El osciloscopio analógico HM303-6 de HAMEG Instruments
+El osciloscopio digital MP720009 de Multicomp PRO
+Sondas de medida para osciloscopio
+El osciloscopio USB Analog Discovery 2 de DIgilent
+El comprobador de circuitos integrados
+Notas sobre los montajes experimentales
+La instrumentación y su uso
+Consejos prácticos
+Componentes auxiliares
+Errores comunes
+Riesgos eléctricos
+Introducción
+La conexión a tierra
+Severidad de una electrocución
+Identificación de pines en circuitos integrados
+Numeración de pines en un CI
+Identificación de pines en puertas lógicas
+Identificación de pines en otros dispositivos integrados
+Identificación de terminales en componentes optoelectrónicos
+Terminales de un led y de una barra de luz led
+Terminales de un visualizador de siete segmentos
+Identificación de terminales en componentes eléctricos
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 13 of 15
+I.3.11I.3.10I.3.9I.3.8I.3.7I.3.6I.3.5I.3.4I.3.3I.3.2I.3.1I.3I.2I.1I.H.3H.2H.1H.G.7.1.5G.7.1.4G.7.1.3G.7.1.2G.7.1.1G.7.1G.7G.6G.5G.4G.3G.2.3G.2.2G.2.1G.2G.1G.F.3F.2F.1F.E.4E.3E.2E.1 Terminales de un potenciómetro rotatorio
+Terminales de un condensador electrolítico
+Terminales de un interruptor SPDT de palanca basculante
+Terminales de un interruptor SPDT de actuador deslizante
+Valores estándar de resistencias y condensadores
+Código de colores para resistencias
+Valores estándar de resistencias
+Valores estándar de condensadores
+Notas de simulación
+Introducción
+Guía rápida de PSpice
+Creación de un proyecto
+Dibujo de un circuito en la ventana de esquemáticos
+Perfil de simulación y ejecución
+El editor de modelos de PSpice
+Conexión de un bus a un circuito
+Vinculación de un estímulo a un bus
+Inicialización de biestables
+Ubicación de componentes en bibliotecas
+Listado de todos los componentes utilizados
+Fuentes de tensión y estímulos digitales
+Semiconductores discretos
+Dispositivos integrados con modelo de simulación
+Dispositivos integrados sin modelo de simulación
+Otros componentes
+Notas sobre el álgebra de conmutación
+Introducción
+Postulados y teoremas del álgebra de conmutación
+Funciones lógicas XOR y XNOR
+Bibliografía
+Monografías
+Artículos de investigación
+Información técnica de los fabricantes
+Circuitos integrados de función fija (general)
+Puertas lógicas
+Decodificadores
+Multiplexor
+Generador de paridad
+Sumador
+Unidades aritmético-lógicas (circuitos ALU)
+Temporizador
+Biestables asíncronos
+Biestables síncronos
+Contadores
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 14 of 15
+K.J.I.4I.3.26I.3.25I.3.24I.3.23I.3.22I.3.21I.3.20I.3.19I.3.18I.3.17I.3.16I.3.15I.3.14I.3.13I.3.12 Registros
+Circuitos de memoria ROM y RAM
+Microprocesadores
+Microcontroladores
+Placas de desarrollo basadas en microcontrolador
+Lógica digital configurable (circuitos CPLD y FPGA)
+Placas de desarrollo basadas en circuitos FPGA
+Codificadores de vídeo
+Conversor A/D
+Generadores de señal
+Diodos luminiscentes (ledes)
+Visualizadores de siete segmentos
+Semipuente cuádruple
+Interruptor de palanca basculante
+Herramienta de simulación para el diseño electrónico
+Enlaces web de interés
+Acrónimos
+Material suplementario
+Índice
+Vázquez, del Real, Javier. Circuitos lógicos Digitales 4ed, Marcombo, S.A., 2024. ProQuest Ebook Central, http://ebookcentral.proquest.com/lib/bibliotecausta-ebooks/detail.action?docID=31317806.
+Created from bibliotecausta-ebooks on 2025-10-28 14:30:06.
+Copyright © 2024. Marcombo, S.A.. All rights reserved.
+Ebook pages 8-18 | Printed page 15 of 15

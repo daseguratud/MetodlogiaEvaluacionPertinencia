@@ -1,0 +1,54 @@
+1. Analog and Digital Signals  1–4
+Definitions • Difference between analog and digital signals • Advantage 
+of Digital signal over analog signal.
+2. Number Systems  5–18
+Definitions • Radix representation of numbers • Conversion of one 
+number system to the other (Decimal, Binary, Octal and Hexadecimal) 
+•  Fixed point representation • Floating point representation.
+3. Logic Gates  19–34
+Definitions • Basic Gates-NOT, OR, AND • Universal gates-NOR, 
+NAND •  X-OR gate • AND-OR-Invert gates • De-Morgan’s laws  
+• Logic circuit for Boolean Expression and vice-versa • Positive logic and 
+negative logic.
+4.	 Combinational 	Logic	Circuits	and	Simplification	 35–54
+Boolean laws and theorems • Consensus theorem •  Karnaugh Map 
+• Don’t care condition • Minterm and Maxterm •  Simplification using 
+Boolean laws and theorems •  Simplification using Karnaugh map for 3, 
+4 and 5 variables—SOP and POS • Simplification using tabular method 
+• Simplification using Consensus theorem • Hazard and Hazard cover.
+5. Binary Arithmetic 55–74
+Binary addition, subtraction, multiplication, division • I’s complement 
+and 2’s complement • Half Adder • Full Adder • Half Subtractor • Full 
+Subtractor • Adder-Subtractor.Detailed Contentsviii Digital Electronics
+6. Codes and Parity 75–90
+Weighted code-BCD code • Non weighted codes-Excess 3 code, Gray 
+code • Alpha numeric codes-ASCII, EBCDIC • Error detecting codes-Odd parity, Even parity (Single and Double Error) • Error correcting or Hamming code • Checksum code • CRC code.
+7. Multiplexer, Demultiplexer, Encoder, Decoder  91–120
+Definitions • Multiplexers •  Demultiplexers •  Implementation of logic 
+function using multiplexer • Decoder, BCD to decimal decoder • Seven 
+segment indicator • Encoder, decimal to BCD encoder.
+8. Different Types of Displays 121–128
+LED •  LCD • Advantage and disadvantage • Difference between LED 
+ad LCD •  Alpha numeric display-discrete method, bar-matrix method and 
+dot-matrix method.
+9. Digital Logic Families  129–152
+Bipolar Logic Family • Saturated-RTL, IIL, DTL, HTL and TTL •  Non-
+Saturated Schottky TTL, ECL • Unipolar logic family-PMOS, NMOS and CMOS • SSI, MS LSI, VLSI • Characteristics of digital ICs.
+10. Flip Flops  153–174
+Definitions • RS Flip Flop • D Flip Flop • JK Flip Flop • T Flip Flop • Conversion of one Flip Flop to other •  Finite state machine •  Moore and 
+Mealy model • State graph and state tables.
+11. Shift Registers  175–190
+Definitions • Type of registers • Serial In-Serial Out •  Serial In-Parallel 
+Out •  Parallel In-Serial Out • Parallel In-Parallel Out •  Universal shift 
+register • Ring counter.
+12. Counters  191–214
+Introduction • Types of counter • Asynchronous counter • Synchronous counter •  Difference between Asynchronous and Synchronous counter 
+• Presettable counter • Design of counters for different modules • Design 
+of binary counters of random sequence using flip flop.
+13. Semiconductor Memories  215–226
+Definitions • Description RAM and ROM • Semiconductor memory 
+organization •  Classification •  Expansion of word length and word 
+capacity • Difference between Static RAM and Dynamic RAM.
+14. D/A Conversion and A/D Conversion 227–250
+D/A Converter •  Binary equivalent rate •  Binary Ladder • A/D Converter 
+Simultaneous, Counter Type, Continuous A/D converter, successive approximation method, single slope and dual slope A/D converter.
