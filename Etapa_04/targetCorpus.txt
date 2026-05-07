@@ -1,0 +1,583 @@
+digital_system
+digital_system
+abstraction
+numbering code
+numbering code bcd ascii ebcdic
+numeric_system binary octal decimal hexadecimal gray
+numeric_conversion base arithmetic
+weighted numerical code
+representation integers magnitude complement sign
+fixed floating point representation
+arithmetic addition subtraction multiplication division overflow carry
+error_detection correction code hamming_code
+logic_function boolean algebra
+boolean algebra
+axioms property theorems
+logic_operation
+logic flip_flop xor truth table
+sum product canonical
+simplified boolean algebra
+integrated_circuit realization
+characteristic power dissipation voltages currents fan fan delays propagation times integration etc.
+totem pole open collector
+buffer tri_state ttl mos
+design combinationals
+combinational
+simplification logic_function karnaugth map
+logic_function nand logic_gate
+encoder decoder multiplexer demultiplexer
+half adder adder integrated adder
+semisubtractor complete subtractor subtraction complement
+adder subtractor magnitude comparator alu
+rom memory
+design
+classification
+flip_flop flip_flop flip_flop flip_flop preset clear master slave
+design fsm fsm automata mealy moore
+synchronous counter registers shift_registers
+pwm
+micro processor
+programmable_logic_device
+fpga fpga
+cepld complex programmable_logic_device
+psoc programmable chip
+microcontroller
+hardware_description_language
+vhdl elements identifiers operators statements
+structural simulation simulation
+combinational design principles
+boolean algebra logic synthesis combinational representation sum products product sums
+karnaugh_map quine mccluskeyn algorithm
+combinational
+binary decoder lines decoder computer
+bcd segments state registers encoder multiplexer demultiplexer parity generator
+comparator arithmetic adder subtractor bcd adder arithmetic logic alu multiplier
+combinational
+programmable_logic_device
+design today computational used design
+electronic design eda principles logic
+programmable pals plds programming
+locks flip_flop
+sequential_gated latches state switch flip_flop flip_flop
+built transmission flip_flop inverter
+counter records
+propagation counter synchronous counter counter registers
+ring counter integrated_circuit watches counter detector
+design
+state_machine fsm design synchronous
+asynchronous control
+plds
+various plds programming
+memory
+general memory random memory read-only memory rom
+
+processor
+configuration microprocessor decoder ports memory instructions
+microcontroller assembler
+design combinational
+specific
+provide boolean algebra synthesis combinational
+memory hardware
+hardware fsm
+
+design, simulate digital_circuit schematic diagrams, boolean equations, truth table hardware_description_languages
+design logic_gate schematic cmos
+differences representation signed unsigned decimal integers digital_circuit arithmetic solutions
+relevant combinational digital_system multiplexer, decoder, code_converter ROM memory behavior
+use combinational circuitynthesis algebraic reduction tabular
+synchronous state equation schematic state_table hardware_description_language
+performance digital_circuit terms delay switching speed hardware
+results projects writing
+
+subject
+
+design
+formal design
+projects
+address complex
+bases boolean algebra combinational
+synthesis digital_circuit combinational characteristic
+different hardware characteristic digital_system
+design fsm
+
+algebra logic variables
+combinational circuitynthesis
+synchronous asynchronous
+fsm design
+
+
+analog quantity
+design analog design
+binary digits logic waveform
+logic_function
+cmos ttl fixed integrated_circuit
+
+numbering
+
+decimal
+binary
+octal
+hexadecimal
+bcd
+gray
+binary arithmetic
+complement
+signed
+boolean algebra
+logic_gate
+boolean property
+boolean laws
+demorgan theorem
+boolean
+minterms maxterms
+canonical
+simplification boolean algebra
+karnaug map
+combinational
+combinationals design
+adder
+adder subtractor
+comparator
+design miscellaneous combinationals
+
+discreet design
+
+
+voltage
+
+
+
+
+hsp
+hsa
+ths guidelines
+multiplexer
+demultiplexer
+encoder
+decoder
+segment display
+code_converter
+tri_state
+hamming_code
+
+discrete code_converter design
+
+
+
+schematic design
+
+
+spld gal pla pal
+cplds
+fpga
+vhdl
+bottom top design
+behavioral schematic design
+structural
+vhdl
+
+adder
+design
+ise modelsim
+digital_circuit
+delayed simulation
+synthesis
+user restrictions
+routing cpld fpga
+cpld fpga programming
+verification testing
+entity
+structure program vhdl
+
+special symbols
+reserved
+operators
+
+element
+generic constants variables
+declarations generic constants variables
+
+code_converter
+
+
+voltage
+
+storage
+
+
+
+hsp
+hsa
+ths guidelines
+concurrent execution serial execution flow
+algorithmic
+series execution block
+conditional statement
+case selection statement
+
+conditional assignment
+assignment selection select
+
+
+decoder multiplexer practical
+concurrent block block
+statement
+loop
+procedure
+component
+component reference
+components
+
+
+
+alu
+
+
+digital_system
+clock
+records
+integrated_circuit
+
+
+flip_flop
+
+shift_registers
+state_machine
+finite
+fsm fsm
+moore mealy fsm
+
+
+simple counter
+design fsm vhdl
+memory
+memory
+memory
+ram random memory
+read memory rom
+rom memory
+
+
+
+
+voltage
+
+
+
+
+hsp
+hsa
+ths guidelines
+digital_circuit design rom
+
+
+stepper motor control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+place context subject
+field digital_circuit
+digital_circuit
+design analog design
+design
+integrated_circuit
+design
+logic_family
+cmos family
+ttl family
+cmos ttl
+binary
+handle hexadecimal octal binary numbering
+manipulation numeric_conversion real structures
+positional
+octal hexadecimal binary
+conversion
+arithmetic
+binary decimal bcd encoding
+binary numeric_system
+unsigned integers
+complement integers
+unsigned fractional
+fractional complement sign
+gray_code
+signed magnitude
+complement shift
+complement
+floating point
+code error_detection correction
+code serial transmission storage
+simulations
+logic_function
+boolean logic well
+logic_operators logic_propositions
+boolean logic
+elementary logic_operation
+truth table
+
+simulations
+elementary digital_circuit
+flip_flop design specific hardware simplification
+design simple combinational
+logic_gate
+flip_flop
+logic_gate
+logic_gate
+gate
+
+
+design
+direct simplified
+gate
+simulations
+combinationals
+design combinational
+design combinational different components integrated_circuit
+combinational
+combinational
+combinational
+encoder
+decoder
+multiplexer
+demultiplexer
+arithmetic
+combinational circuitynthesis
+simplification programming
+abel hardware_description_language
+vhdl hardware_description_language
+simulations
+combinational design
+combinational msl
+design combinational components integrated_circuit msl
+standards documentation
+time
+plds
+decoder
+encoder
+tri_state
+multiplexer
+exclusive parity flip_flop
+comparator
+adder subtractors alus
+multipliers
+simulations abel vhdl
+
+memory
+design msl components integrated_circuit
+communication
+
+beehives
+flip_flop
+logic
+temporal
+state_machine
+design
+synchronous case
+asynchronous case
+
+shift_registers
+
+features layout abel vhdl
+simulations
+memory programmable_logic_device
+combinational memory
+following capabilities
+global
+use available end analyzing potential
+memory
+address decoding
+ram rom memory
+logic_circuit rom
+programmable_logic_device cplds fpga
+design
+state_machine
+design state_machine activity
+field computer control design synchronous asynchronous fsm
+state_machine
+classification
+moore mealy
+msf
+msf design
+design
+vhdl
+processor
+way combinational form processing
+capacity linking processing
+
+
+harvard
+harvard
+microprocessor microcontroller
+microprocessor
+pic microcontroller
+hc microcontroller
+dsp tms
+microprogramming
+
+place context subject
+field digital_circuit
+digital_circuit
+design analog design
+design
+integrated_circuit
+design
+logic_family
+cmos family
+ttl family
+cmos ttl
+binary
+handle hexadecimal octal binary numbering
+manipulation numeric_conversion real structures
+positional
+
+
+
+
+
+octal hexadecimal binary
+conversion
+arithmetic
+binary decimal bcd encoding
+binary numeric_system
+unsigned integers
+complement integers
+unsigned fractional
+fractional complement sign
+gray_code
+signed magnitude
+complement shift
+complement
+floating point
+code error_detection correction
+code serial transmission storage
+simulations
+logic_function
+boolean logic well
+logic_operators logic_propositions
+boolean logic
+elementary logic_operation
+truth table
+
+simulations
+elementary digital_circuit
+flip_flop design specific hardware simplification
+design simple combinational
+logic_gate
+flip_flop
+logic_gate
+logic_gate
+gate
+
+
+design
+direct simplified
+gate
+simulations
+combinationals
+
+
+
+
+
+design combinational
+design combinational different components integrated_circuit
+combinational
+combinational
+combinational
+encoder
+decoder
+multiplexer
+demultiplexer
+arithmetic
+combinational circuitynthesis
+simplification programming
+abel hardware_description_language
+vhdl hardware_description_language
+simulations
+combinational design
+combinational msl
+design combinational components integrated_circuit msl
+standards documentation
+time
+plds
+decoder
+encoder
+tri_state
+multiplexer
+exclusive parity flip_flop
+comparator
+adder subtractors alus
+multipliers
+simulations abel vhdl
+
+memory
+design msl components integrated_circuit
+communication
+
+
+
+
+
+
+beehives
+flip_flop
+logic
+temporal
+state_machine
+design
+synchronous case
+asynchronous case
+
+shift_registers
+
+features layout abel vhdl
+simulations
+memory programmable_logic_device
+combinational memory
+following capabilities
+global
+use available end analyzing potential
+memory
+address decoding
+ram rom memory
+logic_circuit rom
+programmable_logic_device cplds fpga
+design
+state_machine
+design state_machine activity
+field computer control design synchronous asynchronous fsm
+state_machine
+classification
+moore mealy
+msf
+msf design
+design
+vhdl
+processor
+
+
+
+
+
+way combinational form processing
+capacity linking processing
+
+
+harvard
+harvard
+microprocessor microcontroller
+microprocessor
+pic microcontroller
+hc microcontroller
+dsp tms
+microprogramming

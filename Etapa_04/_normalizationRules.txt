@@ -1,0 +1,115 @@
+adder <- adders
+boolean <- Boolean
+application <- applications
+array <- arrays
+bench <- benches
+bit <- bits
+buffer <- buffers
+bus <- buses
+byte <- bytes
+cell <- cells
+characteristic <- characteristics
+checker <- checkers
+circuit <- circuits; circuit s
+class <- classes
+code <- codes
+comparator <- comparators
+computer <- computers
+concept <- concepts
+consideration <- considerations
+content <- contents
+controller <- controllers
+conversion <- conversions
+converter <- converters
+counter <- counters
+combinational <- combinatorial; combinational system; combinational logic
+decoder <- decoders
+demultiplexer <- demultiplexers
+device <- devices
+driver <- drivers
+edge <- edges
+encoder <- encoders
+event <- events
+inverter <- inverters; inverting
+logic <- logical
+expression <- expressions
+flop <- flop s; flops
+function <- functions
+gate <- gate s; gates; gate logic
+generator <- generators
+implementation <- implementations
+instrument <- instruments
+level <- levels
+library <- libraries
+map <- maps
+memory <- memories
+method <- methods
+microcontroller <- microcontrollers
+microprocessor <- microprocessors
+module <- modules
+multiplexer <- multiplexers
+number <- numbers
+operation <- operations
+parameter <- parameters
+problem <- problems
+process <- processes
+processor <- processors
+property <- properties
+pulse <- pulses
+quantity <- quantities
+registers <- register s; registers
+representation <- representations
+requirement <- requirements
+signal <- signal s; signals
+state <- states
+switch <- switches
+system <- systems
+table <- tables
+technology <- technologies
+transition <- transitions
+type <- types
+unit <- units
+value <- values; not gate
+waveform <- waveforms
+word <- words
+machine <- machines
+diode <- diodes
+xor <- ñor; xnor gate
+schmitt <- schm itt
+input <- inputs
+output <- outputs
+fpga <- fpgas; field programmable gate array
+flip_flop <- flip flop; flip-flop; ﬂip ﬂop; gate and
+design <- logic design
+fsm <- finite state machine; number base conversion; decimal conversion; binary conversion; octal conversion; decimal and octal conversion; hexadecimal conversion
+state_machine <- state machine
+karnaugh_map <- karnaugh map; k map; decimal to binary conversion
+numeric_system <- number system; decimal conversion
+tri_state <- three-state; three state; tri-state; tri state
+programmable_logic_device <- programmable logic device
+logic_circuit <- logic circuit
+digital_system <- digital system
+integrated_circuit <- integrated circuit
+flip_flop flip_flop flip_flop flip_flop <- flip_flop sr d t jk
+digital_circuit <- digital circuit
+hardware_description_language <- hardware description language
+test_bench <- test bench
+logic_gate <- logic gate; nand gate; and gate; inverter gate; gate not; xnor gate; xor gate; nor gate; or gate
+sequential <- sequential system; sequential logic
+error_detection <- error detection; error detecting; error correcting
+logic_family <- logic families
+logic_function <- logic function
+transistor_logic <- transistor logic
+logic_operators <- logic operators
+logic_propositions <- logic propositions
+logic_operation <- logic operation
+state_table <- state table
+state_diagram <- state diagram
+numeric_conversion <- conversion between bases; conversion of bases; number conversion
+shift_register <- shift register
+gray_code <- gray code
+code_converter <- code converter
+hamming_code <- hamming code
+binary_code <- binary code
+vhdl <- vhdl code
+checksum_code <- checksum code
